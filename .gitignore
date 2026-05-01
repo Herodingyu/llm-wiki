@@ -1,0 +1,19 @@
+# OpenClaw runtime state (rebuildable, can be regenerated)
+.llm-kb/representations/
+.llm-kb/runs.jsonl
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Temp
+tmp/
+temp/
