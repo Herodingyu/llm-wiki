@@ -24,6 +24,20 @@
 | 嵌入式组件：CPIO DMA UART SPI I2C PLIC SRAM Timer JTAG | CSDN | https://blog.csdn.net/sinat_37916252/article/details/148481400 |
 | DMA 数据传输实战（含代码示例） | CSDN | https://blog.csdn.net/Mumyi_/article/details/155827425 |
 
+## I3C（新增）
+
+| 标题 | 来源 | 链接 |
+|------|------|------|
+| I3C协议详解 | 博客园 | https://www.cnblogs.com/linhaostudy/p/19625228 |
+| I3C协议详解（含动态地址分配实战） | CSDN | https://blog.csdn.net/u010787514/article/details/109045306 |
+| I3C —— 未来传感器的"全能通信王" | CSDN | https://blog.csdn.net/weixin_44650422/article/details/146899955 |
+| I3C高性能、低功耗、双线制串行通信总线介绍 | 微信公众号 | http://mp.weixin.qq.com/s?__biz=Mzk3NTkwMjEyOQ==&mid=2247485128 |
+| I3C vs I2C: 选择哪种通信协议 | 芯片研发测试设备 | https://www.oiosys.cn/article-item-64.html |
+| 适合灵巧手的I3C总线，到底是个啥？ | QQ News | https://news.qq.com/rain/a/20260121A01JHG00 |
+| DDR5 vs DDR4：I3C和I2C相较提高了什么？ | 知乎/老狼 | https://www.zhihu.com/tardis/zm/art/421387137 |
+
+---
+
 ## TI 官方文档
 
 | 标题 | 来源 | 链接 |
