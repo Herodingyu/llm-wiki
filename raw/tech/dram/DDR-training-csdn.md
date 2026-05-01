@@ -1,8 +1,8 @@
-# DDR-training
-
 > 来源: CSDN (blog.csdn.net/m0_57493153)
 > 原URL: https://blog.csdn.net/m0_57493153/article/details/144533384
 > 收集时间: 2026-05-01
+
+# DDR-training
 
 DDR training出现的原因主要包括以下几点：
 

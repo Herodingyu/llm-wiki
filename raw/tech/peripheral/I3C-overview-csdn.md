@@ -1,8 +1,8 @@
-# I3C —— 未来传感器的"全能通信王"
-
 > 来源: CSDN (blog.csdn.net/weixin_44650422)
 > 原URL: https://blog.csdn.net/weixin_44650422/article/details/146899955
 > 收集时间: 2026-05-01
+
+# I3C —— 未来传感器的"全能通信王"
 
 ## 一、I3C是什么？
 

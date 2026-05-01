@@ -1,3 +1,7 @@
+> 来源: 博客园 | 转自 4k8k.xyz | URL: https://www.cnblogs.com/sky-heaven/p/15948268.html
+> 原URL: https://www.cnblogs.com/sky-heaven/p/15948268.html
+> 收集时间: 2026-05-01
+
 # DDR 基础知识点汇总
 
 > 来源：博客园 | 转自 4k8k.xyz | URL: https://www.cnblogs.com/sky-heaven/p/15948268.html

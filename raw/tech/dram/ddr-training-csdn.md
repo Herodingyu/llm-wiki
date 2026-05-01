@@ -1,3 +1,7 @@
+> 来源: CSDN | 作者：m0_57493153 | URL: https://blog.csdn.net/m0_57493153/article/details/144533384
+> 原URL: https://blog.csdn.net/m0_57493153/article/details/144533384
+> 收集时间: 2026-05-01
+
 # DDR Training 详解
 
 > 来源：CSDN | 作者：m0_57493153 | URL: https://blog.csdn.net/m0_57493153/article/details/144533384
