@@ -21,6 +21,20 @@
 | 嵌入式组件：CPIO DMA UART SPI I2C PLIC SRAM PM CTRL ROM Timer JTAG | CSDN | https://blog.csdn.net/sinat_37916252/article/details/148481400 | 组件概述 |
 | PID控制算法：从连续到C语言数字控制 | 微信公众号 | http://mp.weixin.qq.com/s?__biz=MzI0ODU0NDI1Mg==&mid=2247569949 | PID/控制 |
 
+## I3C
+
+| 标题 | 来源 | URL | 分类 |
+|------|------|-----|------|
+| I3C协议详解 | 博客园 | https://www.cnblogs.com/linhaostudy/p/19625228 | I3C 协议 |
+| I3C协议详解（含动态地址分配实战） | CSDN | https://blog.csdn.net/u010787514/article/details/109045306 | I3C 实战 |
+| I3C —— 未来传感器的"全能通信王" | CSDN | https://blog.csdn.net/weixin_44650422/article/details/146899955 | I3C 概述 |
+| I3C高性能、低功耗、双线制串行通信总线介绍 | 微信公众号 | http://mp.weixin.qq.com/s?__biz=Mzk3NTkwMjEyOQ==&mid=2247485128 | I3C 总览 |
+| I3C vs I2C: 选择哪种通信协议 | 芯片研发测试设备 | https://www.oiosys.cn/article-item-64.html | I3C 对比 |
+| 适合灵巧手的I3C总线，到底是个啥？ | QQ News | https://news.qq.com/rain/a/20260121A01JHG00 | I3C 应用 |
+| I3C访问SPD5 Hub时，相比传统I2C有哪些关键升级 | CSDN文库 | https://wenku.csdn.net/answer/6i5c82fq0p3e | I3C SPD5 |
+| DDR5 vs DDR4：I3C和I2C相较提高了什么？ | 知乎/老狼 | https://www.zhihu.com/tardis/zm/art/421387137 | I3C DDR5 |
+| MIPI推的SenseWire为什么叫I3C？ | 知乎 | https://www.zhihu.com/question/53588873 | I3C 命名 |
+
 ## 芯片手册参考
 
 | 标题 | 来源 | URL | 分类 |
@@ -33,3 +47,5 @@
 - 更深入的 DMA 传输机制文章
 - PWM 电机控制专用文章
 - Timer 中断与系统 tick 实现
+- I3C Linux 驱动开发（内核 i3c 子系统）
+- I3C HDR 模式详解
