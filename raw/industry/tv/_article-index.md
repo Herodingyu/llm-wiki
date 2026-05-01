@@ -1,30 +1,18 @@
-# TV 行业文章索引
+# Tv 领域文章索引
 
-> 自动收集于 2026-05-01 | 来源：知乎/微信公众号/行业报告
+> 自动收集于 2026-05-01 | 来源：全网搜索
 
-## TV 产品 / SOC / 面板
+## 已入库文章
 
-| 标题 | 来源 | URL | 分类 |
-|------|------|-----|------|
-| 显示面板芯片前沿技术有哪些 | 电子发烧友 | https://www.elecfans.com/led/2190748.html | Driver IC/面板 |
-| 技术前沿：DDIC触控显示驱动芯片 | 知乎 | https://zhuanlan.zhihu.com/p/633702451 | DDIC |
-| TV Mini LED / Local Dimming 技术 | 知乎多篇 | 见 tv-backlight 索引 | 背光 |
+| 标题 | 文件名 |
+|------|--------|
+| TV Market Recovering: Getting Bigger, Brighter, Better &#8211; Display Daily |  |
+| Amlogic S928X Android TV Box Guide: How to Choose in 2024 |  |
+| MediaTek debuts Pentonic 800 SoC with 165Hz VRR, VVC decoding and more |  |
+| Omdia：2025 年 Mini LED 背光 LCD TV 出货将超越 OLED TV - IT之家 |  |
+| What is Competitive Landscape of Novatek Microelectronics Corp. Company? &ndash; PortersFiveForce.com |  |
+| 2025显示技术“神仙打架”,RGB-Mini LED“上位”,QD-OLED光环褪去_亮度_电视_峰值 |  |
+| Display Timing Controller (TCON) Market Size ($5.1 Billion) 2030 |  |
 
-## 前沿技术
-
-| 标题 | 来源 | URL | 分类 |
-|------|------|-----|------|
-| 下一代前沿技术：智能座舱监测系统 | 汽车测试网 | https://www.auto-testing.net/news/show-117274.html | DMS/OMS |
-
-## OS 生态
-
-| 标题 | 来源 | URL | 分类 |
-|------|------|-----|------|
-| 待补充 | - | - | TV OS |
-
-## 待抓取/待补充
-
-- TV SOC 方案对比（海思/联发科/Realtek/Amlogic）
-- TV 面板技术演进（LCD/OLED/Mini LED/Micro LED）
-- TV 行业市场分析
-- 各大 TV 品牌产品分析
+---
+*共收录 7 篇文章*

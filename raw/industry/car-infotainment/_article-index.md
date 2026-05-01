@@ -1,39 +1,20 @@
-# 车机与智能座舱 行业文章索引
+# Car Infotainment 领域文章索引
 
-> 自动收集于 2026-05-01 | 来源：知乎/财新/微信公众号/行业报告
+> 自动收集于 2026-05-01 | 来源：全网搜索
 
-## SOC / 芯片
+## 已入库文章
 
-| 标题 | 来源 | URL | 分类 |
-|------|------|-----|------|
-| 毕马威预计智能座舱市场未来5年复合增长率超过17% | 财新 | https://www.caixin.com/2023-04-27/102040747.html | 市场分析 |
-| 智能座舱的核心技术是什么？发展前景怎么样？ | 知乎 | https://www.zhihu.com/question/598588177 | 核心技术 |
-| 智能座舱平台研究：汽车与PC界限逐渐模糊 | 微信公众号 | http://mp.weixin.qq.com/s?__biz=MzA4NTcwMDQwMg==&mid=2650821400 | 平台演进 |
-| 智能座舱域控制器技术发展趋势分析 | 知乎 | https://zhuanlan.zhihu.com/p/579152633 | 域控制器 |
-| 智能座舱SOC选型指南 | 知乎 | https://zhuanlan.zhihu.com/p/702525495 | SOC选型 |
-| 深度剖析汽车智能座舱芯片：舱驾融合大战背后的逻辑 | 知乎 | https://zhuanlan.zhihu.com/p/29882048769 | 舱驾融合 |
-| 财新周刊｜高通备战AI时代 | 财新 | https://weekly.caixin.com/2024-11-02/102252616.html | 高通座舱 |
-| 【周刊提前读】AI时代芯片市场面临重构 高通如何应战？ | 财新 | https://database.caixin.com/2024-11-02/102252631.html | 高通分析 |
-| 财新周刊｜英特尔重整旗鼓 | 财新 | https://weekly.caixin.com/2023-10-07/102114277.html | 英特尔座舱 |
+| 标题 | 文件名 |
+|------|--------|
+| MediaTek 结合 NVIDIA 技术推出 Dimensity Auto 座舱平台，为汽车带来先进的 AI 技术 |  |
+| At CES 2024, Valeo and Sennheiser present ImagIn: an immersive sound and light experience in your car |  |
+| NVIDIA Unveils DRIVE Thor — Centralized Car Computer Unifying Cluster, Infotainment, Automated Driving, and Parking in a Single, Cost-Saving System | NVIDIA Newsroom |  |
+| Global and China Intelligent Vehicle Cockpit-driving Integration Industry Report 2024 Featuring 44 Products and Solutions Suppliers and 9 Major Chip Vendors |  |
+| Qualcomm and Bosch Showcase New Central Vehicle Computer for Digital Cockpit and Driver Assistance Functions at CES 2024 | Qualcomm |  |
+| Renesas Unveils Industry’s First Automotive Multi-Domain SoC Built with 3-nm Process Technology | Renesas |  |
+| Automotive Cockpit Domain Controller Research Report, 2025 |  |
+| China Passenger Car Cockpit Multi/Dual Display Research Report, 2023-2024  - ResearchInChina |  |
+| Automotive Cockpit SoC Research Report, 2024 - ResearchInChina |  |
 
-## 关键器件
-
-| 标题 | 来源 | URL | 分类 |
-|------|------|-----|------|
-| ADAYO华阳携手上海海思发布智能座舱360环视方案 | 弗戈工业在线 | https://www.jgvogel.cn/c/2020-09-30/1059848.shtml | 海思方案 |
-
-## 前沿技术
-
-| 标题 | 来源 | URL | 分类 |
-|------|------|-----|------|
-| 下一代前沿技术：智能座舱监测系统 | 汽车测试网 | https://www.auto-testing.net/news/show-117274.html | 座舱监测 |
-| 2025国际汽车智能座舱大会在苏州开幕 | 搜狐 | https://www.sohu.com/a/935942412_121885028 | 大会综述 |
-
-## 待抓取/待补充
-
-- 华为鸿蒙座舱系统
-- 高通8295/8155 详细技术规格
-- 国产座舱芯片（芯擎/芯驰/地平线）
-- DMS/OMS 算法实现
-- HUD/AR-HUD 技术
-- 舱驾一体架构
+---
+*共收录 9 篇文章*
