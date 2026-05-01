@@ -15,7 +15,7 @@
 | 路径 | 内容 |
 |------|------|
 | `raw/tech/dram/` | DRAM / Controller / DDR PHY / Calibration 算法 |
-| `raw/tech/peripheral/` | I2C / SPI / UART / PWM / Timer / DMA |
+| `raw/tech/peripheral/` | I2C / SPI / UART / **I3C** / PWM / Timer / DMA |
 | `raw/tech/tv-backlight/` | Local dimming / BCONless LED driver / 单线通讯 |
 | `raw/tech/soc-pm/` | SOC 开发项目管理 |
 | `raw/industry/tv/` | 产品 / SOC / 面板 / Driver IC / 前沿技术 / OS 生态 |
