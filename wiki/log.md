@@ -42,15 +42,41 @@ updated: 2026-05-02
 - **创建索引**：4 个自动索引（sources、concepts、entities、syntheses）
 - **更新 manifest.json**：记录所有来源
 
+## [2026-05-02] ingest | BSP 领域文章摄入
+
+- **来源**: `raw/tech/bsp/` — 43 篇技术文章
+- **创建 Source Notes**:
+  - Boot/SoC/U-Boot: 12 篇（U-Boot、ARMv8、ATF、UEFI、启动流程）
+  - Linux Drivers: 6 篇（设备驱动、UIO、字符设备、图形驱动）
+  - Memory/IO/Cache: 7 篇（内存映射、Page Fault、零拷贝、IOMMU、IO 子系统）
+  - Interrupts/Power/Concurrency: 7 篇（中断处理、软中断、Semaphore、电源管理、休眠）
+  - Filesystem/Security/Hardware: 10 篇（文件系统、挂载、Flash、ACPI、eFuse、磨损均衡）
+  - RTOS/Misc: 1 篇（树莓派 OS 开发）
+- **更新索引**: `wiki/index.md` 添加 BSP 来源列表
+- **更新 manifest.json**: 添加 `tech/bsp` domain，source 统计更新为 180
+
+## [2026-05-02] concepts | BSP 概念提取
+
+- **提取概念页**: 16 个 BSP 核心概念
+  - Boot: u-boot、bootloader
+  - Hardware: device-tree、acpi、atf、secure-boot
+  - Driver: linux-device-driver、dma、iommu
+  - Memory: memory-mapping、page-fault
+  - Kernel: interrupt、semaphore
+  - Power: power-management
+  - Storage: filesystem、efuse、wear-leveling
+- **更新 index.md**: 添加 BSP 概念索引
+- **更新 manifest.json**: 概念页统计更新为 54
+
 ## [2026-05-02] complete | Wiki 整理完成
 
-- **最终统计**：
-  - Source Notes: 137
-  - 概念页: 38
+- **最终统计**:
+  - Source Notes: 180
+  - 概念页: 54 (+16)
   - 实体页: 21
   - 综合分析: 5
   - 索引: 4
-  - **总计: 209 个 wiki 文件**
+  - **总计: 268 个 wiki 文件**
 - **完成状态**: Wave 1-7 全部完成
 - **验证**: 所有页面包含 YAML frontmatter，交叉引用已建立
 

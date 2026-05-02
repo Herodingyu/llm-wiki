@@ -82,6 +82,54 @@ tags: [index, catalog]
 | [[src-synopsys-blogs-chip-design-ai-driven-bug-discover|Synopsys AI Bug 发现]] | src-synopsys-blogs-chip-design-ai-driven-bug-discover | AI 驱动芯片设计 |
 | *(待处理 13 篇)* | — | raw/tech/soc-pm/ |
 
+#### BSP (`wiki/sources/`)
+
+| 标题 | 文档 ID | 说明 |
+|------|---------|------|
+| [[src-uboot-core-issues|U-Boot 核心问题]] | src-uboot-core-issues | U-Boot 功能与命令详解 |
+| [[src-uboot-bootflow-analysis|U-Boot 启动流程分析]] | src-uboot-bootflow-analysis | BL2 阶段启动流程 |
+| [[src-uboot-dm-model|U-Boot 驱动模型]] | src-uboot-dm-model | DM 框架与数据结构 |
+| [[src-armv8-bootflow-overview|ARMv8 启动流程]] | src-armv8-bootflow-overview | BL1→BL33 完整流程 |
+| [[src-arm-soc-bootflow-intro|ARM SOC 启动介绍]] | src-arm-soc-bootflow-intro | SOC 各核心启动 |
+| [[src-soc-bootflow-detailed|SOC 启动详解]] | src-soc-bootflow-detailed | Qemu+ATF+U-Boot+Linux |
+| [[src-arm-bootloader-kernel-logic|Bootloader 到 Kernel]] | src-arm-bootloader-kernel-logic | ARM 启动总逻辑 |
+| [[src-arm-linux-boot-process|ARM Linux 启动过程]] | src-arm-linux-boot-process | P2V 补丁与虚拟内存 |
+| [[src-arm-linux-self-decompress|ARM Linux 自解压]] | src-arm-linux-self-decompress | zImage 解压流程 |
+| [[src-arm-secure-boot-atf|ARM 安全启动与 ATF]] | src-arm-secure-boot-atf | ATF/TF-A 与 UEFI |
+| [[src-uefi-loader|UEFI 加载机制]] | src-uefi-loader | UEFI 代码加载流程 |
+| [[src-uboot-start-s-determination|U-Boot start.S 选择]] | src-uboot-start-s-determination | Makefile 编译流程 |
+| [[src-linux-device-driver-overview|Linux 设备驱动概述]] | src-linux-device-driver-overview | 字符设备与 LED 驱动 |
+| [[src-graphics-driver-basics|图形驱动基础]] | src-graphics-driver-basics | GPU、DMA、PCIe |
+| [[src-linux-driver-basics|Linux 驱动基础]] | src-linux-driver-basics | 设备号与 file_operations |
+| [[src-uio-driver-mechanism|UIO 驱动机制]] | src-uio-driver-mechanism | 用户空间设备驱动 |
+| [[src-character-device-driver|字符设备驱动]] | src-character-device-driver | cdev 与 API |
+| [[src-userspace-hardware-access|用户态硬件访问]] | src-userspace-hardware-access | UIO 框架实践 |
+| [[src-memory-bandwidth-test|内存带宽测试]] | src-memory-bandwidth-test | 关闭 Cache 测试 |
+| [[src-cache-size-test|Cache 大小测试]] | src-cache-size-test | C 语言估算 Cache |
+| [[src-linux-memory-mapping|Linux 内存映射]] | src-linux-memory-mapping | ioremap 与内存申请 |
+| [[src-page-fault-handling|Page Fault 处理]] | src-page-fault-handling | 缺页异常机制 |
+| [[src-zero-copy|零拷贝技术]] | src-zero-copy | DMA 与 CPU 拷贝 |
+| [[src-iommu-intro|IOMMU 简介]] | src-iommu-intro | 虚拟化 DMA 映射 |
+| [[src-io-subsystem-overview|IO 子系统全流程]] | src-io-subsystem-overview | syscall 到 SCSI 驱动 |
+| [[src-linux-interrupt-evolution|Linux 中断演进]] | src-linux-interrupt-evolution | 硬件/软件中断 |
+| [[src-softirq-cpu-overhead|软中断开销]] | src-softirq-cpu-overhead | 性能分析与测量 |
+| [[src-semaphore-vs-mutex|Semaphore vs Mutex]] | src-semaphore-vs-mutex | 同步机制区别 |
+| [[src-ioremap-why|ioremap 原因]] | src-ioremap-why | MMU 与虚拟地址 |
+| [[src-linux-power-management|Linux 电源管理]] | src-linux-power-management | 框架与子系统 |
+| [[src-linux-suspend-resume|系统休眠唤醒]] | src-linux-suspend-resume | STR/STD 流程 |
+| [[src-linux-suspend-intro|休眠介绍]] | src-linux-suspend-intro | 四种休眠方式 |
+| [[src-filesystem-rootfs|文件系统与根文件系统]] | src-filesystem-rootfs | 文件系统概念 |
+| [[src-linux-mount-concept|Linux 挂载概念]] | src-linux-mount-concept | mount 形象解释 |
+| [[src-linux-why-mount|为什么要挂载]] | src-linux-why-mount | mount 必要性 |
+| [[src-linux-mount-vs-dev|挂载与 /dev 区别]] | src-linux-mount-vs-dev | 设备文件 vs 文件系统 |
+| [[src-text-data-bss-segments|text/data/bss 段]] | src-text-data-bss-segments | 程序段详解 |
+| [[src-flash-xip-vs-ram|Flash XIP vs RAM]] | src-flash-xip-vs-ram | 代码执行位置 |
+| [[src-dd-disk-benchmark|dd 磁盘测试]] | src-dd-disk-benchmark | 正确使用 dd |
+| [[src-efuse-secure-boot|eFuse 与安全启动]] | src-efuse-secure-boot | 安全启动机制 |
+| [[src-acpi-vs-devicetree|ACPI vs DeviceTree]] | src-acpi-vs-devicetree | ARM Server 选择 |
+| [[src-stm32-flash-wear-leveling|STM32 Flash 磨损均衡]] | src-stm32-flash-wear-leveling | 延长 Flash 寿命 |
+| [[src-raspberry-pi-os-dev|树莓派 OS 开发]] | src-raspberry-pi-os-dev | 小 OS 实验准备 |
+
 ### 行业领域
 
 #### TV (`wiki/sources/`)
@@ -189,6 +237,29 @@ tags: [index, catalog]
 | [[verification]] | verification | 芯片验证 |
 | [[chiplet]] | chiplet | 芯粒/小芯片 |
 | [[risc-v]] | risc-v | 开源指令集架构 |
+
+### BSP 概念
+
+| 概念 | 文档 ID | 说明 |
+|------|---------|------|
+| [[u-boot]] | u-boot | 通用启动加载器 |
+| [[bootloader]] | bootloader | 启动加载器 |
+| [[device-tree]] | device-tree | 设备树硬件描述 |
+| [[secure-boot]] | secure-boot | 安全启动机制 |
+| [[atf]] | atf | ARM 可信固件 |
+| [[linux-device-driver]] | linux-device-driver | Linux 设备驱动 |
+| [[memory-mapping]] | memory-mapping | 内存映射与 ioremap |
+| [[page-fault]] | page-fault | 缺页异常处理 |
+| [[interrupt]] | interrupt | 中断处理机制 |
+| [[power-management]] | power-management | 电源管理框架 |
+| [[suspend-resume]] | suspend-resume | 系统休眠唤醒 |
+| [[filesystem]] | filesystem | 文件系统与挂载 |
+| [[dma]] | dma | 直接内存访问 |
+| [[iommu]] | iommu | IO 内存管理单元 |
+| [[semaphore]] | semaphore | Semaphore 与 Mutex |
+| [[efuse]] | efuse | eFuse 与 OTP |
+| [[wear-leveling]] | wear-leveling | Flash 磨损均衡 |
+| [[acpi]] | acpi | 高级配置与电源接口 |
 
 ---
 

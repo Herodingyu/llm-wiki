@@ -18,6 +18,7 @@
 | `raw/tech/peripheral/` | I2C / SPI / UART / **I3C** / PWM / Timer / DMA |
 | `raw/tech/tv-backlight/` | Local dimming / BCONless LED driver / 单线通讯 |
 | `raw/tech/soc-pm/` | SOC 开发项目管理 |
+| `raw/tech/bsp/` | Bootloader / Kernel Driver / OS / BSP 相关技术材料 |
 | `raw/industry/tv/` | 产品 / SOC / 面板 / Driver IC / 前沿技术 / OS 生态 |
 | `raw/industry/smart-glasses/` | 产品 / SOC / 关键器件(panel/camera/sensor) / 前沿技术 / OS 生态 |
 | `raw/industry/car-infotainment/` | SOC / 关键器件 / 前沿技术 |
