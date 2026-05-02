@@ -57,6 +57,15 @@ channel > DIMM > rank > chip > bank > row/column
 - LPDDR 的 self-refresh 功耗优化策略？
 - 多 rank 配置下的 interleaving 策略对性能的影响？
 
+## Related Pages
+
+- [[ddr5]] — DDR 历代技术演进对比
+- [[ddr-training]] — Training 在初始化中的位置和作用
+- [[ddr-calibration]] — ZQ 校准和 ODT 说明
+- [[write-leveling]] — Write Leveling 原理
+- [[ddr-phy]] — PHY、ODT 和信号路径
+- [[lpddr5]] — LPDDR5 与 DDR4 Training 流程的差异
+
 ## Related Links
 
 - [DDR Training 详解](src-ddr-training-csdn.md)

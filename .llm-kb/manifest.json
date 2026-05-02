@@ -1,5 +1,22 @@
 {
   "schema_version": 2,
-  "vault_root": "/root/.openclaw/workspace/llm-wiki",
+  "vault_root": "D:\\llm-wiki",
+  "last_updated": "2026-05-02",
+  "stats": {
+    "total_sources": 137,
+    "total_concepts": 38,
+    "total_entities": 21,
+    "total_syntheses": 5,
+    "total_indexes": 4
+  },
+  "domains": [
+    "tech/dram",
+    "tech/peripheral",
+    "tech/tv-backlight",
+    "tech/soc-pm",
+    "industry/tv",
+    "industry/smart-glasses",
+    "industry/car-infotainment"
+  ],
   "sources": {}
 }
