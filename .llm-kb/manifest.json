@@ -1,10 +1,10 @@
 {
   "schema_version": 2,
-  "vault_root": "D:\\llm-wiki",
-  "last_updated": "2026-05-02",
+  "vault_root": "D:\\llm-wiki\\llm-wiki",
+  "last_updated": "2026-05-03",
   "stats": {
-    "total_sources": 180,
-    "total_concepts": 54,
+    "total_sources": 568,
+    "total_concepts": 101,
     "total_entities": 21,
     "total_syntheses": 5,
     "total_indexes": 4

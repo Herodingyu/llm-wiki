@@ -3,7 +3,7 @@ doc_id: index
 title: LLM Wiki 索引
 page_type: index
 created: 2026-05-01
-updated: 2026-05-02
+updated: 2026-05-03
 tags: [index, catalog]
 ---
 
@@ -39,7 +39,7 @@ tags: [index, catalog]
 | [[src-cxl-q1-2025-whitepaper|CXL Q1 2025 白皮书]] | src-cxl-q1-2025-whitepaper | CXL 联盟白皮书 |
 | [[src-dlep-micron-cadence|Micron DLEP]] | src-dlep-micron-cadence | 内存 ECC 协议 |
 | [[src-synopsys-tsmc-advanced-processes|Synopsys TSMC 先进工艺]] | src-synopsys-tsmc-advanced-processes | PHY IP 与先进工艺 |
-| *(待处理 4 篇)* | — | raw/tech/dram/ |
+| *(已处理 76 篇)* | — | raw/tech/dram/ |
 
 #### Peripheral (`wiki/sources/`)
 
@@ -57,7 +57,7 @@ tags: [index, catalog]
 | [[src-wevolver-article-how-does-spi-work-a-comprehensiv|SPI 工作原理]] | src-wevolver-article-how-does-spi-work-a-comprehensiv | 全双工串行总线 |
 | [[src-deepbluembedded-how-to-receive-spi-with-stm32-dma-interr|STM32 SPI+DMA]] | src-deepbluembedded-how-to-receive-spi-with-stm32-dma-interr | DMA 中断接收 |
 | [[src-cavliwireless-blog-not-mini-in-depth-exploration-of-i2|I2C 深入探索]] | src-cavliwireless-blog-not-mini-in-depth-exploration-of-i2 | I2C 协议详解 |
-| *(待处理 26 篇)* | — | raw/tech/peripheral/ |
+| *(已处理 72 篇)* | — | raw/tech/peripheral/ |
 
 #### TV Backlight (`wiki/sources/`)
 
@@ -69,7 +69,7 @@ tags: [index, catalog]
 | [[src-lincolntechsolutions-blog-full-array-local-dimming-mini-led-e|全阵列分区背光]] | src-lincolntechsolutions-blog-full-array-local-dimming-mini-led-e | FALD 演进 |
 | [[src-cgvis-publications-2012-sig-asia-briefpdf|Local Dimming 算法]] | src-cgvis-publications-2012-sig-asia-briefpdf | SIGGRAPH Asia 论文 |
 | [[src-renesas-en-products-as3824|Renesas AS3824]] | src-renesas-en-products-as3824 | 分区背光驱动 IC |
-| *(待处理 9 篇)* | — | raw/tech/tv-backlight/ |
+| *(已处理 19 篇)* | — | raw/tech/tv-backlight/ |
 
 #### SoC PM (`wiki/sources/`)
 
@@ -80,7 +80,7 @@ tags: [index, catalog]
 | [[src-scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu|敏捷硬件开发]] | src-scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu | 硬件敏捷案例 |
 | [[src-semiengineering-how-ai-and-connected-workflows-will-clos|AI 与验证]] | src-semiengineering-how-ai-and-connected-workflows-will-clos | AI 解决验证瓶颈 |
 | [[src-synopsys-blogs-chip-design-ai-driven-bug-discover|Synopsys AI Bug 发现]] | src-synopsys-blogs-chip-design-ai-driven-bug-discover | AI 驱动芯片设计 |
-| *(待处理 13 篇)* | — | raw/tech/soc-pm/ |
+| *(已处理 124 篇)* | — | raw/tech/soc-pm/ |
 
 #### BSP (`wiki/sources/`)
 
@@ -139,7 +139,7 @@ tags: [index, catalog]
 | [[src-displaydaily-tv-market-recovering-getting-bigger-brig|电视市场复苏]] | src-displaydaily-tv-market-recovering-getting-bigger-brig | 2024 全球电视市场 |
 | [[src-hdtvtest-news-mediatek-debuts-pentonic-800-soc-wi|MediaTek Pentonic 800]] | src-hdtvtest-news-mediatek-debuts-pentonic-800-soc-wi | 电视 SoC 发布 |
 | [[src-redaktor-tech-lg-oled-evo-g5|LG OLED evo G5]] | src-redaktor-tech-lg-oled-evo-g5 | Four-Stack 面板技术 |
-| *(待处理 11 篇)* | — | raw/industry/tv/ |
+| *(已处理 18 篇)* | — | raw/industry/tv/ |
 
 #### Smart Glasses (`wiki/sources/`)
 
@@ -152,7 +152,7 @@ tags: [index, catalog]
 | [[src-lp-research-slam-system-ar-vr-tracking|SLAM 追踪系统]] | src-lp-research-slam-system-ar-vr-tracking | AR/VR 追踪 |
 | [[src-marketintelo-report-ai-smart-glasses-consumer-market|AI 智能眼镜市场]] | src-marketintelo-report-ai-smart-glasses-consumer-market | 2034 市场预测 |
 | [[src-tomsguide-computing-smart-glasses-i-just-tested-th|Rokid Glasses 评测]] | src-tomsguide-computing-smart-glasses-i-just-tested-th | AR/AI 眼镜体验 |
-| *(待处理 12 篇)* | — | raw/industry/smart-glasses/ |
+| *(已处理 26 篇)* | — | raw/industry/smart-glasses/ |
 
 #### Car Infotainment (`wiki/sources/`)
 
@@ -164,7 +164,7 @@ tags: [index, catalog]
 | [[src-researchandmarkets-reports-5867893-automotive-cockpit-domai|座舱域控制器报告]] | src-researchandmarkets-reports-5867893-automotive-cockpit-domai | 三种架构方向 |
 | [[src-strategicmarketresearch-market-report-ai-powered-in-vehicle-cock|AI 座舱市场]] | src-strategicmarketresearch-market-report-ai-powered-in-vehicle-cock | 2024-2030 预测 |
 | [[src-mediatek-zh-cn-press-room-mediatek-brings-advance|MediaTek Dimensity Auto]] | src-mediatek-zh-cn-press-room-mediatek-brings-advance | 座舱平台发布 |
-| *(待处理 12 篇)* | — | raw/industry/car-infotainment/ |
+| *(已处理 25 篇)* | — | raw/industry/car-infotainment/ |
 
 ---
 
@@ -316,17 +316,18 @@ tags: [index, catalog]
 
 ### Tech
 
-- [raw/tech/dram/_article-index.md](raw/tech/dram/_article-index.md) — 16 篇文章
-- [raw/tech/peripheral/_article-index.md](raw/tech/peripheral/_article-index.md) — 38 篇文章
-- [raw/tech/tv-backlight/_article-index.md](raw/tech/tv-backlight/_article-index.md) — 14 篇文章
-- [raw/tech/soc-pm/_article-index.md](raw/tech/soc-pm/_article-index.md) — 18 篇文章
+- [raw/tech/dram/_article-index.md](raw/tech/dram/_article-index.md) — 76 篇文章
+- [raw/tech/peripheral/_article-index.md](raw/tech/peripheral/_article-index.md) — 72 篇文章
+- [raw/tech/tv-backlight/_article-index.md](raw/tech/tv-backlight/_article-index.md) — 19 篇文章
+- [raw/tech/soc-pm/_article-index.md](raw/tech/soc-pm/_article-index.md) — 124 篇文章
+- [raw/tech/bsp/_article-index.md](raw/tech/bsp/_article-index.md) — 196 篇文章
 
 ### Industry
 
-- [raw/industry/tv/_article-index.md](raw/industry/tv/_article-index.md) — 14 篇文章
-- [raw/industry/smart-glasses/_article-index.md](raw/industry/smart-glasses/_article-index.md) — 19 篇文章
-- [raw/industry/car-infotainment/_article-index.md](raw/industry/car-infotainment/_article-index.md) — 18 篇文章
+- [raw/industry/tv/_article-index.md](raw/industry/tv/_article-index.md) — 18 篇文章
+- [raw/industry/smart-glasses/_article-index.md](raw/industry/smart-glasses/_article-index.md) — 26 篇文章
+- [raw/industry/car-infotainment/_article-index.md](raw/industry/car-infotainment/_article-index.md) — 25 篇文章
 
 ---
 
-*最后更新: 2026-05-02*
+*最后更新: 2026-05-03*

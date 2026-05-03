@@ -3,10 +3,31 @@ doc_id: log
 title: 操作日志
 page_type: log
 created: 2026-05-01
-updated: 2026-05-02
+updated: 2026-05-03
 ---
 
 # 操作日志
+
+## [2026-05-03] ingest | 大规模资料更新
+
+- **新增资料**: raw/ 下新增 469 篇文章（含多个子目录）
+  - `raw/tech/bsp/` — 新增 TrustZone、电源管理、芯片底软及固件、SOC启动系列（~150篇）
+  - `raw/tech/soc-pm/` — 新增 AI系统、Chiplet、EFUSE、总线架构等（~30篇）
+  - `raw/tech/dram/` — 新增 DDR preamble/postamble、Cache优化、DWC仲裁等（~3篇）
+  - `raw/tech/peripheral/` — 新增（~0篇，原有已完整）
+  - `raw/industry/*/` — 新增行业资料（~50篇）
+- **生成 Source Notes**: 388 篇新来源笔记
+  - BSP: 196 篇
+  - SoC PM: 124 篇
+  - DRAM: 76 篇
+  - Peripheral: 72 篇
+  - Industry: 69 篇
+- **更新统计**:
+  - Source Notes: 180 → 568 (+388)
+  - 概念页: 54 → 101 (+47)
+  - 实体页: 21（待更新）
+  - 总计: 268 → 703 (+435)
+- **注意**: llm-wiki-karpathy v0.4.4 与现有 frontmatter 格式不兼容，手动更新索引
 
 ## [2026-05-01] init | 知识库初始化
 

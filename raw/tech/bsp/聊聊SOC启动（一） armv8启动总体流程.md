@@ -4,7 +4,7 @@ source: "https://zhuanlan.zhihu.com/p/519995589"
 author:
   - "[[lgjjeff]]"
 published:
-created: 2026-05-02
+created: 2026-05-03
 description: "１ 为什么需要引导程序 在遥远的单片机时代，嵌入式设备功能比较单一，每个设备只需要执行一件简单的任务，因此在系统初始化完成后，程序就运行在一个大循环中，此时，系统启动流程和功能代码并没有很严格的区分。…"
 tags:
   - "clippings"
@@ -154,10 +154,4 @@ TrustZone 等 213 人赞同了该文章
 | SRAM | 0x0e001000 | 0x0e040000 | 252k | YES | BL32 |
 | DDR | 0x60000000 | 0x100000000 | 2.5G | NO | BL33 |
 
-编辑于 2022-10-11 16:07[嵌入式系统](https://www.zhihu.com/topic/19565752)[PMP与ACP的区别是什么？](https://www.zhihu.com/question/331059454/answer/3261178135)
-
-[
-
-先考PMP会好一点。原因：PMP作为ACP的跳板拿到PMP证书后，你会发现考ACP的难度相对会小很多。这是因为PM...
-
-](https://www.zhihu.com/question/331059454/answer/3261178135)
+编辑于 2022-10-11 16:07[嵌入式系统](https://www.zhihu.com/topic/19565752)
