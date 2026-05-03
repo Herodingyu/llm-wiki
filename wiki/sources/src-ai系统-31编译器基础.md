@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-31编译器基础.md) [[../../raw/tech/soc-pm/AI系统/AI系统-31编译器基础.md|原始文章]]
 
+## Key Quotes
+
+> "解释器在程序运行时将代码转换成机器码，编译器在程序运行之前将代码转换成机器码"
+
+> "集成开发环境（IDE，Integrated Development Environment）"
+
+> "分析 Pass（Analysis Pass）"
+
+> "转换 Pass（Transformation Pass）"
+
+> "指令选择器（Instruction Selector）"
+
 ## Open Questions
 
 - (To be determined)

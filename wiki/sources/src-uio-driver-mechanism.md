@@ -68,6 +68,10 @@ static int drv_kpart_probe(struct device *dev) {
 }
 ```
 
+## Key Quotes
+
+> "假如你的uio设备是uio0那么映射的设备内存文件出如今 /sys/class/uio/uio0/maps/mapX。对该文件的读写就是 对设备内存的读写"
+
 ## Open Questions
 
 - UIO 与 VFIO 的区别和适用场景

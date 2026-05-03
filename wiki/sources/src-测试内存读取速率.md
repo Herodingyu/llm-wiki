@@ -33,6 +33,19 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/测试内存读取速率.md) [[../../raw/tech/bsp/测试内存读取速率.md|原始文章]]
 
+## Key Quotes
+
+> "启用cache
+
+实际上将关闭cache载入kernel module的模块卸载就可以了，用下面的指令
+
+```
+$ rmmod disableCache.ko
+$ dmesg
+```
+
+在系统输出的log的中可以看到如下输出，说明已经将cache启用"
+
 ## Open Questions
 
 - (To be determined)

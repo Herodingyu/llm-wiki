@@ -36,6 +36,18 @@ SMMU翻译过程需要使用多种数据结构，如STE, CD， [PTW](https://zhi
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/认识SMMU以及理理SMMU与TrustZone的联系？.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/认识SMMU以及理理SMMU与TrustZone的联系？.md|原始文章]]
 
+## Key Quotes
+
+> "SMMU（system mmu),是I/O device与总线之间的地址转换桥。"
+
+> "理论上可以让Core的MMU和SMMU使用同一套页表."
+
+> "DTI则是SMMU内部的连接总线的协议。"
+
+> "可以在IP前面加安全控制器来实现"
+
+> "Master发出的访问不Care安全或者非安全，通过控制器来扩展TrustZone功能"
+
 ## Open Questions
 
 - (To be determined)

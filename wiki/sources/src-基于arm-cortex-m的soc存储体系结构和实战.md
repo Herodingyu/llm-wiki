@@ -23,6 +23,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/基于ARM Cortex-M的SoC存储体系结构和实战.md) [[../../raw/tech/soc-pm/基于ARM Cortex-M的SoC存储体系结构和实战.md|原始文章]]
 
+## Key Quotes
+
+> "System on Chip Architecture Tutorial Memory Architecture for ARM Cortex-M based SoC-Aviral Mittal"
+
+> "Memory Architecture for Cortex-M bases System on Chip."
+
+> "NVM Memory choice for code storage."
+
+> "Flash or R-RAM as NVM for code storage."
+
+> "ROM for code storage"
+
 ## Open Questions
 
 - (To be determined)

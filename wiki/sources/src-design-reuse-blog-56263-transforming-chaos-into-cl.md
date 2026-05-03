@@ -36,6 +36,12 @@ Figure 2. Agentic AI for chip design Agentic AI&nbsp;and&nbsp;multi-agent system
 
 - Source: [原始文章](raw/tech/soc-pm/design-reuse-blog-56263-transforming-chaos-into-clari.md) [[../../raw/tech/soc-pm/design-reuse-blog-56263-transforming-chaos-into-clari.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.design-reuse.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

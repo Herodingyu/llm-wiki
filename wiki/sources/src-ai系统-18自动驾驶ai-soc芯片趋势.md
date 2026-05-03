@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-18自动驾驶AI SoC芯片趋势.md) [[../../raw/tech/soc-pm/AI系统/AI系统-18自动驾驶AI SoC芯片趋势.md|原始文章]]
 
+## Key Quotes
+
+> "成品率、可靠性、EMI 噪声、成本、易用性"
+
+> "将一颗SoC设计切割成不同的合适工艺节点小芯片"
+
+> "延时必须要控制在毫秒甚至微秒级别"
+
+> "DDR/LPDDR/HBM/GDDR"
+
+> "传感器数据量的变化是成指数级增加"
+
 ## Open Questions
 
 - (To be determined)

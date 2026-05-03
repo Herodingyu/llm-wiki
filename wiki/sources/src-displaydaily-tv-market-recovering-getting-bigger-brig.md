@@ -33,6 +33,13 @@ Display Daily发布的电视市场分析文章。2024年全球电视出货2.3亿
 - Samsung 2025 QD-OLED面板亮度超4000nits，较上代提升30%
 - Sony、Hisense、TCL、Samsung均展示RGB MiniLED/MicroLED背光技术
 
+## 关键引用
+
+- 2024年全球电视出货2.3亿台，同比增长2%，Mini LED LCD TV出货同比增长170%并超越OLED。
+- 80英寸+电视出货同比增长24.5%，90英寸+激增118%，美国市场98/100英寸LCD电视均价降至约\,500。
+- LG Display第四代RGB tandem OLED峰值亮度提升33%达4000nits，功耗降低20%。
+- Samsung 2025 QD-OLED面板亮度超4000nits，较上代提升30%。
+
 ## 市场洞察
 
 电视市场正经历"更大、更亮、更好"的转型。超大尺寸LCD电视因10.5代线产能充足而价格快速下降。Mini LED LCD凭借成本优势在高端市场快速侵蚀OLED份额。OLED厂商通过提升亮度（4000nits+）和降低功耗来应对竞争。RGB MiniLED背光是2025年新兴技术方向，但成本约为QDEF背光的两倍。

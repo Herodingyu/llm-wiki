@@ -32,6 +32,12 @@ tags: [soc-pm]
 ### 5. kmalloc为什么要cache line对齐
 kmalloc需要考虑cacheline，最直接的原因是，kmalloc分配的内存可能用于DMA操作。 1\. 当A和B两个变量共享一个cache line时，且此时DMA正在改写B变量 ![](https://pica.zhimg.com/v2-b83e5c2215fe58c47d18f76deeac4186_1440w.jpg)
 
+## Key Quotes
+
+- "kmalloc() 返回的内存可用于直接内存访问（DMA），这意味着需要考虑硬件cache一致性问题。"
+- "当需要对DMA和CPU访问做同步时，需要对cache做合理的invalid或者clean操作，现有的DMA回调函数提供这个同步API。"
+- "kmalloc需要考虑cacheline对齐，最直接的原因是分配的内存可能用于DMA操作，避免变量共享cache line时DMA改写导致的数据不一致。"
+
 ## Evidence
 
 - Source: [原始文章](raw/tech/soc-pm/kmalloc与硬件cache一致性.md) [[../../raw/tech/soc-pm/kmalloc与硬件cache一致性.md|原始文章]]

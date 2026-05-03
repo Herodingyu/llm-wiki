@@ -36,6 +36,12 @@ All Trending Topics Business &amp; Money
 
 - Source: [原始文章](raw/industry/car-infotainment/prnewswire-news-releases-global-and-china-intellige.md) [[../../raw/industry/car-infotainment/prnewswire-news-releases-global-and-china-intellige.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.prnewswire.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

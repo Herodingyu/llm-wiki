@@ -63,6 +63,14 @@ echo mem > /sys/power/state
 - Ubuntu 支持 freeze、standby、mem、disk
 - QEMU ARM64 支持 freeze、mem
 
+## Key Quotes
+
+> "| 方式 | 特点 |"
+
+> "|------|------|"
+
+> "| freeze | 冻结进程，挂起设备，CPU 进入 idle |"
+
 ## Open Questions
 
 - 不同架构（ARM/x86）休眠实现的差异

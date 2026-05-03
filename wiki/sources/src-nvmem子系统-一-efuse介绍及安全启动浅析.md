@@ -1,6 +1,6 @@
 ---
 doc_id: src-nvmem子系统-一-efuse介绍及安全启动浅析
-title: 【NVMEM子系统】一、Efuse介绍及安全启动浅析
+title: 【NVMEM子系统】一、eFuse介绍及安全启动浅析
 page_type: source
 source_kind: raw_markdown
 raw_paths:
@@ -8,29 +8,80 @@ raw_paths:
 domain: tech/bsp
 created: 2026-05-03
 updated: 2026-05-03
-tags: [bsp]
+tags: [bsp, efuse, otp, secure-boot, nvmem, security]
 ---
 
 ## Summary
 
-不坠青云之志 等 55 人赞同了该文章 目录 `eFuse(electronic fuse)` ：电子保险丝，熔丝性的一种器件，属于 **一次性可编程存储器** 。
+本文系统介绍了eFuse（电子保险丝）和OTP（一次性可编程存储器）的基本原理，以及它们在Secure Boot（安全启动）中的核心作用。eFuse和OTP都是一次性可编程存储器，但物理特性相反：eFuse默认全1，写入0后永久熔断；OTP默认0，击穿后变为1。文章详细对比了两者的成本、面积、安全性差异，并深入解析了Secure Boot的安全模型和CPU内部安全机制（BootROM、iRAM、eFuse、Security Engine、FSBL）。核心在于理解如何通过eFuse存储的根密钥建立从BootROM到OS的信任链，防止固件被篡改和非法刷机。
 
 ## Key Points
 
-### 1. 1、Efuse是什么
-`eFuse(electronic fuse)` ：电子保险丝，熔丝性的一种器件，属于 **一次性可编程存储器** 。 之所以成为 `eFuse` ，因为其原理像电子保险丝一样， `CPU` 出厂后，这片 `eFuse` 空间内所有比特全为1，如果向一位比特写入0，那么就彻底烧死这个比特了，再也无法改变它的值，也就是再也回不去 1 了。
+### 1. eFuse（电子保险丝）
+- **原理**：类似电子保险丝，CPU出厂后全为1，写入0后永久烧死，不可恢复
+- **用途**：记录OEM版本信息、运行模式、Secure Boot根密钥
+- **特性**：一次性可编程，写入后不可逆
 
-### 2. 2、OTP是什么
-> 了解完 `eFuse` 后，我们就顺便了解一下 `OTP` `OTP(One Time Programmable)` 是反熔丝的一种器件，就是说，当 `OTP` 存储单元未击穿时，它的逻辑状态为 `0` ；当击穿时，它的逻辑状态为 `1` ，也属于 **一次性可编程存储器** 。
+### 2. OTP（One Time Programmable）
+- **原理**：反熔丝器件，未击穿时为0，击穿后为1
+- **与eFuse对比**：
 
-### 3. 3、什么是Secure Boot
-> 上面我们也了解过了， `efuse` 主要用于记录一些 `OEM` 的产品信息，并且也会用于安全启动，那么安全启动是什么，为什么要做安全启动？ 安全启动 `Secure Boot` ，其主要目的是： **以限制消费者能力，防止消费者从软硬件层面，对产品的部分关键系统进行读写，调试等高级权限，达到对产品的商业保密，知识产权的保护。**
+| 特性 | eFuse | OTP |
+|------|-------|-----|
+| **默认状态** | 1（导通） | 0（断开） |
+| **成本** | 通常免费（Foundry提供） | 第三方IP，需付费 |
+| **面积** | cell面积大，容量小 | cell面积小，容量大 |
+| **安全性** | 可被电子显微镜读取 | 显微镜下无法区分编程位 |
+| **功耗** | 较高 | 较低 |
 
-### 4. 4、CPU内部安全机制
-![](https://pic4.zhimg.com/v2-d34291945629ea974d0254936616e541_1440w.jpg)
+### 3. Secure Boot 安全启动
+- **目的**：防止消费者从软硬件层面对产品关键系统进行读写、调试，保护商业机密和知识产权
+- **安全假设**：消费者即攻击者
+- **防护对象**：刷机、绕过支付平台、复制数字产品、物理攻击（拆芯片、示波器监听）
+- **安全上限**：攻击成本需在十万美元以上才认为安全
 
-### 5. 4.1 bootROM
-`BootROM` 是集成在 `CPU` 芯片的一个 `ROM` 空间，其主要用于存放一小段可执行程序，出厂的时候被烧录进去写死，不可修改。 `CPU` 在通电之后，执行的第一条程序就在 `BootROM` ，用于初始化 `Secure Boot` 安全机制，加载 `Secure Boot Key` 密钥，从 存储介质中加载并验证 **First Stage Bootloader（FSBL）**
+### 4. CPU内部安全机制
+
+**BootROM：**
+- CPU芯片内部ROM，出厂烧录，不可修改
+- CPU上电后执行的第一条程序
+- 初始化Secure Boot机制，加载Secure Boot Key
+- 从存储介质加载并验证FSBL
+
+**iRAM：**
+- CPU内置小容量RAM（16KB-64KB）
+- BootROM使用4KB作为堆栈
+- FSBL直接加载到iRAM执行
+
+**eFuse：**
+- 存放根密钥：
+  - **Secure Boot Key**：对称密钥（AES 128），每台设备随机生成
+  - **Secure Boot Signing Key**：公钥（RSA/ECC），OEM生成，可存Hash节省空间
+
+**Security Engine：**
+- 专门负责加密解密的硬件模块
+- 含多个密钥槽（Keyslots），支持DMA读写
+- 功能：加密、解密、签名、HMAC、随机数生成
+
+**FSBL（First Stage Bootloader）：**
+- 初始化PCB板上其他硬件
+- 给外部RAM映射内存空间
+- 从外部存储加载、验证并执行后续启动程序
+
+### 5. 根信任建立流程
+1. CPU上电执行BootROM
+2. 加载eFuse内容，判断是否生产模式
+3. 生产模式下开启Secure Boot，加载Secure Boot Key到Security Engine
+4. 从外部存储加载FSBL，验证数字签名和根证书Hash
+5. 验证通过后执行FSBL
+
+## Key Quotes
+
+> "eFuse原理像电子保险丝一样，CPU出厂后全为1，写入0后彻底烧死，再也无法改变。"
+
+> "安全启动的安全模型是建立在消费者是攻击者的假设之上。"
+
+> "能成功攻破芯片安全机制的一次性投资成本至少需要在十万美元以上才可以认为是安全的。"
 
 ## Evidence
 

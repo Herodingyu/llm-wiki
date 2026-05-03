@@ -36,6 +36,12 @@ Saturday April 18, 2026 5:59 am PDT by Joe RossignolLast year, Apple launched Ca
 
 - Source: [原始文章](raw/industry/car-infotainment/macrumors-2025-01-23-apple-removes-2024-from-next-.md) [[../../raw/industry/car-infotainment/macrumors-2025-01-23-apple-removes-2024-from-next-.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.macrumors.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

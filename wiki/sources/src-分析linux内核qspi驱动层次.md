@@ -23,6 +23,10 @@ linux qspi驱动是为了解决spi驱动异步操作的冲突问题，引入了"
 
 - Source: [原始文章](raw/tech/peripheral/分析linux内核qspi驱动层次.md) [[../../raw/tech/peripheral/分析linux内核qspi驱动层次.md|原始文章]]
 
+## Key Quotes
+
+> "**【文章福利】** 小编推荐自己的Linux内核技术交流群： **【977878001】** 整理一些个人觉得比较好得学习书籍、视频资料共享在群文件里面，有需要的可以自行添加哦！！！前100进群领取，额外赠送一份 **价值699的内核资料包** （含视频教程、电子书、实战项目及代码）"
+
 ## Open Questions
 
 - (To be determined)

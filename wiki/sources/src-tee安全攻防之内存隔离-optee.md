@@ -36,6 +36,18 @@ core/arch/arm/kernel/entry\_a64.S [【TEE OS启动时会调用core\_init\_mmu\_m
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/TEE安全攻防之内存隔离-【OPTEE】.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/TEE安全攻防之内存隔离-【OPTEE】.md|原始文章]]
 
+## Key Quotes
+
+> "TZASC可以把外部DDR分成多个区域"
+
+> "tzc\_configure\_region"
+
+> "imx\_configure\_tzasc"
+
+> "CFG\_TZDRAM\_START"
+
+> "CFG\_TZDRAM\_SIZE"
+
 ## Open Questions
 
 - (To be determined)

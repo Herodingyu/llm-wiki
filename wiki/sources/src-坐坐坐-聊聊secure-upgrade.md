@@ -23,6 +23,16 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/坐坐坐！聊聊Secure Upgrade~.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/坐坐坐！聊聊Secure Upgrade~.md|原始文章]]
 
+## Key Quotes
+
+> "更新软件具备端到端的可信度和完整性。"
+
+> "验证设备即将启动的镜像签名，确保固件未被篡改"
+
+> "此过程在每次设备重启时都会进行。"
+
+> "当然关于升级本身的东西，不在本文的考虑之中"
+
 ## Open Questions
 
 - (To be determined)

@@ -28,6 +28,11 @@ tags: [tv-backlight, backlight, local-dimming]
 - 作者单位为CGVIS研究团队
 - 涉及计算机图形学领域的显示技术或背光优化研究
 
+## 关键引用
+
+- 该文件为CGVIS研究团队发表于SIGGRAPH Asia 2012的学术论文PDF，主题可能与局部调光（local dimming）算法或背光优化技术相关。
+- 由于文件为二进制PDF格式，具体内容未能解析，需手动查阅获取论文标题、作者和研究成果。
+
 ## 技术细节
 
 - **会议**: SIGGRAPH Asia 2012

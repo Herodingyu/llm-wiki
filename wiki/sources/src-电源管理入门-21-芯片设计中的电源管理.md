@@ -33,6 +33,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-21 芯片设计中的电源管理.md) [[../../raw/tech/bsp/电源管理/电源管理入门-21 芯片设计中的电源管理.md|原始文章]]
 
+## Key Quotes
+
+> "控制硬件单元，监控传感器，控制时钟和复位，管理电源"
+
+> "Q-channel和P-channel"
+
+> "Voltage Regulator Control"
+
+> "Messaging interface"
+
+> "共享存储和MHU（Message Handling Unit）"
+
 ## Open Questions
 
 - (To be determined)

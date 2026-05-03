@@ -27,6 +27,12 @@ First name (Required) Last name (Required) Business Email (Required) Company (Re
 
 - Source: [原始文章](raw/tech/peripheral/chipinterfaces-from-i2c-to-i3c-evolution-of-two-wire-co.md) [[../../raw/tech/peripheral/chipinterfaces-from-i2c-to-i3c-evolution-of-two-wire-co.md|原始文章]]
 
+## Key Quotes
+
+> "来源: chipinterfaces.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

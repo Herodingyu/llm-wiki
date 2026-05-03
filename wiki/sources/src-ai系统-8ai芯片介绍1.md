@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-8AI芯片介绍1.md) [[../../raw/tech/soc-pm/AI系统/AI系统-8AI芯片介绍1.md|原始文章]]
 
+## Key Quotes
+
+> "需要有灵活的软件配置接口，支持更多的神经网络模型结构"
+
+> "提供不同的 bit 位数的计算单元"
+
+> "提供不同的 bit 位数存储格式"
+
+> "利用硬件提供专门针对稀疏结构计算的优化逻辑"
+
+> "硬件提供专门针对量化压缩算法的硬件电路"
+
 ## Open Questions
 
 - (To be determined)

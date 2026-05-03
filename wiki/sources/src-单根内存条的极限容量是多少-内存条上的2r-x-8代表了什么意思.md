@@ -30,6 +30,18 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/单根内存条的极限容量是多少？内存条上的2R X 8代表了什么意思？.md) [[../../raw/tech/dram/单根内存条的极限容量是多少？内存条上的2R X 8代表了什么意思？.md|原始文章]]
 
+## Key Quotes
+
+> "越大的内存容量，nR中的n就越大；与此相反，越大的内存容量，X n中的n反而越小"
+
+> "4 Gb X （64/4）= 64 Gb = 8GB"
+
+> "4 Gb X （64/16）= 16Gb = 2GB"
+
+> "(2^18) X (2 ^10) X(2^2) X (2^2) X 4 = 16Gb"
+
+> "16 Gb X 16个 X 4个rank = 128GB"
+
 ## Open Questions
 
 - (To be determined)

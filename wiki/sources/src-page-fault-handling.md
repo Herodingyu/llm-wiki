@@ -66,6 +66,27 @@ do_user_addr_fault() → handle_mm_fault() → handle_pte_fault()
 - `handle_pte_fault()` 区分匿名页和 page cache
 - VMA 通过红黑树（rbtree）管理
 
+## Key Quotes
+
+> "do\_anonymous\_page()"
+
+> "do\_swap\_page()"
+
+> "}
+```
+
+内核页面由于使用频繁，通常不会被换出，所以这里是"unlikely""
+
+> "```
+do_user_addr_fault()
+    --> handle_mm_fault()
+        --> handle_pte_fault()
+```
+
+首先，访问的内存地址必须是合法的，所谓「合法」，就是该地址一定是落在进程的某个VMA区间内"
+
+> "而如果你还了两个月再去借这本书，书已经被管理员上架了，你就需要自己去书架上按照类别寻找这本书，花费的时间自然较多，这就是"major page fault""
+
 ## Open Questions
 
 - 大页（Huge Page）的 page fault 处理差异

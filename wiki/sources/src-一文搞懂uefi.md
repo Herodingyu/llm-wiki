@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/一文搞懂UEFI.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/一文搞懂UEFI.md|原始文章]]
 
+## Key Quotes
+
+> "而UEFI（统一可扩展固件接口）是BIOS的现代替代品，提供了更多的功能和更好的安全性。"
+
+> "你通常可以配置启动顺序，如CD-ROM、硬盘1、硬盘2等，以及它们的任何组合。BIOS会根据你的启动顺序偏好找到第一个可启动项。"
+
+> "因此仅凭这个大小的引导加载程序绝对无法加载现代操作系统。"
+
+> "MBR中的引导加载程序会将控制权传递给活动分区的引导加载程序"
+
+> "它将所有关于初始化和启动的数据存储在.efi 文件中，而不是存储在固件上。"
+
 ## Open Questions
 
 - (To be determined)

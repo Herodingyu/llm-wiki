@@ -36,6 +36,12 @@ Next, we can use the interrupt signal to free-up some of the CPU time. So it doe
 
 - Source: [原始文章](raw/tech/peripheral/deepbluembedded-how-to-receive-spi-with-stm32-dma-interr.md) [[../../raw/tech/peripheral/deepbluembedded-how-to-receive-spi-with-stm32-dma-interr.md|原始文章]]
 
+## Key Quotes
+
+> "来源: deepbluembedded.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

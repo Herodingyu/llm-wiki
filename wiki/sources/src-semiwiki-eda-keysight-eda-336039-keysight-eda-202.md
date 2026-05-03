@@ -30,6 +30,12 @@ Keysight EDA 2024 发布，重点介绍了针对 Chiplet 和 PDK 工作流的 "S
 - IC-CAP 新增模型重新定心功能，可节省 70% 的模型提取时间
 - QA Express 轻量级模型质量保证工具集成到 Model Builder
 
+## Key Quotes
+
+- "Chiplet PHY Designer is the industry's first chiplet interconnect simulation tool, supporting both 2D standard and 2.5D advanced packaging variants."
+- "IC-CAP's new model re-centering feature can save up to 70% of model extraction time."
+- "UCIe fills the gap in D2D interconnect specifications, enabling standardized chiplet communication."
+
 ## 技术细节
 
 - Chiplet PHY Designer 基于 ADS 2024 Update 1.0

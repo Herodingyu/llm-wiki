@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-24芯片数据一致性.md) [[../../raw/tech/soc-pm/AI系统/AI系统-24芯片数据一致性.md|原始文章]]
 
+## Key Quotes
+
+> "一级一级的去获取信息，且速度越来越快"
+
+> "同一时刻，不同的主体看到的数据不一致"
+
+> "L1 Cache、L2 Cache、L3 Cache"
+
+> "L3 Cache 是所有核心共享使用的"
+
+> "一致性总线（Coherent Bus），总线在维护cache一致性时，通知相关cache的操作称为snoop"
+
 ## Open Questions
 
 - (To be determined)

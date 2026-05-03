@@ -23,6 +23,12 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/EFUSE 1.md) [[../../raw/tech/soc-pm/EFUSE 1.md|原始文章]]
 
+## Key Quotes
+
+> "DE在设计过程中需要认真考虑的原则问题。如何避免设计中出现bug，如何在设计的过程中留够软件work around的空间"
+
+> "在进行一项设计工作时，首先需要思考的问题是设计对象的本质是什么"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/uboot-3链接脚本和第一阶段启动.md) [[../../raw/tech/bsp/芯片底软及固件/uboot-3链接脚本和第一阶段启动.md|原始文章]]
 
+## Key Quotes
+
+> "save\_boot\_params"
+
+> "system counter的频率"
+
+> "gd是uboot中的一个global\_data类型全局变量"
+
+> "board\_init\_f\_alloc\_reserve"
+
+> "board\_init\_f\_init\_reserve"
+
 ## Open Questions
 
 - (To be determined)

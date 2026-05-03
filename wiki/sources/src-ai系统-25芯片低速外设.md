@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-25芯片低速外设.md) [[../../raw/tech/soc-pm/AI系统/AI系统-25芯片低速外设.md|原始文章]]
 
+## Key Quotes
+
+> "SDA 和 SCL 是双向和开漏的"
+
+> "两根线，一根用于发送，一根用于接收"
+
+> "GPIO 3态控制寄存器可以动态地配置端口为输入或者输出"
+
+> "为每一个通道配置独立的中断使能位"
+
+> "串行外设接口（Serial Peripheral Interface）"
+
 ## Open Questions
 
 - (To be determined)

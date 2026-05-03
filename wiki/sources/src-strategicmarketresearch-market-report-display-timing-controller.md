@@ -31,6 +31,12 @@ Strategic Market Research发布的显示时序控制器（TCON）市场报告，
 - 汽车级TCON需要满足ISO 26262 (ASIL) 合规要求
 - 主要厂商：Novatek、Himax、Samsung System LSI、Parade Technologies、MegaChips
 
+## Key Quotes
+
+- "The global TCON market is projected to grow from $3.6 billion in 2024 to $5.1 billion by 2030, at a CAGR of 5.9%."
+- "Asia Pacific holds over 62% market share, led by China, South Korea, and Taiwan."
+- "AI-enhanced visual features like real-time upscaling and adaptive refresh rate control are creating new TCON requirements."
+
 ## 市场洞察
 
 TCON正从传统的被动信号路由器演变为智能、可编程的显示控制核心。AI集成、自适应同步和软件定义显示器是三大关键趋势。汽车领域的功能安全要求将TCON从1-2美元的组件转变为10美元以上的智能组件。接口碎片化（MIPI、eDP、LVDS共存）是行业面临的主要挑战。

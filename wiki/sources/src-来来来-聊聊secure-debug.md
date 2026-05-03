@@ -36,6 +36,20 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/来来来！聊聊Secure Debug~.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/来来来！聊聊Secure Debug~.md|原始文章]]
 
+## Key Quotes
+
+> "怎么理解这句话？先说说几个概念
+
+1."
+
+> "：当设备首次接通电源或电源被切断后重新接通时，会触发电源上电复位。在这个过程中，系统会阻止对所有调试域的访问，"
+
+> "。与电源上电复位不同，热复位期间，"
+
+> "。在这个过程中，系统会阻止对所有除JTAG外的调试域的访问。JTAG（Joint Test Action Group）是一种国际标准测试协议，用于对芯片进行测试、调试和编程。在某些情况下，"
+
+> "但具体的访问权限可能还受到其他安全机制（如软件锁、密码保护等）的限制。"
+
 ## Open Questions
 
 - (To be determined)

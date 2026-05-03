@@ -23,6 +23,16 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/从低速Flash到高速Dram，输出电路设计的不同点.md) [[../../raw/tech/dram/从低速Flash到高速Dram，输出电路设计的不同点.md|原始文章]]
 
+## Key Quotes
+
+> "与通道其他因素的交互，比如串扰和电源线的噪声。"
+
+> "但究其根源，主要是信号上升时间减小了。"
+
+> "Xf =（Z2-Z1）/ (Z1+Z2)"
+
+> "反射的具体原理有兴趣可以找文章末尾的参考书籍阅读。"
+
 ## Open Questions
 
 - (To be determined)

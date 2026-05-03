@@ -36,6 +36,12 @@ Smartphones &amp; Tablets Televisions &amp; Monitors Laptops &amp; Notebooks Aut
 
 - Source: [原始文章](raw/industry/tv/strategicmarketresearch-market-report-display-timing-controller-.md) [[../../raw/industry/tv/strategicmarketresearch-market-report-display-timing-controller-.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.strategicmarketresearch.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

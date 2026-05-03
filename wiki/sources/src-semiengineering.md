@@ -29,6 +29,12 @@ Semiconductor Engineering 是一个专注于芯片工程的深度洞察平台，
 - 涵盖从设计到制造的全产业链技术洞察
 - 活跃的 Startup Corner 跟踪初创公司动态
 
+## 关键引用
+
+- "Semiconductor Engineering provides deep insights for chip engineers across systems design, low power-high performance design, manufacturing, packaging, and test."
+- "Coverage spans the full industry chain from design to manufacturing, with special reports on AI/ML architectures, automotive electronics, and chiplet standards."
+- "The platform tracks startup dynamics through its active Startup Corner section."
+
 ## 技术细节
 
 - 主要栏目：Systems & Design、Low Power-High Performance、Manufacturing/Packaging/Materials

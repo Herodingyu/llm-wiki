@@ -73,6 +73,10 @@ mov r3, r7          // architecture ID
 bl decompress_kernel
 ```
 
+## Key Quotes
+
+> "1、节省存放内核的闪存或其他存储介质的空间。"
+
 ## Open Questions
 
 - 不同压缩格式的性能对比（解压速度 vs 压缩率）

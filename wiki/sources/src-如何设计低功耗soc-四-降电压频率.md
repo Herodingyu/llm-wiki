@@ -33,6 +33,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/如何设计低功耗SOC（四，降电压频率）.md) [[../../raw/tech/soc-pm/如何设计低功耗SOC（四，降电压频率）.md|原始文章]]
 
+## Key Quotes
+
+> "那么你要问了，频率变低了，岂不是完成一个任务的时间变长了？事实上确实是这样的"
+
+> "这个词可以说是非常容易出现了。Dynamic Voltage and Frequency Scaling。动态的电压频率调节。最常见的实现手段是用CPU来来调节电压和频率。典型的做法如下图"
+
+> "一般来讲，为了时序好处理，一种简单的办法是CPU的时钟只允许是总线的整数倍。然后接口出加上latch"
+
+> "## 4、总结
+
+这个部分东西学术研究还是比较多的尤其DVFS的各种变种。但是实际产品中如果不是极致追求，不一定能用的到。以上"
+
 ## Open Questions
 
 - (To be determined)

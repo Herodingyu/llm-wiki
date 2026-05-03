@@ -82,6 +82,30 @@ BL1(bootrom) → BL2 → BL31 → BL32(optee) → BL33(u-boot) → linux → ini
 - OP-TEE 入口位于 `core/arch/arm/kernel/entry_a64.S`
 - U-Boot 重定位代码位于 `arch/arm/lib/relocate_64.S`
 
+## Key Quotes
+
+> "1.1 疑问：1）芯片的功耗怎么来的？（动态功耗-晶体管翻转，静态功耗-漏电功耗） 2）CPU的设计宗旨是能又好又快的干活，怎么设计才能达到…"
+tags:
+  - "clippings"
+---
+不坠青云之志 等 224 人赞同了该文章
+
+目录
+
+目标：做个明白人
+
+## 1\"
+
+> "- 流水线（指令宽度，cache, MMU, TLB, 分支预测，乱序执行， 通过这些方法让流水线满负荷工作），将一条指令分成多个阶段执行，从而达到一个时钟完成一条指令。这也有利于提高CPU的主频"
+
+> "- 芯片上电后运行在EL3级别，所以BL1也是运行在EL3级别"
+
+> "runtime\_svc.c->runtime\_svc\_init函数:
+
+主要是初始化SMC调用时的处理函数，rt\_svc\_descs通过 DECLARE\_RT\_SVC声明，并链接到RT\_SVC\_DESCS\_START和RT\_SVC\_DESCS\_END范围内"
+
+> "当前qemu平台上会有两个rt\_svc\_descs, 分别是arm\_arch\_svc和std\_svc"
+
 ## Open Questions
 
 - 实际芯片（非 qemu）与 qemu 平台的启动差异

@@ -23,6 +23,16 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/芯片总线架构设计2 - 系统地址映射.md) [[../../raw/tech/soc-pm/芯片总线架构设计2 - 系统地址映射.md|原始文章]]
 
+## Key Quotes
+
+> "principles\_of\_arm\_memory\_maps"
+
+> "以4-bit为地址段扩展单位，此时地址空间会扩大16倍，下一级地址空间以如下规律进行地址分区"
+
+> "arm\_total\_compute\_2023\_reference\_design\_software\_developer\_guide"
+
+> "d\_n2\_releaseD\_technical\_overview"
+
 ## Open Questions
 
 - (To be determined)

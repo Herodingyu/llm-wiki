@@ -36,6 +36,12 @@ OLED&nbsp;technology employs organic compounds that emit light when electrically
 
 - Source: [原始文章](raw/industry/car-infotainment/lamboiparts-blogs-car-dvr-the-battle-for-automotive-.md) [[../../raw/industry/car-infotainment/lamboiparts-blogs-car-dvr-the-battle-for-automotive-.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.lamboiparts.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

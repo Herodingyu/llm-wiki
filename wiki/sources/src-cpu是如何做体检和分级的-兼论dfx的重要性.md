@@ -33,6 +33,14 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/CPU是如何做体检和分级的？兼论DFx的重要性.md) [[../../raw/tech/soc-pm/CPU是如何做体检和分级的？兼论DFx的重要性.md|原始文章]]
 
+## Key Quotes
+
+> "3\. 老化测试（Burn-in）"
+
+> "4.定级（Class Test）："
+
+> "5\. PPV （Produce平台测试）"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,12 @@ Milad and Markus kick off the discussion with the story behind the RoadPak proje
 
 - Source: [原始文章](raw/tech/soc-pm/scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu.md) [[../../raw/tech/soc-pm/scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu.md|原始文章]]
 
+## Key Quotes
+
+> "来源: scrum-master-toolbox.org"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,18 @@ VBT的格式如下所示： ![](https://pica.zhimg.com/v2-269ce1e32ebe704e443871
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/信息安全：软件认证（Authentication）.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/信息安全：软件认证（Authentication）.md|原始文章]]
 
+## Key Quotes
+
+> "本文讨论第一个点：软件Part创建（Create SW Part）"
+
+> "可能会将Block间的gap用指定填充值（eg：padding value = 0x00）进行填充"
+
+> "提示：实际的工程中， **可能会将Block间的gap用指定填充值（eg：padding value = 0x00）进行填充** ，形成一个大的Block，以便于减少hash的计算。"
+
+> "- 每个Data Block的hash值仅是Data Block的Data计算结果；"
+
+> "- VBT的hash值（root hash）是VBT对应的Start Address、Length、Data计算结果。"
+
 ## Open Questions
 
 - (To be determined)

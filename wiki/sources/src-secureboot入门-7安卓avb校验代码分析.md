@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/secureboot入门-7安卓AVB校验代码分析.md) [[../../raw/tech/bsp/芯片底软及固件/secureboot入门-7安卓AVB校验代码分析.md|原始文章]]
 
+## Key Quotes
+
+> "android AVB2.0学习总结"
+
+> "可移植性(Portability)："
+
+> "avb\_slot\_verify"
+
+> "load\_and\_verify\_vbmeta"
+
+> "read\_from\_partition"
+
 ## Open Questions
 
 - (To be determined)

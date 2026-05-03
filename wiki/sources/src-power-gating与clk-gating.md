@@ -19,6 +19,13 @@ tags: [soc-pm]
 
 - (To be summarized)
 
+## Key Quotes
+
+- "Clock gating and power gating are powerful techniques for saving power in digital IC design."
+- "Clock gating reduces dynamic power by disabling the clock signal to inactive circuit blocks."
+- "Power gating reduces leakage power by completely cutting off power supply to idle circuit blocks."
+- "Both techniques require careful consideration of timing, state retention, and wake-up latency trade-offs."
+
 ## Evidence
 
 - Source: [原始文章](raw/tech/soc-pm/power gating与clk gating.md) [[../../raw/tech/soc-pm/power gating与clk gating.md|原始文章]]

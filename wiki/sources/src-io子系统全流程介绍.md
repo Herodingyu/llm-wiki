@@ -8,29 +8,70 @@ raw_paths:
 domain: tech/bsp
 created: 2026-05-03
 updated: 2026-05-03
-tags: [bsp]
+tags: [bsp, linux, io, kernel, filesystem, block]
 ---
 
 ## Summary
 
-目录 代码基于 [linux kernel](https://zhida.zhihu.com/search?content_id=209445970&content_type=Article&match_order=1&q=linux+kernel&zhida_source=entity) -5.19-rc5，作为IO子系统的初学者，文章如果有错误，请大家慷慨指出。 kernel的各个子系统互相独立又相互纠缠，这篇文章旨在从系统调用到硬件磁盘给大家简单捋一遍整个io子系统的主线流程。中间涉及系统调用([syscall](https://zhida.zhihu.com/search?conten
+本文基于Linux Kernel 5.19-rc5，从系统调用到硬件磁盘完整梳理了Linux IO子系统的主线流程。文章通过一个简单C语言文件的open/read/write/close操作，深入解析了IO请求在用户态到内核态的完整处理链路：syscall → VFS → 文件系统（xfs） → iomap → folio/page cache → bio → request → IO调度器 → 软件调度队列(ctx) → 硬件调度队列(hctx) → SCSI磁盘驱动。核心在于理解Linux如何将用户视角的连续文件映射到物理上不连续的内存和磁盘块，以及bio机制如何桥接文件系统与块设备驱动。
 
 ## Key Points
 
-### 1. 前言
-开篇先引入一个简单的c语言代码 ```c int main() { char buff[128] = {0}; int fd = open("/var/pilgrimtao.txt", O_CREAT|O_RDWR);
+### 1. IO系统调用流程
+**sys_read/write 调用链：**
+```
+syscall → ksys_read/write → vfs_read/write → file_operations → xfs_file_read/write_iter → iomap → bio → request → scsi
+```
 
-### 2. bio机制
-常见的磁盘有机械硬盘和固态硬盘两种，机械硬盘是由一个个扇区组成，而固态硬盘由一个个存储页组成，我们统称它们为sector，为了兼容历史，我们规定一个sector为512字节。因此访问磁盘时我们需要两个信息，数据存储的sector位置和连续sector的数目。磁盘需要内存作为缓存以提高访问速度，所以我们需要先申请内存，并确定的page地址和页内偏移。磁盘驱动只有拿到sector位置、sector数目
+**两种写模式：**
+- **BUFFERED（默认）**：数据写入page cache，由回写进程定期刷盘
+- **DIRECT**：绕过page cache，直接读写磁盘
+- **DAX**：直接访问（适用于NOR Flash等可直接地址访问的存储）
 
-### 3. folio简介
-首先做一个简单科普，如图所示，内存是以page (4k)为单位的 ![](https://pic3.zhimg.com/v2-58538a39bdc737bde8c3e5c2776a2d3a_1440w.png)
+### 2. 核心数据结构
 
-### 4. file、mem和disk的映射关系
-如sys\_read和sys\_write所表示的那样，kernel给用户营造的视角是一个地址连续的file，用户读取file内容时只需要从偏移地址0的位置一直读到文件结尾，但是实际文件数据存储在mem和disk上却是不连续的。那么他们之间的关系是怎样的呢，我给大家举个例子。
+**folio（2020年引入）：**
+- 一段连续内存，一个或多个page的集合
+- 本质调用`alloc_pages(gfp, order)`，目前多为4K
+- 未来趋势替代page概念
 
-### 5. bio关键信息获取
-用户调用syscall时，内核能获取到的信息只有文件fd、文件offset、读写size，如syscall的形参所表示的那样，但是磁盘(disk)并不能识别文件的fd、offset、size，我们需要将它们转化成磁盘能看懂的信息。那么如何将用户层传进来的file fd和file offset转化为folio offset、folio len、sector ID、sector size，并把这些信息
+**bio（Block IO）：**
+- 描述一段连续磁盘空间到不连续内存的映射
+- `bio_vec`数组：每个元素描述一段连续mem空间（不超过一个folio）
+- 关键字段：
+  - `bi_sector`：磁盘起始扇区
+  - `bi_size`：总大小
+  - `bv_page`：folio的head page
+  - `bv_offset`：folio内部偏移
+  - `bv_len`：映射长度
+
+### 3. 三层映射关系
+```
+用户视角：连续的文件（file offset → size）
+    ↓ 文件系统转换
+内核视角：不连续的folio（folio地址 + 页内偏移）
+    ↓ bio映射
+磁盘视角：不连续的sector（sector ID + sector数目）
+```
+
+### 4. 磁盘访问单元
+- **sector（扇区）**：512字节（历史兼容）
+- **机械硬盘**：由扇区组成
+- **固态硬盘**：由存储页组成
+- **所需信息**：sector位置、sector数目、folio地址、页内偏移
+
+### 5. Page Cache机制
+- **读优化**：若数据已在page cache，直接读取内存避免磁盘IO
+- **写优化**：sys_write仅写入page cache，由回写进程异步刷盘
+- **回写策略**：定期唤醒回写进程，将脏页写入磁盘
+
+## Key Quotes
+
+> "kernel给用户营造的视角是一个地址连续的file，但是实际文件数据存储在mem和disk上却是不连续的。"
+
+> "sys_write并没有写磁盘的操作，而是把这个操作交给了定期开启的回写进程。"
+
+> "磁盘驱动只有拿到sector位置、sector数目、page(folio)地址、page(folio)页内偏移才能将数据写入或者写出。"
 
 ## Evidence
 

@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-20AI芯片ISP视觉系统介绍.md) [[../../raw/tech/soc-pm/AI系统/AI系统-20AI芯片ISP视觉系统介绍.md|原始文章]]
 
+## Key Quotes
+
+> "图像传感器（SENSOR）是一种半导体芯片，其表面包含有几十万到几百万的光电二极管。光电二极管受到光照射时，就会产生电荷。"
+
+> "绿色传感器是红色或蓝色传感器的两倍"
+
+> "AE（自动曝光）、AF（自动对焦）、AWB（自动白平衡）、去除图像噪声、LSC(Lens Shading Correction)、BPC(Bad PixelCorrection)，最后把Raw Data 保存起来，传给videocodec 或CV"
+
+> "数字图像信号处理、图像分割（Pyramid）、图像拼接（Stitch）、图像渲染（GDC）以及视频编解码功能"
+
+> "即旋转（角度变化），锐化（调整锐度），缩放（放大缩小），色彩空间转换（转换到不同色彩空间进处理），颜色增强（可选，调整颜色），肤色增强（可选，优化肤色表现）"
+
 ## Open Questions
 
 - (To be determined)

@@ -32,6 +32,12 @@ HDTVTest报道联发科发布Pentonic 800 SoC，支持165Hz VRR、VVC解码（H.
 - AI功能：AI-Super Resolution 3.0、AI-Picture Quality Scene Recognition 2.0+、AI-Contrast 2.0
 - MediaTek芯片被Sony、Philips、TCL等品牌广泛采用
 
+## Key Quotes
+
+- MediaTek Pentonic 800 SoC features 165Hz VRR, VVC (H.266) decoding, Wi-Fi 7, and HDMI 2.1a support, with AI processing speed improved by 50% over the previous generation.
+- The release marks the TV SoC entering the 165Hz era, with VVC decoding support preparing for next-generation video compression standards.
+- MediaTek chips are widely adopted by brands including Sony, Philips, and TCL.
+
 ## 市场洞察
 
 联发科Pentonic 800的发布标志着电视SoC进入165Hz时代，虽然主机游戏尚未支持，但PC游戏和高刷显示器市场需求正在增长。VVC（H.266）解码支持为下一代视频压缩标准做准备。AI处理能力的提升将显著改善画质增强和场景识别效果。

@@ -36,6 +36,16 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-7 DevFreq.md) [[../../raw/tech/bsp/电源管理/电源管理入门-7 DevFreq.md|原始文章]]
 
+## Key Quotes
+
+> "为什么操作的动作要放在ATF里面？"
+
+> "为了安全，进入安全世界才能操作，普通应用app进不去"
+
+> "为了进入AON（Always ON）一直运行的非DDR区域运行，例如SRAM"
+
+> "学习ARMV8，RK也就是rockchip是不错的板子选择，还记得以前买过萤火虫的rk板卡，所有软硬件资料都很全，还挺不错的。这里的电源管理也算是驱动，学习驱动还是能有个板子调下，主要区分是32位还是64位，目前的大型SoC基本都是ARMv8的64位，甚至ARMv9了。"
+
 ## Open Questions
 
 - (To be determined)

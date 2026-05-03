@@ -1,6 +1,6 @@
----
+﻿---
 doc_id: src-linux-pwm-子系统
-title: Linux pwm 子系统
+title: "Linux pwm 子系统"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
@@ -11,35 +11,124 @@ updated: 2026-05-03
 tags: [peripheral]
 ---
 
+# Linux pwm 子系统
+
+## 来源
+
+- **原始文件**: raw/tech/peripheral/Linux pwm 子系统.md
+- **提取日期**: 2026-05-03
+
 ## Summary
 
-2 人赞同了该文章 PWM：Pulse width modulation， [脉冲宽度调制](https://zhida.zhihu.com/search?content_id=197789819&content_type=Article&match_order=1&q=%E8%84%89%E5%86%B2%E5%AE%BD%E5%BA%A6%E8%B0%83%E5%88%B6&zhida_source=entity) ，在 IC 中，是使用 [定时器](https://zhida.zhihu.com/search?content_id=197789819&content_type=Artic
+Linux PWM（Pulse Width Modulation，脉冲宽度调制）子系统是内核中用于统一管理PWM输出设备的框架。PWM在嵌入式系统中应用广泛，包括LED亮度控制、电机调速、LCD背光调节、蜂鸣器驱动等场景。Linux PWM子系统通过提供标准化的内核API和用户空间sysfs接口，使得驱动开发者和应用程序能够以统一的方式操作不同硬件平台的PWM功能，而无需关心底层定时器寄存器的具体实现。PWM子系统的核心是`pwm_chip`结构体，代表一个PWM控制器，每个控制器可以提供多个PWM通道。芯片厂商通常为SoC编写了PWM控制器驱动，开发者在使用时主要通过设备树（Device Tree）进行配置，并在用户空间通过`/sys/class/pwm/`接口或内核API控制PWM的周期和占空比。PWM子系统的设计大大简化了跨平台PWM应用的开发。
 
 ## Key Points
 
-### 1. PWM 简介
-PWM：Pulse width modulation， [脉冲宽度调制](https://zhida.zhihu.com/search?content_id=197789819&content_type=Article&match_order=1&q=%E8%84%89%E5%86%B2%E5%AE%BD%E5%BA%A6%E8%B0%83%E5%88%B6&zhida_source=entity
+### PWM子系统架构
 
-### 2. PWM 软件分析
-PWM 驱动比 I2C 等简单，可以理解为不用写，芯片厂商已经为 soc 写了 PWM 驱动，我们在使用过程中，只需要修改 [设备树](https://zhida.zhihu.com/search?content_id=197789819&content_type=Article&match_order=1&q=%E8%AE%BE%E5%A4%87%E6%A0%91&zhida_source=en
+```
+用户空间
+    | (sysfs /sys/class/pwm/)
+    v
+PWM Core (drivers/pwm/pwm-core.c)
+    | (pwm_config, pwm_enable, pwm_disable)
+    v
+PWM Controller Driver (厂商实现)
+    | (硬件寄存器操作)
+    v
+SoC PWM Hardware (定时器模块)
+```
 
-### 3. PWM 驱动测试
-参考内核文档 Documentation/ABI/testing/sysfs-class-pwm 描述。 PWM 子系统的核心是 pwm\_chip 结构体，在 sys/class/pwm/ 下会显示内核注册了几个。
+### 核心数据结构
 
-### 4. 在其他外设上添加 PWM 功能
-有时候我们需要在某个外设上添加 PWM 功能，比如，LCD 的背光控制就是 PWM 来完成的。 首先肯定是设备树描述，直接看 linux 内核里面关于 backlight(背光)的绑定文档，路径为Documentation/devicetree/bindings/video/backlight/pwm-backlight.txt，此文档描述了如何创建backlight 节点来使用 linux 内核
+| 结构体 | 功能 | 关键字段 |
+|--------|------|----------|
+| `struct pwm_chip` | PWM控制器 | dev, ops, base, npwm |
+| `struct pwm_device` | PWM通道 | chip, hwpwm, period, duty_cycle |
+| `struct pwm_ops` | 操作函数集 | request, free, config, enable, disable |
 
-### 5. 扩展
-一些 IC 厂商的 PWM 控制器有多种工作模式： ![](https://pica.zhimg.com/v2-224c33d621aef80855f6ae82d5ede4c0_1440w.jpg) 发布于 2022-04-05 21:11[【2026最新净热一体机测评】不踩坑怎么选？即热好？VS储热好？多维度测评佳德净净热一体机，看看到底是“智商税”还是“真香”？](https://zhuanl
+### PWM关键参数
 
-## Evidence
+| 参数 | 说明 | 控制方式 |
+|------|------|----------|
+| period | PWM周期（纳秒） | `pwm_config()`或sysfs |
+| duty_cycle | 高电平时间（纳秒） | `pwm_config()`或sysfs |
+| polarity | 极性（正常/反向） | `PWM_POLARITY_NORMAL`/`INVERSED` |
+| enable | 使能/禁用输出 | `pwm_enable()`/`pwm_disable()` |
 
-- Source: [原始文章](raw/tech/peripheral/Linux pwm 子系统.md) [[../../raw/tech/peripheral/Linux pwm 子系统.md|原始文章]]
+### 用户空间sysfs接口
 
-## Open Questions
+| 路径 | 功能 |
+|------|------|
+| `/sys/class/pwm/pwmchipN/` | PWM控制器N的根目录 |
+| `npwm` | 该控制器的通道数量 |
+| `export` | 导出指定通道（写入通道号） |
+| `unexport` | 释放指定通道 |
+| `/sys/class/pwm/pwmchipN/pwmM/` | 通道M的控制接口 |
+| `period` | 设置/读取周期（纳秒） |
+| `duty_cycle` | 设置/读取占空比（纳秒） |
+| `enable` | 使能(1)或禁用(0)PWM输出 |
+| `polarity` | 设置极性 |
 
-- (To be determined)
+### 使用示例
 
-## Related Links
+```bash
+# 导出PWM通道0
+echo 0 > /sys/class/pwm/pwmchip0/export
 
-- [原始文章](raw/tech/peripheral/Linux pwm 子系统.md) [[../../raw/tech/peripheral/Linux pwm 子系统.md|原始文章]]
+# 设置周期为1ms (1KHz)
+echo 1000000 > /sys/class/pwm/pwmchip0/pwm0/period
+
+# 设置占空比为50%
+echo 500000 > /sys/class/pwm/pwmchip0/pwm0/duty_cycle
+
+# 使能PWM输出
+echo 1 > /sys/class/pwm/pwmchip0/pwm0/enable
+```
+
+### 设备树配置示例
+
+```dts
+&pwm {
+    pinctrl-names = "default";
+    pinctrl-0 = <&pwm_pins>;
+    status = "okay";
+};
+
+backlight: backlight {
+    compatible = "pwm-backlight";
+    pwms = <&pwm 0 50000>;  /* pwm, channel, period */
+    brightness-levels = <0 4 8 16 32 64 128 255>;
+    default-brightness-level = <6>;
+};
+```
+
+### PWM驱动开发要点
+
+- 芯片厂商通常已提供PWM控制器驱动
+- 开发者主要关注设备树配置和背光/电机等上层驱动
+- 参考内核文档：`Documentation/ABI/testing/sysfs-class-pwm`
+- 背光绑定文档：`Documentation/devicetree/bindings/video/backlight/pwm-backlight.txt`
+
+## Key Quotes
+
+> "PWM：Pulse width modulation，脉冲宽度调制，在IC中，是使用定时器产生可调占空比方波的技术。"
+
+> "PWM驱动比I2C等简单，芯片厂商已经为SoC写了PWM驱动，我们在使用过程中，只需要修改设备树。"
+
+> "PWM子系统的核心是pwm_chip结构体，在sys/class/pwm/下会显示内核注册了几个控制器。"
+
+> "PWM多用于控制马达、LED、振动器等模拟器件。"
+
+## Related Pages
+
+- [[pwm]] — PWM 技术原理
+- [[linux-driver]] — Linux 驱动开发框架
+- [[device-tree]] — 设备树配置
+- [[backlight]] — LCD背光控制
+- [[motor-control]] — 电机调速
+
+## 开放问题
+
+- PWM子系统在高精度音频应用中的抖动控制
+- 多通道PWM同步与相位控制的内核支持

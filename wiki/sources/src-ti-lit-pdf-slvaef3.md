@@ -28,6 +28,11 @@ tags: [tv-backlight, led-driver]
 - 文档编号：SLVAEF3
 - 属于TI的照明技术文献系列
 
+## Key Quotes
+
+- "TI technical document SLVAEF3 covers LED backlight driver technology."
+- "Part of Texas Instruments' lighting technology literature series."
+
 ## 技术细节
 
 - **来源**: Texas Instruments

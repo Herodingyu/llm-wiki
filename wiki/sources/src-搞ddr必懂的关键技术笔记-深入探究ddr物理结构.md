@@ -36,6 +36,18 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/搞DDR必懂的关键技术笔记：深入探究DDR物理结构.md) [[../../raw/tech/dram/搞DDR必懂的关键技术笔记：深入探究DDR物理结构.md|原始文章]]
 
+## Key Quotes
+
+> "这样的存储单元网格被称为一个Bank"
+
+> "Bank模式的选择是在初始化期间通过在模式寄存器MR3中设置一个参数来完成的"
+
+> "页大小是指当一行被激活时，加载到感测放大器中的位数。"
+
+> "两行会同时被激活以总共获取256位的数据"
+
+> "两行被激活，所以总页大小为2x1KB = 2KB。"
+
 ## Open Questions
 
 - (To be determined)

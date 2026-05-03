@@ -30,6 +30,14 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/SoC入门-2芯片研究框架（下）.md) [[../../raw/tech/soc-pm/AI系统/SoC入门-2芯片研究框架（下）.md|原始文章]]
 
+## Key Quotes
+
+> "ROM (Read-Only Memory) - 只读存储器"
+
+> "RAM (Random Access Memory) - 随机存取存储器"
+
+> "点赞、收藏、在看、划线和评论交流"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,14 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-32AI编译器介绍.md) [[../../raw/tech/soc-pm/AI系统/AI系统-32AI编译器介绍.md|原始文章]]
 
+## Key Quotes
+
+> "总结：1.各家自己的软硬件2.支持Pytorch平台调用自己的接口3.算法代码通用，自动根据硬件调用优化"
+
+> "我们目前处在阶段二，就是各个厂商不光自己用，也推出让用户使用，用户使用的PyTorch，那就去支持PyTorch，提供IR。"
+
+> "最近比较忙停更了一段时间，接下来AI SoC的文章最近会有一个加速结束过程，然后开启新的领域知识分享。"
+
 ## Open Questions
 
 - (To be determined)

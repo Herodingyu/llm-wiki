@@ -36,6 +36,12 @@ In addition, facing the industry dilemma of cockpit chip computing power bottlen
 
 - Source: [原始文章](raw/industry/car-infotainment/researchandmarkets-reports-5867893-automotive-cockpit-domai.md) [[../../raw/industry/car-infotainment/researchandmarkets-reports-5867893-automotive-cockpit-domai.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.researchandmarkets.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

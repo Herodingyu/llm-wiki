@@ -29,6 +29,13 @@ Renesas AS3824是一款16通道LED电视背光控制器，支持局部调光（l
 - 支持外部同步信号，无VLED/ILED限制（控制器不暴露于高压/大电流）
 - 相比全局背光控制器可实现额外的系统功耗节省
 
+## 关键引用
+
+- "Renesas AS3824 is a 16-channel LED TV backlight controller supporting local dimming for improved picture quality and 20%-30% power savings."
+- "Each channel features independent 12-bit PWM generation with global 10-bit DAC for LED current setting (±0.5% accuracy)."
+- "The controller avoids exposure to high voltage/current, with no VLED/ILED limitations."
+- "Local dimming enables significant system power savings compared to global backlight controllers."
+
 ## 技术细节
 
 - **通道数**: 16通道

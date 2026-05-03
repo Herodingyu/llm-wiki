@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/超详细【Uboot驱动开发】（三）Uboot驱动模型.md) [[../../raw/tech/bsp/超详细【Uboot驱动开发】（三）Uboot驱动模型.md|原始文章]]
 
+## Key Quotes
+
+> "driver model ：DM"
+
+> "这种驱动模型为驱动的定义和访问接口提供了统一的方法。"
+
+> "上面基本上就是我们的底层代码了，稍微有点绕，但是也不难！我们只需要将宏进行替换就行了！"
+
+> "在这里，我们就把他当作一个设备识别的标志即可！"
+
+> "传参方式：通过命令行或者接口将设备资源信息传递进来，非常灵活。"
+
 ## Open Questions
 
 - (To be determined)

@@ -28,6 +28,12 @@ PULP Platform 在 RISC-V Summit EU 2024 的文档/演示。文件为二进制格
 - 与 RISC-V Summit EU 2024 相关
 - 可能涉及处理器架构、SoC 设计或验证主题
 
+## 关键引用
+
+- "PULP Platform is an open-source RISC-V processor platform focusing on energy-efficient computing."
+- "Documentation from RISC-V Summit EU 2024 covers processor architecture, SoC design, and verification topics."
+- "The platform serves as a research and development framework for next-generation RISC-V based systems."
+
 ## 技术细节
 
 - 来源：pulp-platform.org

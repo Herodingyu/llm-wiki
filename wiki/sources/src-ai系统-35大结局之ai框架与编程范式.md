@@ -36,6 +36,16 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-35大结局之AI框架与编程范式.md) [[../../raw/tech/soc-pm/AI系统/AI系统-35大结局之AI框架与编程范式.md|原始文章]]
 
+## Key Quotes
+
+> "AI 框架将支持端边云全场景跨平台设备部署"
+
+> "AI 框架将注重前端便捷性与后端高效性的统一"
+
+> "AI 框架将着力强化对超大规模 AI 的支持"
+
+> "AI 框架将进一步与科学计算深度融合交叉"
+
 ## Open Questions
 
 - (To be determined)

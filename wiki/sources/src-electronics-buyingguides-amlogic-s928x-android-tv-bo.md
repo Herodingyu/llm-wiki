@@ -32,6 +32,12 @@ Alibaba Electronics Hub发布的Amlogic S928X安卓电视盒选购指南。S928X
 - 关键选购指标：64位Android 11、HDMI 2.1 DSC、USB 3.0吞吐量、Wi-Fi 6E 6GHz支持
 - 金属机身型号可维持90%以上CPU/GPU频率20分钟以上
 
+## 关键引用
+
+- S928X是2023年底发布的旗舰SoC，采用12nm工艺，五核CPU支持8K@60fps解码和Dolby Vision/HDR10+。
+- 支持AV1/VP9/H.265/H.264 8K@60fps硬件解码，原生支持Dolby Vision、HDR10+和Dolby Atmos passthrough。
+- 金属机身型号可维持90%以上CPU/GPU频率20分钟以上，固件质量比硬件规格更能决定长期使用体验。
+
 ## 市场洞察
 
 S928X代表了安卓电视盒的高端性能标杆，但市场分化明显：发烧友追求8K和Dolby Vision全链路支持，而普通用户可能只需要4K流媒体。固件质量（64位支持、更新频率）比硬件规格更能决定长期使用体验。价格区间$129-229反映了从入门到高端的不同定位。

@@ -36,6 +36,12 @@ Don’t default to headline specs. Focus on these five functional metrics: 🔍 
 
 - Source: [原始文章](raw/industry/tv/electronics-buyingguides-amlogic-s928x-android-tv-bo.md) [[../../raw/industry/tv/electronics-buyingguides-amlogic-s928x-android-tv-bo.md|原始文章]]
 
+## Key Quotes
+
+> "来源: electronics.alibaba.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

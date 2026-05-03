@@ -23,6 +23,18 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/Memory闲谈（DRAM，SRAM）.md) [[../../raw/tech/dram/Memory闲谈（DRAM，SRAM）.md|原始文章]]
 
+## Key Quotes
+
+> "positive feedback的latch"
+
+> "$3500 vs $1600 for DRAM"
+
+> "一个正常的40nm工艺，一个6T（6 transistors）的SRAM面积是150\*0.04\*0.04= 0.24um2/SRAM。所以如果我们需要一个1Mb的SRAM，面积是1M\*0.24um2= 0.24mm2,也就是大概0.5mm\*0.5mm。"
+
+> "说到memory的面积，作者君昨天还跟一个做数字前端的朋友聊了聊。他说他们的SOC里面放了一个512MB的SRAM，12nm的工艺下，面积是400mm^2."
+
+> "所以尺寸是20mm\*20mm。真.土豪公司啊！"
+
 ## Open Questions
 
 - (To be determined)

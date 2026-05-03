@@ -1,0 +1,109 @@
+﻿Missing Key Quotes: 106
+
+All files:
+src-alibaba-product-insights-apple-vision-pro-vs-met.md
+src-anysilicon-the-ultimate-signoff-tapeout-checklist.md
+src-apple-newsroom-2025-05-carplay-ultra-the-next-.md
+src-arm鏀掓満鎸囧崡-ai绡?md
+src-arxiv-html-260303147v1.md
+src-arxiv.md
+src-asianda-top-10-mini-led-driver-chip-manufacturer.md
+src-auganix-xr-news-qualcomm-voxelsensors-partnershi.md
+src-baapofmovies-samsung-galaxy-xr-headset-2025-highlight.md
+src-blog-chinamaoge-article-details-143466179.md
+src-blog-products-and-platforms-platforms-android.md
+src-caixin-2025-03-17-102299245html.md
+src-cgvis-publications-2012-sig-asia-briefpdf.md
+src-ciglobaltech-blog-remote-engineering-teams-best-pract.md
+src-cn-report-rinc1660089-automotive-dms-oms-dr.md
+src-content-fileadmin-media-download-impulse-codico.md
+src-cpu鏄€庝箞鏀瑰彉棰戠巼鐨?鑰佺嫾-鐨勫洖绛?md
+src-cpu杩愯鍔熻€楀拰浠€涔堢浉鍏?娑堣€楃殑鐢佃兘閮藉幓鍝簡.md
+src-ddr4鐨勫欢杩?neroli-鐨勫洖绛?md
+src-design-reuse-blog-56263-transforming-chaos-into-clari.md
+src-digineat-news-samsungtizen9update.md
+src-displaydaily-the-miniled-road-to-success.md
+src-displaydaily-tv-market-recovering-getting-bigger-brig.md
+src-displayspecifications-en-news-3707dd0-7cd991.md
+src-displayspecifications-en-news-b606c11-1b8dc0.md
+src-ecoustics-products-lg-qned-evo-tvs-2025.md
+src-electronics-buyingguides-amlogic-s928x-android-tv-bo.md
+src-en-expanding-the-application-area-of-mini-l.md
+src-en-meta-rayban-display-lcos-smart-glasses-s.md
+src-eureka-blog-electronics-edge-lit-vs-direct-lit.md
+src-fonearena-blog-442223-unveils-android-xr-next-gen-.md
+src-gladwellacademy-knowledge-blogs-applying-agile-and-lean.md
+src-glassalmanac-galaxy-xr-reveals-android-xr-support-and.md
+src-hdtvtest-news-lg-s-web-os-25-now-coming-to-2022-2.md
+src-hdtvtest-news-mediatek-debuts-pentonic-800-soc-wi.md
+src-ic鍩虹璇?澶氭ā鍧楀紓姝ヤ氦浜掓椂-濡備綍纭畾缂撳啿鍖哄ぇ灏?md
+src-ic璁捐-鎬庝箞瀹炵幇闈㈢Н鍜屾椂搴忕殑鍧囪　浼樺寲.md
+src-influencermarketinghub-snapchat-lens-studio-ai-spectacles-comme.md
+src-ithome-0-841-993htm.md
+src-jb-display-newsdetails-85html.md
+src-kinet-ic-display-power-led-backlight-drivers-ics.md
+src-kmalloc涓庣‖浠禼ache涓€鑷存€?md
+src-koreaherald-article-3394189.md
+src-l1-l2-l3-cache绌剁珶鍦ㄥ摢閲?md
+src-lamboiparts-blogs-car-dvr-the-battle-for-automotive-.md
+src-ledinside-interview-2025-4-2025-04-23-09.md
+src-ledinside-news-2025-10-2025_10_16_03.md
+src-ledinside-news-2025-2-2025-02-20-01.md
+src-lincolntechsolutions-blog-full-array-local-dimming-mini-led-e.md
+src-lp-research-slam-system-ar-vr-tracking.md
+src-macrumors-2025-01-23-apple-removes-2024-from-next-.md
+src-marketintelo-report-ai-smart-glasses-consumer-market.md
+src-mediatek-zh-cn-press-room-mediatek-brings-advance.md
+src-microled-info-microled-tv.md
+src-newsroom-at-ces-2024-valeo-and-sennheiser-present.md
+src-nvidianews-news-nvidia-unveils-drive-thor-centraliz.md
+src-portersfiveforce-blogs-competitors-novatek.md
+src-power-gating涓巆lk-gating.md
+src-prnewswire-news-releases-global-and-china-intellige.md
+src-pulp-platform-docs-riscvmunich2024-riscv-summit-eu-202.md
+src-qualcomm-news-releases-2024-01-qualcomm-and-bosch.md
+src-redaktor-tech-lg-oled-evo-g5.md
+src-renesas-en-about-newsroom-renesas-unveils-indust.md
+src-renesas-en-products-as3824.md
+src-researchandmarkets-reports-5867893-automotive-cockpit-domai.md
+src-researchinchina-htmls-report-2024-74971html.md
+src-researchinchina-htmls-report-2024-74973html.md
+src-roadtovr-meta-waveguide-provider-lumus-zoe-70-deg.md
+src-scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu.md
+src-semiengineering-how-ai-and-connected-workflows-will-clos.md
+src-semiengineering.md
+src-semiwiki-eda-346400-keysight-eda-at-61dac-its-big.md
+src-semiwiki-eda-keysight-eda-336039-keysight-eda-202.md
+src-semiwiki.md
+src-smarteye-wp-content-uploads-2023-12-ces-2024-coll.md
+src-soc浣庡姛鑰?avs涓巇vfs.md
+src-sohu-a-881791417-365505.md
+src-strategicmarketresearch-market-report-ai-powered-in-vehicle-cock.md
+src-strategicmarketresearch-market-report-display-timing-controller.md
+src-synopsys-blogs-chip-design-ai-driven-bug-discover.md
+src-synopsys-blogs-chip-design-vso-ai-nvidiahtml.md
+src-synopsys-blogs-chip-design.md
+src-techinsights-about-techinsights-overview-newsroom-fea.md
+src-ti-lit-pdf-slvaef3.md
+src-tomsguide-computing-smart-glasses-i-just-saw-the-f.md
+src-tomsguide-computing-smart-glasses-i-just-tested-th.md
+src-trendforce-news-2024-08-29-2024-mini-led-backlight.md
+src-us-blogs-press-releases-tcl-introduces-the.md
+src-vlsisystemdesign-soc-labs.md
+src-vrtuoluo-543632html.md
+src-woshipm-ai-6341694html.md
+src-www2-pubs-techrpts-2024-eecs-2024-222pdf.md
+src-xkh-semitech-news-how-silicon-carbide-sic-is-crossing.md
+src-涓轰粈涔坅sic鐨勯鐜囧彲浠ヨ揪鍒癵hz-鑰宖pga鍙兘杈惧埌鍑犵櫨mhz-宀戝窛-鐨勫洖绛?md
+src-浣庡姛鑰楄璁＄殑rtl-coding鏂规硶.md
+src-鍏堣繘灏佽鎶€鏈鏅?浠€涔堟槸鎵囧嚭鍨嬪皝瑁協an-out-packaging-浠€涔堟槸fowlp-focos鍜?md
+src-鍐呭瓨鏄犲皠io-mmio-绠€浠?md
+src-鍐呭瓨鑳藉惁8g鍜?g缁勫弻閫氶亾-lizj-鐨勫洖绛?md
+src-鍗婂浣撳巶鍟嗗浣曞仛鑺墖鐨勫嚭鍘傛祴璇?ricky-li-鐨勫洖绛?md
+src-鍗婂浣撳巶鍟嗗浣曞仛鑺墖鐨勫嚭鍘傛祴璇?娓╂垐-鐨勫洖绛?md
+src-鍚屽瀷鍙峰悓娆?cpu-涓轰粈涔堜細鏈?浣撹川-涔嬪垎-ricky-li-鐨勫洖绛?md
+src-澶氭牳鐨勬祦琛屾槸鍚﹁〃鏄庡崟涓?cpu-鏍稿績鎬ц兘鐨勬彁鍗囧凡杈剧摱棰堥樁娈?鍛嗘稕-鐨勫洖绛?md
+src-鑺墖cp娴嬭瘯杩囩▼涓殑鐑樼儰鐩殑鏄粈涔?鑰佺嫾-鐨勫洖绛?md
+src-鑺墖鍒堕€犲伐鑹虹殑-22-绾崇背绾ф剰鍛崇潃浠€涔?杩欓噷鐨勭撼绫冲崟浣嶆槸鎸囦粈涔?鍖垮悕鐢ㄦ埛-鐨勫洖绛?md
+src-璇﹁Вasic璁捐娴佺▼.md
+src-杩炶浇瑙ｈapple-m1-soc鐨勫嚑鐐规妧鏈繘姝ヤ箣涓€-mem-over-fabric.md

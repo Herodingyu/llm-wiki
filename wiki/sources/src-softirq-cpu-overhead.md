@@ -48,6 +48,14 @@ vmstat 1
 57402 interrupts/sec
 ```
 
+## Key Quotes
+
+> "中断请求（interrupt request，IRQ）"
+
+> "软中断消耗的CPU周期相对比硬中断要多不少"
+
+> "从实验数据来看，一次软中断CPU开销大约3.4us左右"
+
 ## Open Questions
 
 - 如何优化软中断处理（如 RPS/XPS）

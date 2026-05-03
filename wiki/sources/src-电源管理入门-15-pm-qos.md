@@ -36,6 +36,16 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-15 PM QoS.md) [[../../raw/tech/bsp/电源管理/电源管理入门-15 PM QoS.md|原始文章]]
 
+## Key Quotes
+
+> "吞吐量（Throughput）减少"
+
+> "对其他模块的影响就类比为服务的质量"
+
+> "target\_value、default\_value"
+
+> "pm\_qos\_add\_request"
+
 ## Open Questions
 
 - (To be determined)

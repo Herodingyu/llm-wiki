@@ -36,6 +36,14 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/NVIDIA ADAS-英伟达DriveOS入门.md) [[../../raw/tech/soc-pm/AI系统/NVIDIA ADAS-英伟达DriveOS入门.md|原始文章]]
 
+## Key Quotes
+
+> "Nvidia闭环了自驾在线和离线，软件和硬件各个方面的服务"
+
+> "硬件冗余（同时运行两套硬件，一套是备份）"
+
+> "Adaptive AUTOSAR"
+
 ## Open Questions
 
 - (To be determined)

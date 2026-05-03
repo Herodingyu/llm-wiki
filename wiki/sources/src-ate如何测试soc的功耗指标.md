@@ -27,6 +27,10 @@ Soc的总功耗可以简单的分为 [静态功耗](https://zhida.zhihu.com/sear
 
 - Source: [原始文章](raw/tech/soc-pm/ATE如何测试SoC的功耗指标.md) [[../../raw/tech/soc-pm/ATE如何测试SoC的功耗指标.md|原始文章]]
 
+## Key Quotes
+
+> "DICC是无法直接测量的，只能测试SICC和TICC = SICC+DICC，然后反算出DICC。如下图为例，该方式的主要问题是单独SICC测试的时候Chip Tj会相对低一些，导致反算的DICC偏高"
+
 ## Open Questions
 
 - (To be determined)

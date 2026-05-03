@@ -36,6 +36,24 @@ DRAM 采用标准容量，由 [JEDEC 标准](https://zhida.zhihu.com/search?cont
 
 - Source: [原始文章](raw/tech/dram/译文： DDR4 SDRAM - Understanding the Basics（上）.md) [[../../raw/tech/dram/译文： DDR4 SDRAM - Understanding the Basics（上）.md|原始文章]]
 
+## Key Quotes
+
+> "一文了解 DDR4 的基础知识。"
+
+> "申请翻译授权中，如有侵权，将会删除"
+
+> "### 顶层 Top Level
+
+正如你预期的那样，DRAM 拥有时钟、复位、片选、地址以及数据输入。下文中的表格有关于各个引脚更详细的信息。表格中并没有列出所有的 IO，只列出了其中基础的部分。读者可以花一些时间来了解各个 IO 的功能，尤其是那些拥有复用功能的地址信号"
+
+> "DRAM 协议规定了列数据位宽，包括 4 bit，8 bit 和 16 bit 三种，DRAM 也因此分为三类：x4,x8 以及 x16 。此外请注意：DRAM 颗粒的 DQ 宽度与列数据位宽相同。所以也可以说 DRAM 是根据 DQ 总线宽度划分的，为了简便起见"
+
+> "同理，x8/16 器件的 page size 分别为 1k/2k Byte
+
+### Rank (Depth Cascading)
+
+DRAM 中有 single/Dual/Quad Rank 等术语。Rank 是 DRAM 中的最高层次的逻辑单元，一般用于增加整个系统的存储容量"
+
 ## Open Questions
 
 - (To be determined)

@@ -23,6 +23,10 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/【术】怎样绕过Linux kernel在用户态操纵硬件.md) [[../../raw/tech/bsp/【术】怎样绕过Linux kernel在用户态操纵硬件.md|原始文章]]
 
+## Key Quotes
+
+> "以上就是利用UIO框架在用户空间开发驱动的方法"
+
 ## Open Questions
 
 - (To be determined)

@@ -23,6 +23,12 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/EFUSE 2.md) [[../../raw/tech/soc-pm/EFUSE 2.md|原始文章]]
 
+## Key Quotes
+
+> "可以加入EFUSE重复编程保护工作，当EFSUE中的数据已经成1的时候，本次编程操作失效，上报异常中断
+
+EFUSE在接口上和其它IO控制器类似，本质上都可以使用一个状态机控制EFUSE的所有管脚赋某个值完成一次特定的操作，这是最直观最容易理解且不容易出错的设计思路"
+
 ## Open Questions
 
 - (To be determined)

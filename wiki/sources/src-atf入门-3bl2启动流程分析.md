@@ -1,6 +1,6 @@
 ---
 doc_id: src-atf入门-3bl2启动流程分析
-title: ifdef BL32_BASE
+title: ATF入门-3：BL2启动流程分析
 page_type: source
 source_kind: raw_markdown
 raw_paths:
@@ -8,29 +8,62 @@ raw_paths:
 domain: tech/bsp
 created: 2026-05-03
 updated: 2026-05-03
-tags: [bsp]
+tags: [bsp, atf, bl2, secure-boot, arm]
 ---
 
 ## Summary
 
-[收录于 · 芯片底软及固件](https://www.zhihu.com/column/c_2025981427003527181) 2 人赞同了该文章 ![](https://pic3.zhimg.com/v2-2a557c3a46c4c6fb6a7458e373443f2e_1440w.jpg)
+本文深入分析了ATF BL2（Trusted Boot Firmware）的启动流程。BL2承担加载后续固件（BL31、BL32/OP-TEE、BL33/U-Boot）的关键职责，并在Secure Boot中对所有固件进行校验，防止篡改。文章详细解析了BL2的入口函数`bl2_entrypoint`的执行流程：参数保存、异常向量设置、sctlr_el1寄存器配置、C运行时环境初始化、以及`bl2_main`加载BL3x系列镜像并通过SMC调用将执行权交给BL31。重点阐述了BL2与BL1的设计分离原因（ROM成本、驱动适配、安全考虑），以及S-EL1运行模式下的初始化细节。
 
 ## Key Points
 
-### 1. 1\. BL2简介
-![](https://pic3.zhimg.com/v2-bfa8c01176a030550f94d432dc449e20_1440w.jpg) Bl2的启动流程与bl1类似，主要区别是 - bl2的 **初始化** 流程比bl1更简单，
+### 1. BL2定位与功能
+- **职责**：加载BL31、BL32（OP-TEE）、BL33（U-Boot）等后续固件
+- **安全角色**：Secure Boot核心，对所有固件进行签名校验
+- **运行等级**：可运行于EL3或S-EL1（ARMv8通常S-EL1）
+- **内存需求**：需要初始化DDR，因为加载的镜像可能较大
 
-### 2. 2\. 代码分析
-![](https://pic2.zhimg.com/v2-cb9447eebedcfcf7e7bcbc9d720f9829_1440w.jpg) - BL2的主要工作就是加载BL3x系列镜像，然后通过 **SMC** 进入BL1进而跳转到BL31运行。
+### 2. BL2与BL1分离的设计原因
+- **ROM成本**：BL1写死在芯片ROM中，体积需最小化
+- **驱动适配**：BL1驱动越少越好，避免适配不同厂家硬件
+- **安全考虑**：BL2加载完固件后不再运行，减少被攻击面
+- **功能分离**：BL1负责根信任验证，BL2负责加载搬运
 
-### 3. 2.1 bl2\_entrypoint
-bl2/aarch64/ **bl2\_entrypoint.S** 中是s-el1模式对应的代码。 ``` func bl2_entrypoint mov    x20, x0 mov    x21, x1
+### 3. 入口函数 bl2_entrypoint
+- **文件**：`bl2/aarch64/bl2_entrypoint.S`
+- **运行模式**：S-EL1（Secure EL1）
+- **执行流程**：
+  1. 保存x0-x3参数到x20-x23（callee-saved寄存器）
+  2. 设置异常向量表（`early_exceptions`）
+  3. 配置sctlr_el1（Cache、对齐等属性）
+  4. 刷新D-Cache，初始化BL2栈
+  5. 调用`bl2_setup`进行平台设置
+  6. 调用`bl2_main`加载BL3x镜像
 
-### 4. 2.1.1 参数保存
-bl1虽然定义了x0 – x7寄存器用于向bl2传递参数，但bl2实际使用的 **只有x0 - x3四个寄存器** ，因此其实际传参的数量不能超过四个。在BL2中x0 - x3四个寄存器 **在bl2\_setup函数里面需要用** 。但是之前需要执行其他函数就需要 **先保存下，防止丢失** ，mov x20, x0 就是把x0的值放入x20。
+### 4. bl2_main 核心工作
+- **加载镜像**：将BL31、BL32、BL33加载到RAM
+- **安全校验**：对每个镜像进行数字签名和哈希验证
+- **参数准备**：为下一级准备启动参数
+- **SMC调用**：通过SMC进入BL1指定的handler
+- **跳转执行**：将CPU执行权交给BL31
 
-### 5. 2.1.2 异常向量设置
-**early\_exceptions** 在common/aarch64/early\_exceptions.S中定义，从其定义可知，bl2捕获到异常后不会对其做实际处理，而只是 **打印出异常相关的信息** ，然后将系统设置为panic状态。
+### 5. 异常处理
+- **早期异常**：`early_exceptions`仅打印异常信息并panic
+- **严重错误**：未定义指令、空指针等触发SError/External Abort
+- **安全策略**：捕获异常并将系统置于安全状态
+
+### 6. 寄存器约定
+- **caller-saved**：x0-x18，子函数可随意使用
+- **callee-saved**：x19-x30，子函数需保存并恢复
+- **参数传递**：BL1→BL2通过x0-x3传递，BL2需先保存
+
+## Key Quotes
+
+> "BL2承担起了加载其他固件（bl31、bl32（optee-os）和bl33（uboot））的功能，并在secure boot中占据了重要角色，主要是对这些固件进行校验，防止被篡改。"
+
+> "BL1的初衷就是ROM写死在芯片里面，用于校验外部固件用的，只要完成这个功能其他的都不重要。"
+
+> "BL2的主要工作就是加载BL3x系列镜像，然后通过SMC进入BL1进而跳转到BL31运行。"
 
 ## Evidence
 

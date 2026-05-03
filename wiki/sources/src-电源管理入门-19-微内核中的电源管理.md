@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-19 微内核中的电源管理.md) [[../../raw/tech/bsp/电源管理/电源管理入门-19 微内核中的电源管理.md|原始文章]]
 
+## Key Quotes
+
+> "设备硬件驱动APP、电源敏感APP、电源监控APP"
+
+> "Power Manager Server初始化"
+
+> "shutdown\_system"
+
+> "SystemPowerModeHandler"
+
+> "SystemShutdownHandler"
+
 ## Open Questions
 
 - (To be determined)

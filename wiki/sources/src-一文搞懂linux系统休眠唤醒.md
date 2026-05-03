@@ -32,6 +32,12 @@ Linux系统休眠唤醒的整个流程： ![](https://pic4.zhimg.com/v2-054b14da
 ### 5. 3.2 休眠唤醒函数调用流程
 echo mem > /sys/power/state 做如上操作后，整个函数调用流程如下： ![](https://pic3.zhimg.com/v2-ea4591f75c869274c4f55cde2f355d66_1440w.jpg)
 
+## Key Quotes
+
+> "系统休眠唤醒是电源管理中重要的一个技术点，一方面，它能让系统在不需要工作时，尽可能进入一个功耗极低的状态。"
+
+> "系统休眠唤醒的框架包括三部分：services、PM core、PM driver。"
+
 ## Evidence
 
 - Source: [原始文章](raw/tech/bsp/一文搞懂linux系统休眠唤醒.md) [[../../raw/tech/bsp/一文搞懂linux系统休眠唤醒.md|原始文章]]

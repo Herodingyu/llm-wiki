@@ -36,6 +36,18 @@ zImage内核镜像下载到开发板之后，可以使用u-boot的go命令进行
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【系统启动】3W字理清UBoot如何跳转Kernel—uboot与linux交界.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【系统启动】3W字理清UBoot如何跳转Kernel—uboot与linux交界.md|原始文章]]
 
+## Key Quotes
+
+> "但是有时候总感觉是各自孤立的，将三者连续不起来？"
+
+> "怎么从UBoot跳转到Kernel"
+
+> "kernel的镜像最开始是压缩的zImage格式的存在"
+
+> "那这个uImage被加载到哪里呢？"
+
+> "go命令没有将内核需要的相关启动参数从u-boot中传递给内核"
+
 ## Open Questions
 
 - (To be determined)

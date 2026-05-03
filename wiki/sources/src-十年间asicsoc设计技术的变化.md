@@ -23,6 +23,10 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/十年间ASICSoC设计技术的变化.md) [[../../raw/tech/soc-pm/十年间ASICSoC设计技术的变化.md|原始文章]]
 
+## Key Quotes
+
+> "今天FINFET晶体管，已经在16nm已下广泛使用，我们在讨论未来代替它的结构式是管状晶体管，还是超浅沟道晶体管"
+
 ## Open Questions
 
 - (To be determined)

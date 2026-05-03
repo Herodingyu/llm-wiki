@@ -36,6 +36,14 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/Chiplet - 以高性能和低成本为驱动力的芯片设计方法.md) [[../../raw/tech/soc-pm/Chiplet - 以高性能和低成本为驱动力的芯片设计方法.md|原始文章]]
 
+## Key Quotes
+
+> "M3 Ultra (两个M3 Max合封)"
+
+> "全IO Die (传输+MEM+Ctrl Die)"
+
+> "Graviton3 & Graviton4"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,12 @@ Segmentation here aligns with ADAS levels (Level 1 to Level 5 autonomy). Level 2
 
 - Source: [原始文章](raw/industry/car-infotainment/strategicmarketresearch-market-report-ai-powered-in-vehicle-cock.md) [[../../raw/industry/car-infotainment/strategicmarketresearch-market-report-ai-powered-in-vehicle-cock.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.strategicmarketresearch.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

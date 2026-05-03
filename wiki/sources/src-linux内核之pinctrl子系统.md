@@ -33,6 +33,16 @@ pinctrl-driver主要为pinctrl-core提供pin的操作能力。对于具体的pin
 
 - Source: [原始文章](raw/tech/peripheral/Linux内核之pinctrl子系统.md) [[../../raw/tech/peripheral/Linux内核之pinctrl子系统.md|原始文章]]
 
+## Key Quotes
+
+> "众所周知，ARM SoC提供了十分丰富的硬件接口，而接口物理上的表现就是一个个的pin。为了实现丰富的硬件功能，SoC的pin需要实现复用功能，即单独的pin需要提供不同功能，例如，pin0既可以作为GPIO，也可以用于i2c的SCL，通过pin相关的复用寄存器来切换不同的功能。"
+
+> "pinctrl子系统'求同存异'，将pin的管理方式进行了抽象，形成pinctrl-core抽象层，将具体SoC的pin controler隔离出去，形成pinctrl-driver抽象层，pinctrl-core和pinctrl-driver通过抽象接口进行通信。"
+
+> "可见，pinctrl子系统地位相当于kernel全局的pin管理中心，kernel中所有需要pin资源的驱动、子系统都需要通过pinctrl子系统来申请、配置、释放。"
+
+> "pinctrl-core与pinctrl-driver是通过pin controller descriptor进行通信的。该结构包括了pinctrl-driver所有属性以及其具有的所有能力；这就是典型的面向对象编程的思想。"
+
 ## Open Questions
 
 - (To be determined)

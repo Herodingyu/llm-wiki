@@ -36,6 +36,14 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-20 Hypervisor中的电源管理.md) [[../../raw/tech/bsp/电源管理/电源管理入门-20 Hypervisor中的电源管理.md|原始文章]]
 
+## Key Quotes
+
+> "CPU、内存、存储空间、网络适配器、外设等"
+
+> "硬件隔离、虚拟化隔离、容器隔离、进程隔离等"
+
+> "集群+信息娱乐汽车系统，ECU整合，医疗设备，工业控制"
+
 ## Open Questions
 
 - (To be determined)

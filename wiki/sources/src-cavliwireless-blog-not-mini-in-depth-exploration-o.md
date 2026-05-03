@@ -36,6 +36,12 @@ I²C Protocol uses two wires for communication, namely:SDA (Serial Data Line):Tr
 
 - Source: [原始文章](raw/tech/peripheral/cavliwireless-blog-not-mini-in-depth-exploration-of-i2.md) [[../../raw/tech/peripheral/cavliwireless-blog-not-mini-in-depth-exploration-of-i2.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.cavliwireless.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

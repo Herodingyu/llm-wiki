@@ -23,6 +23,12 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【系统DFX】如何诊断占用过多 CPU、内存、IO 等的神秘进程？.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【系统DFX】如何诊断占用过多 CPU、内存、IO 等的神秘进程？.md|原始文章]]
 
+## Key Quotes
+
+> "热门面试问题：如何诊断占用过多 CPU、内存、IO 等的神秘进程？"
+
+> "**热门面试问题：如何诊断占用过多 CPU、内存、IO 等的神秘进程？**"
+
 ## Open Questions
 
 - (To be determined)

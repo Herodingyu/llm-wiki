@@ -51,6 +51,18 @@ channel > DIMM > rank > chip > bank > row/column
 - 一个 bank 最大自动刷新间隔 64ms，行数约 8192（64ms/7.8us）
 - 自动刷新间隔 7.8us 每次
 
+## Key Quotes
+
+> "CAS Latency (CL)"
+
+> "RAS-to-CAS Delay (tRCD)"
+
+> "Row-precharge Delay (tRP)"
+
+> "Row-active Delay (tRAS)"
+
+> "页命中（PH, Page Hit）"
+
 ## Open Questions
 
 - 现代 DDR5 中 bank group 架构如何影响访问效率？

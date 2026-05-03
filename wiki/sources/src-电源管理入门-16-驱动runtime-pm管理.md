@@ -36,6 +36,14 @@ Runtime pm core主要提供了三类函数接口： - 提供 **enable/disable接
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-16 驱动Runtime PM管理.md) [[../../raw/tech/bsp/电源管理/电源管理入门-16 驱动Runtime PM管理.md|原始文章]]
 
+## Key Quotes
+
+> "runtime\_suspend"
+
+> "enable/disable接口"
+
+> "runtime\_suspend/runtime\_resume接口"
+
 ## Open Questions
 
 - (To be determined)

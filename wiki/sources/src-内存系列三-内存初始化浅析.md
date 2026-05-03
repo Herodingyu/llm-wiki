@@ -30,6 +30,10 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/内存系列三：内存初始化浅析.md) [[../../raw/tech/dram/内存系列三：内存初始化浅析.md|原始文章]]
 
+## Key Quotes
+
+> "“那我要是换了内存呢，会死机吗？“。不会的，主板有个GPIO连接到机箱开关上，我们打开机箱，BIOS会捕捉到这个信息（叫做Intrude）。利用这个信号，我们可以认为用户做了些改变配置的事，我们在从头训练就好了。有的MRC还会在SPD信息改变后自动重新训练"
+
 ## Open Questions
 
 - (To be determined)

@@ -30,6 +30,14 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/内存为什么要Training 内存初始化代码为什么是BIOS中的另类？.md) [[../../raw/tech/dram/内存为什么要Training 内存初始化代码为什么是BIOS中的另类？.md|原始文章]]
 
+## Key Quotes
+
+> "当然不是，但和AI 模型的training之所以取名如此一样，都是为了通过实验来寻找可以解决问题的方案"
+
+> "这些步骤大部分是所有内存方案都要做的，包括焊在板子上的Solder Down方案和不同的内存控制器。关键是谁来执行这些步骤，谁来Training整个命令和数据链条"
+
+> "OOB training十分常见，比大家认为的常见更加常见。现在几乎所有高速通信线路都需要Training，包括但不限于PCIe、USB、SATA等等。而完成这个Training的并不是CPU，可以是MCU和DSP等"
+
 ## Open Questions
 
 - (To be determined)

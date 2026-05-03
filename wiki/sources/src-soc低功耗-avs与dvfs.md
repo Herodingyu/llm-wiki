@@ -23,6 +23,12 @@ tags: [soc-pm]
 ### 2. DVFS
 DVFS（Dynamic Voltage Frequency Scaling）是指根据系统负载动态调整电源电压（VDD）和时钟频率（FCLK）的技术，其核心目标是在性能需求与功耗之间取得平衡。看上去和AVS很像，但DVFS中电压和频率是提前设置好的离散值，软件根据当前任务负载决定把电压频率调整到哪个值。所以AVS省功耗的能力比DVFS更强，但是实现起来也更复杂。
 
+## Key Quotes
+
+- "AVS (Adaptive Voltage Scaling) dynamically adjusts supply voltage to minimize power consumption while meeting performance requirements."
+- "DVFS uses pre-defined discrete voltage/frequency values based on workload, while AVS allocates the minimum required voltage per device class."
+- "AVS has stronger power-saving capability than DVFS, but is more complex to implement."
+
 ## Evidence
 
 - Source: [原始文章](raw/tech/soc-pm/SOC低功耗 AVS与DVFS.md) [[../../raw/tech/soc-pm/SOC低功耗 AVS与DVFS.md|原始文章]]

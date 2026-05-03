@@ -36,6 +36,12 @@ Creating a truly versatile SerDes IP requires architectural foresight. Here are 
 
 - Source: [原始文章](raw/tech/peripheral/design-reuse-blog-56212-accelerating-your-development.md) [[../../raw/tech/peripheral/design-reuse-blog-56212-accelerating-your-development.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.design-reuse.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

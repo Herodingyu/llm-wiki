@@ -58,6 +58,18 @@ tags: [bsp, uboot, bootloader]
 - 环境变量存储在 Flash 的专用分区，掉电保持
 - 典型 bootargs: `console=ttySAC0,115200 root=/dev/mmcblk0p2 rw init=/linuxrc rootfstype=ext3`
 
+## Key Quotes
+
+> "本文目的，有助于嵌入式新手对uboot有个大概的了解，方便老手回忆，复习。"
+
+> "3、典型嵌入式linux系统启动过程"
+
+> "5、总结：uboot到底是干嘛的?"
+
+> "4、什么是uboot的可移植性？"
+
+> "2、能够引导操作系统内核启动并给内核传参"
+
 ## Open Questions
 
 - 不同 SoC 的启动设计差异对 U-Boot 移植的影响

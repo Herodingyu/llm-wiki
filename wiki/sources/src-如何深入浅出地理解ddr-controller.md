@@ -36,6 +36,20 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/如何深入浅出地理解DDR Controller？.md) [[../../raw/tech/dram/如何深入浅出地理解DDR Controller？.md|原始文章]]
 
+## Key Quotes
+
+> "内存事务与 DRAM 命令排序方案"
+
+> "行命中（row hit）的概率降低，而 BANK 冲突（bank conflict）的概率上升"
+
+> "x⋅tCAS+(1−x)⋅(tRP+tRCD+tCAS)"
+
+> "为相对较低请求速率的请求序列而设计的、对功耗敏感的内存系统"
+
+> "大多数 store 命中在缓存里改脏位，不立即下沉到内存。  
+> 回写触发由替换策略决定：脏行只有在被淘汰时才写回内存，淘汰顺序受组相联/冲突/容量压力影响，不一定与程序访问顺序一致，导致写回地址在时间上更“离散”。  
+>"
+
 ## Open Questions
 
 - (To be determined)

@@ -23,6 +23,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-2开机详解.md) [[../../raw/tech/bsp/电源管理/电源管理入门-2开机详解.md|原始文章]]
 
+## Key Quotes
+
+> "3.1 内核启动start\_kernel"
+
+> "3.2 平台启动setup\_arch"
+
+> "\_\_cpu\_method\_of\_table"
+
+> "3.3 CPU初始化smp\_init\_cpus"
+
+> "3.4 DTS初始化psci\_dt\_init"
+
 ## Open Questions
 
 - (To be determined)

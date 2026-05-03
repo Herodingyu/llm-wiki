@@ -29,6 +29,12 @@ Patsnap Eureka技术博客对比了LED显示背光的两种主要技术：Edge L
 - Edge Lit更适合超薄显示和成本敏感产品；Direct Lit更适合HDR、大屏和专业显示
 - 最新创新包括：Edge Lit散热改进和局部调光算法；Direct Lit超薄设计和混合Mini LED方案
 
+## Key Quotes
+
+- Edge Lit places LEDs at the panel edges and uses a light guide plate for uniform illumination, making products thinner; Direct Lit places LED arrays behind the panel, supporting local dimming.
+- Edge Lit is better suited for ultra-thin displays and cost-sensitive products, while Direct Lit is preferred for HDR, large screens, and professional displays.
+- Hybrid Mini LED backlight combines the advantages of both Edge Lit and Direct Lit, achieving ultra-thin design with high optical efficiency and excellent local dimming.
+
 ## 技术细节
 
 - **Edge Lit结构**: LED沿边缘放置 + 导光板（含微结构/白点/微透镜）+ 全内反射

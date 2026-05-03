@@ -36,6 +36,18 @@ BL2位于SRAM中，运行在Secure EL1主要工作有： - 架构初始化：EL1
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/万字长文：安全启动之SecureBoot启动吧（小白也能看懂！）.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/万字长文：安全启动之SecureBoot启动吧（小白也能看懂！）.md|原始文章]]
 
+## Key Quotes
+
+> "安全引导（Secure Boot）功能是指在系统的整个启动过程中"
+
+> "Bootloader、Linux内核、TEE OS的启动都由ATF来加载和引导"
+
+> "于保证系统的完整性，防止系统中重要镜像文件被破坏或替换"
+
+> "加入安全引导功能中可阻止黑客通过替换TEE镜像文件的方式来窃取被TEE保护的重要资料"
+
+> "当用户非法刷入其他厂商的ROM后手机无法正常启动"
+
 ## Open Questions
 
 - (To be determined)

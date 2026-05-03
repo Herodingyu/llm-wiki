@@ -58,6 +58,18 @@ void getc() {
 - Semaphore: 线程间同步，控制执行顺序
 - `sem_post`（increase）和 `sem_wait`（decrease）
 
+## Key Quotes
+
+> "根本原因是不知道semaphore的用途。"
+
+> "如果你要做这件事，请用mutex。"
+
+> "mutex干的活儿和semaphore干的活儿不要混起来。"
+
+> "调度线程，就是：一些线程生产（increase）同时另一些线程消费（decrease），semaphore可以让生产和消费保持合乎逻辑的执行顺序。"
+
+> "条件锁，是为了避免绝大多数情况下都是lock ---> 判断条件 ----> unlock的这种很占资源但又不干什么事情的线程。"
+
 ## Open Questions
 
 - Linux 内核中 mutex 与 spinlock 的选择策略

@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-26芯片高速外设USBETHPCIE等.md) [[../../raw/tech/soc-pm/AI系统/AI系统-26芯片高速外设USBETHPCIE等.md|原始文章]]
 
+## Key Quotes
+
+> "高质量 USB 数字控制器、PHY、验证 IP、IP 子系统和 IP 原型套件"
+
+> "1\. USB Controller"
+
+> "2 米的电缆上保持 5 Gbps"
+
+> "DesignWare USB4 设备路由器 IP"
+
+> "Data FIFO RAM/IF"
+
 ## Open Questions
 
 - (To be determined)

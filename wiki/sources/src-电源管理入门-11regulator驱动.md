@@ -36,6 +36,18 @@ regulator driver指的是regulator设备的驱动，主要包含如下结构： 
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-11Regulator驱动.md) [[../../raw/tech/bsp/电源管理/电源管理入门-11Regulator驱动.md|原始文章]]
 
+## Key Quotes
+
+> "Regulator的作用是什么？"
+
+> "通常的作用是给电子设备供电。大多数regulator可以启用(enable)和禁用(disable)其输出，同时也可以控制其输出电压(voltage)和电流(current)。"
+
+> "电源域由稳压器、开关或其他电源域的输出电源提供其输入电源的电子电路。电源Regulator可能位于一个或多个开关后面，例如："
+
+> "Regulator电压设计时的约束："
+
+> "稳压器级别：这由稳压器硬件操作参数定义，并在稳压器数据表中指定，例如：\`\`\` 电压输出范围为 800mV -> 3500mV 稳压器电流输出限制为 20mA @ 5V，但为 10mA @ 10V"
+
 ## Open Questions
 
 - (To be determined)

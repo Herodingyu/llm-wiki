@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/NVIDIA ADAS-英伟达Orin芯片介绍.md) [[../../raw/tech/soc-pm/AI系统/NVIDIA ADAS-英伟达Orin芯片介绍.md|原始文章]]
 
+## Key Quotes
+
+> "车辆雷达、摄像头、激光雷达和超声波等传感器"
+
+> "TC297 MCU用于满足ISO26262功能安全需求（ASIL-C/D级别）的控制应用场景（也即作为Safety Core）"
+
+> "双Xavier+TC297 MCU"
+
+> "智驾域（NVIDIA）+车控域（TC）"
+
+> "ARM Hercules CPU内核和英伟达下一代GPU架构"
+
 ## Open Questions
 
 - (To be determined)

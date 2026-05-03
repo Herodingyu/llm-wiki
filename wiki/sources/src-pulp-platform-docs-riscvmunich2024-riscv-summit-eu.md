@@ -23,6 +23,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/pulp-platform-docs-riscvmunich2024-RISCV-Summit-EU_202.md) [[../../raw/tech/soc-pm/pulp-platform-docs-riscvmunich2024-RISCV-Summit-EU_202.md|原始文章]]
 
+## Key Quotes
+
+> "来源: pulp-platform.org"
+
+> "收集时间: 2026-05-01"
+
+> "/Font > /XObject > >>"
+
+> "D_\HHNDk#,u|`V96٬:Li(bsL¸ĸ!#'ܞ8W"
+
+> "I-ٔ~~76N1*şLHUgvgBwUo?nHG:wu$ec*&ڙ4ŉgyrDi6~!1r ~4=3aҟڲ|dۆme/Mo$cz\ۣoFFQ/ƿv"
+
 ## Open Questions
 
 - (To be determined)

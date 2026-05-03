@@ -23,6 +23,16 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-开篇即巅峰.md) [[../../raw/tech/bsp/电源管理/电源管理入门-开篇即巅峰.md|原始文章]]
 
+## Key Quotes
+
+> "2\. Linux 电源管理的组成"
+
+> "3\. ARM SoC中PCSA与SCP"
+
+> "CMOS芯片的能量消耗正比于电压的平方和时钟频率"
+
+> "使用PMIC进行供电。另外引入电源轨的概念，"
+
 ## Open Questions
 
 - (To be determined)

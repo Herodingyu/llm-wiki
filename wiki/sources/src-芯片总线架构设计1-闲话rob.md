@@ -23,6 +23,10 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/芯片总线架构设计1 - 闲话ROB.md) [[../../raw/tech/soc-pm/芯片总线架构设计1 - 闲话ROB.md|原始文章]]
 
+## Key Quotes
+
+> "对于AXI协议，其整体保序模型是相同ID的传输必须保序，不同ID之间完全没有保序要求，读写相互独立之间也没有保序要求。同时由于一般而言master在接入总线时一定会扩展master id，因此不同的master的传输ID在总线上必然是不同的，要想在master之间保序就只能靠软件来完成了"
+
 ## Open Questions
 
 - (To be determined)

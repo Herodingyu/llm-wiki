@@ -36,6 +36,12 @@ Get Notified when a new article is published!
 
 - Source: [原始文章](raw/tech/dram/systemverilog-design-ddr4-initialization-and-calibrati.md) [[../../raw/tech/dram/systemverilog-design-ddr4-initialization-and-calibrati.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.systemverilog.io"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

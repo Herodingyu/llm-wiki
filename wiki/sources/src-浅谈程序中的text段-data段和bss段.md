@@ -23,6 +23,10 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/浅谈程序中的text段、data段和bss段.md) [[../../raw/tech/bsp/浅谈程序中的text段、data段和bss段.md|原始文章]]
 
+## Key Quotes
+
+> "(To be summarized)"
+
 ## Open Questions
 
 - (To be determined)

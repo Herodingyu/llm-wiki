@@ -36,6 +36,14 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/译文：DDR4 SDRAM - Understanding Timing Parameters.md) [[../../raw/tech/dram/译文：DDR4 SDRAM - Understanding Timing Parameters.md|原始文章]]
 
+## Key Quotes
+
+> "Clock to Data Strobe relationship"
+
+> "Data Strobe to Data relationship"
+
+> "申请翻译授权中，如有侵权，将会删除"
+
 ## Open Questions
 
 - (To be determined)

@@ -29,6 +29,13 @@ Keysight EDA 在 2024 年设计自动化大会 (DAC) 上的展示概况，包括
 - 工程生命周期管理 (ELM) 涵盖 IP 管理、知识整合、BOM、可追溯性
 - 企业 EDA 三大关键能力：开放互操作、高频高速工具、AI 就绪平台
 
+## 关键引用
+
+- "Keysight had the largest booth on the first floor at DAC 2024, showcasing three major themes: ELM, RF/uW design and simulation, and HPC workflow automation."
+- "Engineering Lifecycle Management (ELM) covers IP management, knowledge integration, BOM, and traceability."
+- "Three key enterprise EDA capabilities: open interoperability, high-frequency/high-speed tools, and AI-ready platforms."
+- "Chiplet PHY Designer supports D2D to D2D PHY system-level modeling and analysis."
+
 ## 技术细节
 
 - 工具套件涵盖：器件建模、RF 系统设计、RFIC/MMIC/3D 模块设计、电源电子、信号完整性/电源完整性、量子计算

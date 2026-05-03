@@ -60,6 +60,10 @@ demo_driver_map = mmap(NULL, 0x10000, PROT_READ|PROT_WRITE, MAP_SHARED, devuio_f
 - 用户空间访问虚拟地址时，page table 引导到实际物理地址
 - 可以点亮/熄灭 LED 等简单硬件操作
 
+## Key Quotes
+
+> "以上就是利用UIO框架在用户空间开发驱动的方法"
+
 ## Open Questions
 
 - UIO 与 sysfs /dev/mem 直接访问的优劣对比

@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/从内核小白到大神——图形驱动基础.md) [[../../raw/tech/bsp/从内核小白到大神——图形驱动基础.md|原始文章]]
 
+## Key Quotes
+
+> "DMA的常见用途包括提高纹理上传或流视频的性能。"
+
+> "DMA分散-收集（scatter-gather）功能"
+
+> "请注意，DMA功能在某些情况下可能是一个缺点。"
+
+> "PCI (Peripheral Component Interconnect，外设部件互连标准)"
+
+> "AGP (Accelerated Graphics Port，图形加速端口)"
+
 ## Open Questions
 
 - (To be determined)

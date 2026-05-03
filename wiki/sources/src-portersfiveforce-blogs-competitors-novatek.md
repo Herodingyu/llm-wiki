@@ -31,6 +31,13 @@ PortersFiveForce发布的联咏科技（Novatek）竞争格局分析报告。联
 - 2024年营收约NT$52.3 billion，运营利润率恢复到中高 teens
 - 在高端手机OLED DDIC领域份额相对较弱，正通过新OLED DDIC/touch方案追赶
 
+## 关键引用
+
+- "Novatek is one of the world's top three display driver IC suppliers, with mid-to-high teens market share in TV/Monitor DDIC."
+- "Product portfolio spans LCD/OLED DDIC (including LTPO), TDDI, TCON, 4K/8K scaler, and mini-LED backlight controllers."
+- "2024 revenue reached approximately NT$52.3 billion with operating margins recovering to mid-to-high teens."
+- "Novatek faces competition from Korean/Japanese vendors in high-end OLED DDIC and pricing pressure from Chinese vendors."
+
 ## 市场洞察
 
 联咏在TV/Monitor大面板DDIC和TCON领域保持强势地位，但面临韩国/日本厂商在高端OLED DDIC领域的竞争以及中国大陆厂商（FocalTech、Goodix、BOE系）在价格上的压力。OLED转型、高刷游戏显示器（240-360Hz）和汽车显示IC是未来增长机会。供应链多元化和先进制程产能获取是关键挑战。

@@ -27,6 +27,10 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/STM32内部Flash使用磨损均衡算法(Erase Leveling).md) [[../../raw/tech/bsp/STM32内部Flash使用磨损均衡算法(Erase Leveling).md|原始文章]]
 
+## Key Quotes
+
+> "写在前面：大家好，我是 吴炎，既是一名项目经理，也.."
+
 ## Open Questions
 
 - (To be determined)

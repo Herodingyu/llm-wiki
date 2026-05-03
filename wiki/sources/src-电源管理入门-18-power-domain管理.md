@@ -36,6 +36,16 @@ Cousumer可能是一个驱动程序或者sysfs，在驱动probe函数中调用de
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-18 Power Domain管理.md) [[../../raw/tech/bsp/电源管理/电源管理入门-18 Power Domain管理.md|原始文章]]
 
+## Key Quotes
+
+> "CPU core（1、2、3…）；GPU；NAND；DDR；USB；Display；Codec等等"
+
+> "直到所有模块停止工作，才能power off"
+
+> "开钟、上电、解复位、解除电源隔离等"
+
+> "generic\_pm\_domain"
+
 ## Open Questions
 
 - (To be determined)

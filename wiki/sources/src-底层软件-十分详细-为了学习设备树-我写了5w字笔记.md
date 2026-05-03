@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/底层软件  十分详细，为了学习设备树，我写了5w字笔记！.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/底层软件  十分详细，为了学习设备树，我写了5w字笔记！.md|原始文章]]
 
+## Key Quotes
+
+> "DTC是将.dts编译为.dtb的工具。"
+
+> "在Linux内核的arch/arm/boot/dts/Makefile中，描述了当某种SoC被选中后"
+
+> "文件.dtb是.dts被DTC编译后的二进制格式的设备树描述"
+
+> "bootloader也是可以识别.dtb的"
+
+> "会为.dtb文件单独留下一个很小的区域以存放之"
+
 ## Open Questions
 
 - (To be determined)

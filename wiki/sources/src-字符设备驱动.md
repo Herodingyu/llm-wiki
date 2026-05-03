@@ -36,6 +36,16 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/字符设备驱动.md) [[../../raw/tech/bsp/字符设备驱动.md|原始文章]]
 
+## Key Quotes
+
+> "register\_chrdev\_region()和alloc\_chrdev\_region()的区别："
+
+> "(2) 初始化函数xxx\_init的定义"
+
+> "(3) 卸载函数xxx\_exit的定义"
+
+> "(4) 定义file\_operations"
+
 ## Open Questions
 
 - (To be determined)

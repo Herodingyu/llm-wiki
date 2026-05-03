@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/uboot入门-4命令行和驱动管理.md) [[../../raw/tech/bsp/芯片底软及固件/uboot入门-4命令行和驱动管理.md|原始文章]]
 
+## Key Quotes
+
+> "Hit any key to stop autoboot"
+
+> "abortboot\_single\_key"
+
+> "autoboot\_command"
+
+> "parse\_file\_outer"
+
+> "parse\_stream\_outer"
+
 ## Open Questions
 
 - (To be determined)

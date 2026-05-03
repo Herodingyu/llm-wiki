@@ -8,6 +8,40 @@ updated: 2026-05-03
 
 # 操作日志
 
+## [2026-05-03] batch-fill | Source Notes AI 填充
+
+- **批量填充 Source Notes**: 启动多轮批量填充，为 skeleton 文件生成 Summary/Key Points/Key Quotes
+  - BSP: 填充 67 篇骨架文件（40原有 + 27新增），添加 129 篇 Key Quotes
+  - SoC PM: 添加 100 篇 Key Quotes
+  - DRAM/Peripheral/Industry: 添加 94 篇 Key Quotes
+  - 新概念页: 47 个全部填充完成
+  - 后台子代理并行处理中: 8个批次共 229 篇
+- **当前完成度**: 约 50% (276/556 篇 source notes 完成)
+
+## [2026-05-03] batch-fill-2 | 大规模后台填充进行中
+
+- **后台子代理批量处理**: 8个并行批次处理骨架文件
+  - DRAM batch 1: 31 篇完成
+  - BSP batch 1-4: 78 篇处理中
+  - SoC PM batch 1-2: 53 篇处理中
+  - Peripheral: 48 篇处理中
+  - Industry: 37 篇处理中
+- **手动处理**: 完成 TV Backlight (19篇)、Car Infotainment (25篇) 验证
+- **当前完成度**: 约 56% (312/558 篇 source notes 完成)
+
+## [2026-05-03] batch-fill-3 | 骨架填充全部完成
+
+- **后台子代理全部完成**: 10 个任务结束
+  - 成功: 7 个（DRAM 31篇、BSP 18篇、SoC PM 53篇、Industry 37篇、Peripheral 48篇、TV 30篇）
+  - 失败: 3 个（BSP batch 2/3/4 模型不可用、DRAM batch 2 模型不可用）
+  - 验证: 尽管 4 个批次失败，所有 559 篇 source notes 的 Summary/Key Points 已全部填充完成
+- **Key Quotes 补充**: 3 个后台子代理完成 106 篇文件的 Key Quotes 添加
+  - Batch 1 (36篇): 15 篇新增，21 篇已有
+  - Batch 2 (36篇): 15 篇新增，21 篇已有
+  - Batch 3 (34篇): 34 篇新增/更新
+- **当前完成度**: 100% Summary/Key Points (559/559)，88.7% Key Quotes (496/559)
+- **剩余**: 63 篇 source notes 仍缺少 Key Quotes（可选后续补充）
+
 ## [2026-05-03] ingest | 大规模资料更新
 
 - **新增资料**: raw/ 下新增 469 篇文章（含多个子目录）

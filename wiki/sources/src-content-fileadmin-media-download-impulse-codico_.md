@@ -23,6 +23,14 @@ tags: [tv-backlight]
 
 - Source: [原始文章](raw/tech/tv-backlight/content-fileadmin-media-download-Impulse-CODICO_.md) [[../../raw/tech/tv-backlight/content-fileadmin-media-download-Impulse-CODICO_.md|原始文章]]
 
+## Key Quotes
+
+> "来源: content.codico.com"
+
+> "收集时间: 2026-05-01"
+
+> "/XObject>/ExtGState>/Properties>>>"
+
 ## Open Questions
 
 - (To be determined)

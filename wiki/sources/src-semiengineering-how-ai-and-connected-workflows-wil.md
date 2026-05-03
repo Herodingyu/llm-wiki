@@ -36,6 +36,12 @@ Disconnected verification tools have long been a pain point in the industry. Ear
 
 - Source: [原始文章](raw/tech/soc-pm/semiengineering-how-ai-and-connected-workflows-will-clos.md) [[../../raw/tech/soc-pm/semiengineering-how-ai-and-connected-workflows-will-clos.md|原始文章]]
 
+## Key Quotes
+
+> "来源: semiengineering.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

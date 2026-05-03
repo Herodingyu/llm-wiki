@@ -36,6 +36,14 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-6 CPUFreq.md) [[../../raw/tech/bsp/电源管理/电源管理入门-6 CPUFreq.md|原始文章]]
 
+## Key Quotes
+
+> "不会根据系统运行时负载的变化动态作出调整"
+
+> "功耗：performance > ondemand > conservative >powersave"
+
+> "本节代码有点多，不是调试这个可以不用关注代码，想深入学习还是需要运行起来代码打点log比较好。"
+
 ## Open Questions
 
 - (To be determined)

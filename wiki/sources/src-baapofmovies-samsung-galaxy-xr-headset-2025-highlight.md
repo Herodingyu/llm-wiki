@@ -20,32 +20,61 @@ tags: [smart-glasses, xr, samsung, android-xr, qualcomm, gemini]
 
 ## 摘要
 
-Samsung's Galaxy XR headset, unveiled in October 2025, is co-developed with Google and Qualcomm, representing the birth of the Android XR ecosystem. It features a Snapdragon XR2+ Gen 2 processor, dual 4K Micro-OLED displays, multimodal AI with Gemini integration, and enterprise-focused applications.
+Samsung于2025年10月正式发布了Galaxy XR头显，这是Samsung首款 dedicated AI-powered XR设备，标志着Android XR生态系统的诞生。该产品由Samsung、Google和Qualcomm三方联合打造：Samsung负责硬件设计和制造，Google提供Android XR操作系统和Gemini AI，Qualcomm则供应Snapdragon XR2+ Gen 2处理器。
+
+Galaxy XR定位为高端XR头显，主要面向企业级应用和部分高端消费者。产品采用双4K Micro-OLED显示屏（总像素达2700万），提供109°水平视场角和100°垂直视场角，配备丰富的传感器阵列（包括2颗透视摄像头、6颗追踪摄像头、4颗眼动追踪摄像头以及深度传感器和IMU）。多模态AI是核心卖点之一，支持语音、注视和手势三种交互方式的融合识别。产品定价$1,800（约Rs 1,60,000），采用可拆卸电池包设计以平衡续航和佩戴舒适度。
 
 ## 关键要点
 
-- Galaxy XR marks Samsung's first dedicated AI-powered XR device
-- Co-developed with Google (Android XR, Gemini) and Qualcomm (Snapdragon XR2+ Gen 2)
-- Multimodal AI combining voice, gaze, and gesture recognition
-- Circle to Search feature for instant AI-driven object information
-- Enterprise applications: virtual training, industrial simulations, creative collaboration
-- Detachable battery pack for extended comfort
-- Price: $1,800 (~Rs 1,60,000)
+### 核心硬件规格
 
-## 产品/技术细节
+| 参数 | 规格 |
+|------|------|
+| **处理器** | Qualcomm Snapdragon XR2+ Gen 2 |
+| **内存** | 16 GB RAM |
+| **存储** | 256 GB |
+| **显示屏** | 双Micro-OLED，3,552×3,840（单眼），27M总像素 |
+| **刷新率** | 60/72/90 Hz |
+| **视场角** | 109° H × 100° V |
+| **摄像头** | 6.5MP 3D相机，f/2.0，18mm镜头 |
 
-- **Processor**: Qualcomm Snapdragon XR2+ Gen 2
-- **RAM**: 16 GB
-- **Storage**: 256 GB
-- **Display**: Dual Micro-OLED, 3,552×3,840 resolution (27M pixels), 60/72/90Hz refresh
-- **FoV**: 109° Horizontal, 100° Vertical
-- **Camera**: 6.5MP 3D Camera, f/2.0, 18mm Lens
-- **Sensors**: 2 Passthrough, 6 Tracking, 4 Eye-Tracking, Depth + IMU
-- **Audio**: Dual Speakers + 6 Microphones with Beamforming
-- **Connectivity**: Wi-Fi 7, Bluetooth 5.4
-- **Battery**: 2 hours normal use, 2.5 hours video (detachable pack)
-- **Weight**: 545g (headset) + 302g (battery)
-- **Vision correction**: Supported via optical inserts
+### 传感器配置
+
+- **透视摄像头**: 2颗，用于混合现实场景融合
+- **追踪摄像头**: 6颗，实现Inside-Out 6DoF追踪
+- **眼动追踪**: 4颗摄像头，支持注视点渲染和眼控交互
+- **深度传感器**: 用于环境理解和手势识别
+- **IMU**: 惯性测量单元，辅助快速运动追踪
+
+### 多模态AI交互
+
+- **语音交互**: 集成Gemini助手，支持自然语言对话
+- **注视交互**: 眼动追踪实现目光选择和EyeConnect共享
+- **手势交互**: 手势识别进行直观操控
+- **Circle to Search**: 圈选物体即可获取AI驱动的即时信息
+
+### 企业与消费应用
+
+- **虚拟培训**: 企业级沉浸式培训场景
+- **工业仿真**: 3D模型可视化与远程协作
+- **创意协作**: 设计评审、虚拟原型展示
+- **娱乐体验**: 游戏、影视、社交应用
+
+### 设计与续航
+
+- **重量**: 545g（头显本体）+ 302g（电池包）
+- **续航**: 正常使用2小时，视频播放2.5小时
+- **电池设计**: 可拆卸电池包，便于更换和延长使用
+- **视力矫正**: 支持光学插片，兼容近视用户
+- **音频**: 双扬声器 + 6麦克风阵列（支持波束成形）
+- **连接**: Wi-Fi 7，Bluetooth 5.4
+
+## Key Quotes
+
+- Samsung Galaxy XR marks Samsung first dedicated AI-powered XR device, co-developed with Google and Qualcomm, signaling the birth of the Android XR ecosystem.
+- The headset features dual 4K Micro-OLED displays with 27 million total pixels, 109 horizontal FoV, and a rich sensor array including 2 passthrough cameras, 6 tracking cameras, and 4 eye-tracking cameras.
+- Multimodal AI combining voice, gaze, and gesture recognition is a core selling point, enabling natural interaction through integrated Gemini assistant.
+
 
 ## Related Pages
 

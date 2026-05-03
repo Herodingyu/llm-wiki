@@ -64,6 +64,14 @@ void main_loop(void) {
 }
 ```
 
+## Key Quotes
+
+> "打开图片，结合文档、图片、代码进行理解！"
+
+> "setup\_reloc——重定向地址查看（仿真有关）"
+
+> "记得对照文章开始的执行流程图哦！"
+
 ## Open Questions
 
 - BL1 (SPL) 阶段的详细启动流程

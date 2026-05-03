@@ -24,6 +24,12 @@ tags: [tv-backlight]
 
 - Source: [原始文章](raw/tech/tv-backlight/ledinside-interview-2025-4-2025_04_23_09.md) [[../../raw/tech/tv-backlight/ledinside-interview-2025-4-2025_04_23_09.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.ledinside.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

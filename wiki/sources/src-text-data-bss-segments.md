@@ -67,6 +67,14 @@ text → data → bss → heap → stack
 - 初始化时 bss 部分清零
 - data 段包含初始化后的全局变量及其值
 
+## Key Quotes
+
+> "| 段 | 内容 | 属性 | 初始化 |"
+
+> "|----|------|------|--------|"
+
+> "| text | 程序代码、机器指令 | 只读 | 编译时确定 |"
+
 ## Open Questions
 
 - ELF 文件中 .rodata 段与 .text 段的关系

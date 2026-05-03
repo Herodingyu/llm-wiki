@@ -36,6 +36,12 @@ Pre-Built Desktops Barebones Raspberry Pi and Single Board Computers Home Theate
 
 - Source: [原始文章](raw/tech/dram/anandtech-show-21533-cxl-gathers-momentum-at-fms-2.md) [[../../raw/tech/dram/anandtech-show-21533-cxl-gathers-momentum-at-fms-2.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.anandtech.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

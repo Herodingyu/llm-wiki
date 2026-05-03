@@ -50,6 +50,19 @@ tags: [bsp, uefi, bios, bootloader]
 - UEFI App 由 UEFI 环境（BIOS）加载
 - 磁盘上的 efi 文件只是 UEFI 引导的最后阶段
 
+## Key Quotes
+
+> "---
+title: "UEFI代码是由谁加载的"
+
+> "开机 用简单的语言来描述就是，电脑按下开机键之后做了什么"
+
+> "也就是说，CPU每次启动都会从固定的地址取指令来初始化CPU，然后初始化整个硬件设备"
+
+> "App 由UEFI环境来加载，UEFI环境就是所谓的BIOS，通常固化在主板上"
+
+> "简单说磁盘上你看到的efi文件仅仅是整个uefi引导的最后阶段。在这之前固化在主板上的uefi固件已经跑很多东西了"
+
 ## Open Questions
 
 - Boot Guard 对 UEFI 加载流程的影响

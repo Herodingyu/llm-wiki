@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/SoC 101（六）：Memory.md) [[../../raw/tech/soc-pm/SoC 101（六）：Memory.md|原始文章]]
 
+## Key Quotes
+
+> "对于Cache而言，组相联用的最多"
+
+> "对于L1 Cache而言，其关键在于快，而对于L2和L3Cache而言，其关键应该在于大而全"
+
+> "还有一点值得说的是，Cache是一个相对的概念，软件也可以实现Cache，你浏览器的缓存记录也是Cache。对于芯片和计算机而言，Cache通常是个硬件概念，大部分时候在讲SRAM，有时候也可以包括DRAM，但具体指的是什么要看具体的语境"
+
+> "Hill提出。首先是Compulsory缺失，理论上第一次启动的时候，Cache是空的，这个时候肯定会MISS。但实际上可以通过Prefetch缓解这个问题，这里不详细讲"
+
+> "然后是Capacity Misses，就比如你需要来回读一段2KB大小的数据（完全随机读取顺序），你的Cache只有1KB，那肯定会MISS"
+
 ## Open Questions
 
 - (To be determined)

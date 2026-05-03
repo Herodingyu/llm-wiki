@@ -13,24 +13,73 @@ tags: [dram]
 
 ## Summary
 
-知乎日报收录 [ 收录于 · UEFI和BIOS探秘
+本文深入解析了x86系统中内存如何映射到物理地址空间，以及内存在物理上是否连续分布的问题。一个典型的物理地址空间中，只有部分区域是真正的DRAM内存，其余被MMIO（Memory-Mapped I/O）占用。内存被划分为Low DRAM（4GB以下）和High DRAM（4GB以上），而Low DRAM的最高地址称为TOLUD（Top of Low Usable DRAM）。BIOS并不会将所有内存都报告给操作系统，而是预留一部分给核显、ME（Management Engine）和SMM（System Management Mode）等功能。现代内存系统引入多通道后，为了充分发挥多通道并行优势、避免数据局部性导致的通道利用率不均，BIOS默认开启了Interleaving（交织），将连续的数据分散到多个通道上，因此内存在物理地址空间上不再连续分布。BIOS作为内存分配的主导者，掌握着完整的物理地址到内存单元的映射关系，可以从任意物理地址反推出Channel、DIMM、Rank、Bank、Row、Column等具体位置。
 
 ## Key Points
 
-### 1. 物理地址空间
-一个典型的物理地址空间是这样的： ![](https://pic1.zhimg.com/v2-d5b849892dcf0826362c5459a397cdd0_1440w.jpg) 其中只有灰色部分是真正的内存，其余都是MMIO。而内存被分为 [High DRAM](https://zhida.zhihu.com/search?content_id=102859802&content_type=A
+### 1. 物理地址空间布局
 
-### 2. Low MMIO和High MMIO
-Low MMIO结构如下图： ![](https://pic1.zhimg.com/v2-392dfb30d8bbd5b4d3c01d93c9843a88_1440w.jpg) 其中有几块要特别说明一下：
+| 区域 | 地址范围 | 用途 |
+|------|----------|------|
+| Low MMIO | 0 - 640KB / 1MB-4GB | 设备寄存器、显存、BIOS等 |
+| Low DRAM | 640KB-1MB / 1MB-TOLUD | 可用内存（部分被预留） |
+| High DRAM | 4GB以上 | 扩展内存 |
+| High MMIO | 预留区域 | PCI设备、固件等 |
 
-### 3. Low DRAM和High DRAM
-4G以下内存最高地址叫做BMBOUND，也有叫做Top of Low Usable DRAM (TOLUD) 。BIOS也并不是把这些都报告给操作系统，而是要在里面划分出一部分给核显、ME和SMM等功能：
+- **关键概念**：TOLUD（Top of Low Usable DRAM）
+- **预留区域**：核显、ME、SMM等使用部分Low DRAM
 
-### 4. 内存的Interleave
-从前面可以看出内存在地址空间上被拆分成两块：Low DRAM和High DRAM。那么在每块地址空间上分配连续吗？现代内存系统在引入多通道后，为了规避数据的局部性（这也是Cache为什么起作用的原因）对多通道性能的影响，BIOS基本缺省全部开启了Interleaving，过去美好的DIMM 0和DIMM 1挨个连续分配的日子一去不复返了。
+### 2. Low DRAM和High DRAM
+- **Low DRAM**：4GB以下内存区域
+  - TOLUD定义Low DRAM最高地址
+  - BIOS预留部分给系统功能
+- **High DRAM**：4GB以上内存区域
+  - 通过内存重映射（Memory Remapping）访问
+  - 64位系统可支持TB级内存
 
-### 5. 物理地址到内存单元的反推
-BIOS实际上一手导演的内存的分配，它当然可以从任何物理地址反推回内存的单元地址。我们可以用下面一组数据来唯一确定某个内存单元： ``` Channel #;DIMM #; Rank #;Bank #;Row #;Column #
+### 3. MMIO（Memory-Mapped I/O）
+- **Low MMIO**：传统设备、BIOS、显存等
+- **High MMIO**：PCIe设备、高端显卡等
+- **特点**：CPU通过内存访问指令与设备通信
+
+### 4. Interleaving（内存交织）
+- **目的**：充分利用多通道带宽，避免局部性导致的不均衡
+- **原理**：连续地址分散到不同Channel/DIMM
+- **结果**：物理地址不再连续对应单一内存条
+- **配置**：BIOS默认开启，可手动关闭（不推荐）
+
+### 5. 物理地址到内存单元映射
+BIOS可从物理地址反推：
+```
+Channel # ; DIMM # ; Rank # ; Bank # ; Row # ; Column #
+```
+
+| 层级 | 映射关系 | 决定因素 |
+|------|----------|----------|
+| Channel | 地址低位bits | Interleave配置 |
+| DIMM | Channel内分配 | 插槽配置 |
+| Rank | DIMM内选择 | CS信号 |
+| Bank | Rank内选择 | Bank地址bits |
+| Row | Bank内选择 | Row地址bits |
+| Column | Row内选择 | Column地址bits |
+
+### 6. 内存不连续的原因
+1. **MMIO占用**：设备和固件占用地址空间
+2. **Interleaving**：多通道数据分散
+3. **预留区域**：系统功能预留
+4. **重映射**：High DRAM通过重映射访问
+
+## Key Quotes
+
+> "其中只有灰色部分是真正的内存，其余都是MMIO。"
+
+> "BIOS也并不是把这些都报告给操作系统，而是要在里面划分出一部分给核显、ME和SMM等功能。"
+
+> "现代内存系统在引入多通道后，为了规避数据的局部性对多通道性能的影响，BIOS基本缺省全部开启了Interleaving。"
+
+> "过去美好的DIMM 0和DIMM 1挨个连续分配的日子一去不复返了。"
+
+> "BIOS实际上一手导演的内存的分配，它当然可以从任何物理地址反推回内存的单元地址。"
 
 ## Evidence
 

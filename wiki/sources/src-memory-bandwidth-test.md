@@ -51,6 +51,19 @@ dmesg  # 查看加载日志
 - 关闭 cache 后系统性能显著下降
 - 带宽测试需考虑数组大小和读取时间
 
+## Key Quotes
+
+> "启用cache
+
+实际上将关闭cache载入kernel module的模块卸载就可以了，用下面的指令
+
+```
+$ rmmod disableCache.ko
+$ dmesg
+```
+
+在系统输出的log的中可以看到如下输出，说明已经将cache启用"
+
 ## Open Questions
 
 - 如何测试 L3 cache 和内存的混合带宽

@@ -74,6 +74,10 @@ cat /sys/power/state
 - Power domain 划分：aon domain 一般不休眠时不断电
 - Hibernate 时包含 aon domain 在内的整个系统断电
 
+## Key Quotes
+
+> "以上都是系统休眠的一些典型案例，由于休眠需要保存当前执行上下文，且在唤醒时恢复这些上下文，因此与关机相比，休眠唤醒需要处理更多的流程。如休眠时需要先关闭哪些设备，后关闭哪些设备，休眠过程中如何处理中断，以及如何唤醒已休眠的系统等"
+
 ## Open Questions
 
 - SOC 上 power domain 的划分策略

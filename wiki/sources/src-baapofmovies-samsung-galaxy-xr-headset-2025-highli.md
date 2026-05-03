@@ -36,6 +36,12 @@ Pros: Samsung Galaxy XR Headset comes with an advanced AI integration with Gemin
 
 - Source: [原始文章](raw/industry/smart-glasses/baapofmovies-samsung-galaxy-xr-headset-2025-highlight.md) [[../../raw/industry/smart-glasses/baapofmovies-samsung-galaxy-xr-headset-2025-highlight.md|原始文章]]
 
+## Key Quotes
+
+> "来源: baapofmovies.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

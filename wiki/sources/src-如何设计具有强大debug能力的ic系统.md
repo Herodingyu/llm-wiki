@@ -23,6 +23,14 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/如何设计具有强大debug能力的IC系统.md) [[../../raw/tech/soc-pm/如何设计具有强大debug能力的IC系统.md|原始文章]]
 
+## Key Quotes
+
+> "讲到具体怎么设计之前，我还是先讲一个自己的故事"
+
+> "但是我也意识到有些人debug非常快。为什么呢？因为这帮狡猾的人把自己模块的debug信号做了一个CPU的read接口，可以用CPU将debug接口的值给读出来，这样，一到debug的时候，他们不需要用LA，只需要用CPU读几个寄存器，就可以成功摆脱嫌疑"
+
+> "这就是我要说的设计，对于SOC系统，将系统的debug接口做成CPU可读的寄存器，这样就可以极大的方便debug。因为用CPU读寄存器相比于抓LA是非常容易并且快速的"
+
 ## Open Questions
 
 - (To be determined)

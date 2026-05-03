@@ -30,6 +30,12 @@ Asianda发布的全球Top 10 Mini LED驱动芯片制造商综述，涵盖Macrobl
 - **TI**: TLC6983（48恒流源+16扫描FET，共阴极，单颗驱动16×16 RGB像素）
 - **SUNMOON**: SM6610（48通道PM驱动，单颗控制384分区）、SM6212（12通道AM驱动，单通道40mA）
 - **HYASIC**: HY8602B0QA（车规级AEC-Q100 AM驱动，8通道，23位混合调光，SPB专利协议）
+## Key Quotes
+
+- Asianda review covers top Mini LED driver chip manufacturers including Macroblock, WH, Samsung, Xm-Plus, NOVATEK, TLi, TI, SILERGY, HYASIC, and SUNMOON, highlighting their key products and technologies.
+- Common-cathode architecture significantly reduces power consumption compared to common-anode, while AM driving suits high-zone backlight applications and PM driving fits traditional zoning schemes.
+- HYASIC HY8602B0QA is an automotive-grade AEC-Q100 AM driver with 8 channels, 23-bit hybrid dimming, and proprietary SPB protocol supporting 16MHz frequency.
+
 
 ## 技术细节
 

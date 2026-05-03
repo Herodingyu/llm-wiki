@@ -36,6 +36,12 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/测试cache大小-C语言实现.md) [[../../raw/tech/bsp/测试cache大小-C语言实现.md|原始文章]]
 
+## Key Quotes
+
+> "讨论
+
+实际上可以看到数组大小到达4194304 Byte时随即读取的总时间也比较大，这可能是cache替换时出现抖动引起的"
+
 ## Open Questions
 
 - (To be determined)

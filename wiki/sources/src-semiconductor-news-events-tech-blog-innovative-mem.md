@@ -27,6 +27,12 @@ press release Samsung begins mass production of data center SSD Jul 18, 2021 sam
 
 - Source: [原始文章](raw/tech/dram/semiconductor-news-events-tech-blog-innovative-memory-.md) [[../../raw/tech/dram/semiconductor-news-events-tech-blog-innovative-memory-.md|原始文章]]
 
+## Key Quotes
+
+> "来源: semiconductor.samsung.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,12 @@ Gaming continues to be a cornerstone of Snap’s engagement strategy. More than 
 
 - Source: [原始文章](raw/industry/smart-glasses/influencermarketinghub-snapchat-lens-studio-ai-spectacles-comme.md) [[../../raw/industry/smart-glasses/influencermarketinghub-snapchat-lens-studio-ai-spectacles-comme.md|原始文章]]
 
+## Key Quotes
+
+> "来源: influencermarketinghub.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

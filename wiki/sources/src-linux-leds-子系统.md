@@ -30,6 +30,11 @@ led-class.c(led子系统框架的入口) 和 led-core.c led\_classdev 代表 led
 
 - Source: [原始文章](raw/tech/peripheral/Linux leds 子系统.md) [[../../raw/tech/peripheral/Linux leds 子系统.md|原始文章]]
 
+## Key Quotes
+
+> "有的led可能是接在gpio管脚上,不同的led有不同的gpio来控制
+2"
+
 ## Open Questions
 
 - (To be determined)

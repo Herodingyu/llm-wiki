@@ -19,6 +19,11 @@ tags: [soc-pm]
 
 - (To be summarized)
 
+## Key Quotes
+
+- "Apple M1 SoC's potential innovation: Mem Fabric architecture for unified memory access."
+- "Limited official technical disclosure requires speculative analysis of M1's memory architecture."
+
 ## Evidence
 
 - Source: [原始文章](raw/tech/soc-pm/连载解读Apple M1 SoC的几点技术进步之一：Mem over Fabric.md) [[../../raw/tech/soc-pm/连载解读Apple M1 SoC的几点技术进步之一：Mem over Fabric.md|原始文章]]

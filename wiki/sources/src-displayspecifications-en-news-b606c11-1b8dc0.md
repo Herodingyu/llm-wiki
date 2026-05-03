@@ -29,6 +29,12 @@ TCL华星（TCL CSOT）在SID Display Week 2024展示多款创新显示产品，
 - 4K 1000Hz显示器：采用TCL CSOT自研P2P国标协议（CSPI）、6 Gbps传输
 - 16英寸Ultra-S笔记本显示：Mini LED背光、2,000:1静态对比度、240Hz
 
+## 关键引用
+
+- 57英寸8K MLED显示器拥有超过11,000个局部调光分区、1,600 nits峰值亮度和VESA DisplayHDR 1400认证，提供接近OLED的对比度表现。
+- 85英寸UD w-HVA Pro采用超广角HVA技术，实现178°视角、144Hz刷新率和1.4%低反射率。
+- 4K 1000Hz显示器采用TCL CSOT自研P2P国标协议（CSPI），传输速率达6 Gbps。
+
 ## 技术细节
 
 - **MLED背光**: 57" 8K显示器采用MLED背光，超过11,000 local dimming zones

@@ -7,13 +7,13 @@ raw_paths:
   - raw/tech/bsp/确的使用dd进行磁盘读写速度测试.md
 domain: tech/bsp
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-03
 tags: [bsp, dd, disk, benchmark, performance]
 ---
 
 ## Summary
 
-本文纠正了使用 dd 命令测试磁盘速度的常见误区。dd 默认显示的速度是写入内存缓冲区的速度，不是磁盘实际写入速度。文章介绍了四种测试方式，推荐使用 `conv=fdatasync` 参数进行写速度测试，`iflag=direct` 进行读速度测试。测试文件大小应远大于内存容量，以排除缓存影响。
+本文纠正了使用 dd 命令测试磁盘速度的常见误区。dd 默认显示的速度是写入内存缓冲区的速度，不是磁盘实际写入速度。文章介绍了四种测试方式，推荐使用 `conv=fdatasync` 参数进行写速度测试，`iflag=direct` 进行读速度测试。测试文件大小应远大于内存容量，以排除缓存影响。正确理解 dd 的工作机制对于获取真实的磁盘性能数据至关重要。
 
 ## Key Points
 
@@ -49,6 +49,7 @@ dd if=/test.iso of=/dev/zero bs=1024M count=1 iflag=direct
 - 测试文件大小应 **远大于内存容量**
 - 排除 page cache 影响
 - `conv=fdatasync` 在最后执行 sync，数据写入磁盘后才显示速度
+- `iflag=direct` 绕过 page cache，直接读取磁盘
 
 ## Evidence
 
@@ -60,6 +61,14 @@ dd if=/test.iso of=/dev/zero bs=1024M count=1 iflag=direct
 
 - fio 工具与 dd 在磁盘测试中的优劣对比
 - SSD 与 HDD 在 dd 测试中的差异
+
+## Key Quotes
+
+> "也就是说，这条命令每次读取1M后就要先把这1M写入磁盘，然后再读取下面这1M，一共重复128次"
+
+> "但是，很多人都存在一个误区，以为dd命令显示的速度就是磁盘…"
+
+> "建议使用测试写速度的方式为：dd if=/dev/zero of=/xiaohan/test.iso bs=1024M count=1 conv=fdatasync"
 
 ## Related Pages
 

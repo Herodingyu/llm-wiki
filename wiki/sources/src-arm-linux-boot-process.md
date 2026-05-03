@@ -71,6 +71,10 @@ static inline unsigned long __virt_to_phys(unsigned long x) {
 }
 ```
 
+## Key Quotes
+
+> "PAGE\_OFFSET，即 virtual memory split symbol，在其上方的地址处创建一个虚拟内存空间，供内核驻留"
+
 ## Open Questions
 
 - LPAE（大物理地址扩展）对 P2V 补丁的影响

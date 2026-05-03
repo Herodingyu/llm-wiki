@@ -36,6 +36,14 @@ REF 不是一个持久性（persistent）命令，需要间隔一个平均周期
 
 - Source: [原始文章](raw/tech/dram/DDR 学习时间 (Part B - 1)：DRAM 刷新.md) [[../../raw/tech/dram/DDR 学习时间 (Part B - 1)：DRAM 刷新.md|原始文章]]
 
+## Key Quotes
+
+> "H、L 标识的信号在该 DRAM 命令中必须为高或者低电平；"
+
+> "X，V 标识的信号在该命令中都不起任何作用，可以为任何值。区别在于 V 表示信号可以为高电平或者低电平。X 更近一步，信号还可以为悬空值（float）。"
+
+> "用 OP Code 等具体名称标识的信号是命令的一部分，它们的值用于表示命令的某个字段的值；"
+
 ## Open Questions
 
 - (To be determined)

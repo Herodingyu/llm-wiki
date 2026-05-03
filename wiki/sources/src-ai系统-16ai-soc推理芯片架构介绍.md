@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-16AI SoC推理芯片架构介绍.md) [[../../raw/tech/soc-pm/AI系统/AI系统-16AI SoC推理芯片架构介绍.md|原始文章]]
 
+## Key Quotes
+
+> "基于网络的拓扑结构，来提高片上通信的效率"
+
+> "NoC逐渐取代总线和交叉开关(crossbar)，而成为片上互连的行业标准"
+
+> "ARM自家的CI-700和Arteris的NoC"
+
+> "核间通信MailBox，准确来说是告知"
+
+> "感知芯片的工艺变化和操作环境，包含以下几种传感器"
+
 ## Open Questions
 
 - (To be determined)

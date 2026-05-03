@@ -27,6 +27,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/智能终端安全：硬件安全技术—加密芯片.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/智能终端安全：硬件安全技术—加密芯片.md|原始文章]]
 
+## Key Quotes
+
+> "加密芯片都作为其中的一个重要的基础安全功能单元被广泛使用。"
+
+> "由于密钥和加密数据被存储在加密芯片中，难以从外部窃取和解密，这样也就实现了保护数据安全的目标。"
+
+> "要求密码算法必须在专用硬件模块上实现"
+
+> "加密芯片一般都支持ECB（Electronic Codebook，电码本工作模式）和CBC（Cipher-block Chaining，密码分组链接工作模式）模式。"
+
+> "手机终端可以使用加密芯片对终端的应用数据进行加密存储和加密传输"
+
 ## Open Questions
 
 - (To be determined)

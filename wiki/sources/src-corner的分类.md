@@ -36,6 +36,14 @@ Lot 与 Lot 之间, Wafer Wafer之间, Die 和 Die之间的工艺的偏差都是
 
 - Source: [原始文章](raw/tech/soc-pm/corner的分类.md) [[../../raw/tech/soc-pm/corner的分类.md|原始文章]]
 
+## Key Quotes
+
+> "PVT Corner用于描述晶体管的全局工艺偏差。 RC Corner 用于描述互联线工艺偏差。"
+
+> "### process corner
+
+Lot 与 Lot 之间, Wafer Wafer之间, Die 和 Die之间的工艺的偏差都是全局工艺偏差"
+
 ## Open Questions
 
 - (To be determined)

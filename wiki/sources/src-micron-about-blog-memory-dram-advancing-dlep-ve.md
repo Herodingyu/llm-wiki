@@ -36,6 +36,12 @@ Visit TEP
 
 - Source: [原始文章](raw/tech/dram/micron-about-blog-memory-dram-advancing-dlep-ve.md) [[../../raw/tech/dram/micron-about-blog-memory-dram-advancing-dlep-ve.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.micron.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

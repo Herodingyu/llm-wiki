@@ -36,6 +36,18 @@ devm\_reset\_control\_get ``` struct reset_control *devm_reset_control_get(struc
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-4子系统reset.md) [[../../raw/tech/bsp/电源管理/电源管理入门-4子系统reset.md|原始文章]]
 
+## Key Quotes
+
+> "考虑到安全的因素对CRU寄存器的操作可以放在："
+
+> "本小节先介绍下Linux里面的通用reset框架，下篇介绍arm-scmi到SCP进行CRU硬件操作的实现。"
+
+> "例如有3个软件I2C/EMMC/IPC都有复位某个硬件模块的需求，那么要写三个复位操作代码。"
+
+> "这些代码可以进行抽象出来一个独立的软件框架-reset framework，"
+
+> "这样软件使用者（consumer:I2C/EMMC/IPC）直接使用硬件模块的名字，就可以对硬件进行复位。"
+
 ## Open Questions
 
 - (To be determined)

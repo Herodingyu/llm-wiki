@@ -13,24 +13,56 @@ tags: [bsp]
 
 ## Summary
 
-3 人赞同了该文章 大家好！我是不知名的安全工程师Hkcoco！ 欢迎大家关注我的微信公众号：TrustZone | CSDN：Hkcoco
+本文详细介绍了SCMI（System Control and Management Interface）标准化接口及其在TEE环境中的实现。SCMI覆盖电源域管理、性能管理、时钟管理、传感器管理、复位管理和电压域管理，通过定义统一的命令、消息和数据结构，为操作系统、固件和硬件提供通用通信接口。文章重点阐述了SCMI server在OP-TEE中的架构设计，包括基于共享内存的传输层、多通道并发支持（最多8条待处理消息）、以及与Linux/U-Boot的集成方案，展示了如何通过SCP固件（运行在Cortex-M微控制器）减轻AP处理器负载。
 
 ## Key Points
 
-### 1. 什么是SCMI
-SCMI（System Control and Management Interface）是一种标准化的系统控制和管理接口，旨在提高跨平台设备管理的效率和可移植性。SCMI通过定义一组命令、消息和数据结构，为操作系统、虚拟机、固件和硬件提供一个通用的通信接口。
+### 1. SCMI 核心功能
+| 管理域 | 说明 |
+|--------|------|
+| **电源域管理** | 控制芯片/模块的电源开关，实现低功耗状态 |
+| **电压域管理** | 配置供电电压，支持动态调压（DVFS） |
+| **性能管理** | 调整系统参数，优化运行效率 |
+| **时钟管理** | 控制设备时钟频率和同步 |
+| **传感器管理** | 温度、湿度、压力等传感器数据采集 |
+| **复位管理** | 系统故障时的复位操作 |
 
-### 2. SCMI server in TEE
-SCMI server in TEE的作用是提供系统管理接口（System Management Interface，简称SMI），用于管理硬件组件和系统操作。它允许安全操作系统与硬件进行交互，执行各种管理任务，例如电源管理、性能优化、时钟控制、传感器数据采集等。
+### 2. SCMI 架构组件
+- **AP（应用处理器）**：通过安全或非安全通道发送SCMI命令
+- **SCP（系统控制处理器）**：微控制器（Cortex-M），协调请求并驱动硬件状态
+- **通信通道**：硬件mailbox实现AP与SCP间通信
 
-### 3. SCMI服务在哪里运行？
-![](https://picx.zhimg.com/v2-fed7eb8abb1e5625092dc40629f9d487_1440w.jpg)
+### 3. OP-TEE 中的 SCMI Server
+- **传输层**：OP-TEE共享内存 + OP-TEE调用命令
+- **并发支持**：每个通道最多8条待处理消息，按顺序处理
+- **多通道**：每个传输通道对应一个OP-TEE会话，允许多请求并发
+- **集成**：支持Linux OP-TEE传输层、U-Boot OP-TEE传输层
 
-### 4. SCMI server in OP-TEE
-- ● 传输层 - ○ OP-TEE共享内存 - ○ OP-TEE调用命令 - ● 支持每个通道多条消息 - ○ 目前最多有8封待处理邮件 - ○ 消息按顺序处理 - ● 支持多个通道 - ○ 每个传输通道一个OP-TEE会话
+### 4. SCP 固件
+- **实现**：针对Cortex-M处理器的开源固件（SCP-firmware）
+- **功能**：基于硬件mailbox提供SCMI服务
+- **优势**：统一软件栈，支持不同硬件配置，最大化软件复用
 
-### 5. SCMI的学习资料
-SCMI的学习资料包括协议版本、接口初始化、命令和消息、响应或通知、传输协议和SCMI应用案例，下面详细展开说说。 - SCMI协议版本和功能集：SCMI协议版本和功能集是SCMI学习资料的重要组成部分，每个版本都有不同的命令、消息和数据结构，并支持不同的设备功能。因此，要了解SCMI协议版本和功能集，并根据设备的需求选择合适的版本和功能集。
+## Key Quotes
+
+> "SCMI通过定义一组命令、消息和数据结构，为操作系统、虚拟机、固件和硬件提供一个通用的通信接口。"
+
+> "应用处理器可以通过安全或者非安全通道发送SCMI命令给微控制器，微控制器则协调来自所有这些请求，并将硬件驱动到适当的电源或性能状态。"
+
+> "对所有配置使用一个SW，最大限度地重用软件。"
+
+## Evidence
+
+- Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/TEE中的SCMI服务与SCP固件.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/TEE中的SCMI服务与SCP固件.md|原始文章]]
+
+## Open Questions
+
+- SCMI协议不同版本的功能差异和迁移策略
+- 多通道并发场景下的消息优先级和死锁处理
+
+## Related Links
+
+- [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/TEE中的SCMI服务与SCP固件.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/TEE中的SCMI服务与SCP固件.md|原始文章]]
 
 ## Evidence
 

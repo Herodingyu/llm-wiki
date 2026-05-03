@@ -19,6 +19,12 @@ tags: [dram]
 
 - (To be summarized)
 
+## 关键引用
+
+- 本文详细解释了DDR4延迟的各个组成部分及其含义。
+- DDR4内存的延迟由多个时序参数组成，包括CL、tRCD、tRP、tRAS等，每个参数对应内存操作的不同阶段。
+- 理解DDR4延迟对于优化内存性能和系统响应速度至关重要。
+
 ## Evidence
 
 - Source: [原始文章](raw/tech/dram/ddr4的延迟？ - Neroli 的回答.md) [[../../raw/tech/dram/ddr4的延迟？ - Neroli 的回答.md|原始文章]]

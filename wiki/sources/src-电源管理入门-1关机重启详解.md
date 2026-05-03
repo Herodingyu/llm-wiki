@@ -23,6 +23,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-1关机重启详解.md) [[../../raw/tech/bsp/电源管理/电源管理入门-1关机重启详解.md|原始文章]]
 
+## Key Quotes
+
+> "psci\_sys\_poweroff"
+
+> "rt\_svc\_desc\_t"
+
+> "psci\_system\_off"
+
+> "2\. Busybox中的关机重启命令"
+
+> "check\_delayed\_sigs"
+
 ## Open Questions
 
 - (To be determined)

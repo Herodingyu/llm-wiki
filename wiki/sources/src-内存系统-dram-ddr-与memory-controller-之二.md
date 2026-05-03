@@ -13,28 +13,87 @@ tags: [dram]
 
 ## Summary
 
-[收录于 · 现代计算机](https://www.zhihu.com/column/modern-computing) 134 人赞同了该文章 昨天写了“之一”，评论区明白人写的评论很精彩。
+本文是"内存系统：DRAM, DDR与Memory Controller"系列的第二篇（134赞同），深入探讨了DRAM组织结构、访问延迟机制、页面管理策略和地址映射等核心主题。文章首先澄清了DRAM的层级命名：arrays实际应称为array，而array应称为subarray，subarray之下还有MAT（Memory Array Tile）组成。然后详细分析了三种DRAM访问延迟场景：row buffer hit（约20ns）、empty row buffer（约40ns）和row buffer conflict（需要预充电+激活+读取）。文章对比了Open Page Policy和Close Page Policy两种页面管理策略的优劣：Open Page保留row buffer内容以利用局部性，Close Page立即预充电以减少冲突。在地址映射策略方面，文章解释了CPU发出的32/48位地址如何通过多种映射方案（如row::rank::bank::channel::column::blkoffset）转换为DRAM内部地址，并强调了不同系统采用不同映射策略，没有统一标准。
 
 ## Key Points
 
-### 1. DRAM的组织结构
-“之一”中讲的DRAM arrays实际上的名字应该叫array, 而DRAM array应该叫subarray，而且subarray之下还由MAT组成。 以上内容是“之一”评论区指出的，这个我确实不知道，今天查了一下确实如此。网上找到了篇资料，这里就不帖图了， [niladrish.org/pubs/hpca](https://link.zhihu.com/?target=http%3A//ni
+### 1. DRAM组织结构精确定义
 
-### 2. DRAM的访问延时
-一条访存指令发到内存控制器，它的访存延时是存在不同的可能性的。 1. row buffer hit 就是说数据已经在row buffer中，这时延时主要来自于从row buffer到把数据放在数据总线上的时延，这个过程需要大约20ns的时间。（可能是比较旧的数据了，欢迎评论区发出挑战）
+| 层级 | 正确定义 | 说明 |
+|------|----------|------|
+| MAT | 最小存储阵列单元 | 包含行列解码器和sense amplifier |
+| Subarray | 由多个MAT组成 | 传统误称为"array" |
+| Array | 由多个subarray组成 | 传统误称为"arrays" |
+| Bank | 包含独立row buffer的阵列组 | 可独立操作 |
 
-### 3. OpenPage Policy和Close Page Policy
-DRAM访问有两种模式，一个Open Page 一个是Close Page。前者在完成一次访存后保留row buffer的内容，如果下一个访存命令恰好也在同一个row上，就会row buffer hit，节省访问时间，但如果后一个访问地址不在同一个row上，就可row buffer conflict，增加了访存时间。后者在完成一次访存后立即执行prechage命令，即将row buffer的内容写
+### 2. DRAM访问延迟三种场景
+
+| 场景 | 条件 | 延迟 | 原因 |
+|------|------|------|------|
+| Row Buffer Hit | 目标数据在当前row buffer中 | ~20ns | 只需从row buffer读取 |
+| Empty Row Buffer | Row buffer为空 | ~40ns | 需要激活行+读取 |
+| Row Buffer Conflict | 目标数据在不同row | ~60ns+ | 预充电+激活+读取 |
+
+### 3. 页面管理策略对比
+
+| 策略 | 操作 | 优势 | 劣势 | 适用场景 |
+|------|------|------|------|----------|
+| Open Page | 访问后保留row buffer | 利用局部性，hit时延迟低 | Conflict时延迟高 | 顺序访问、局部性好 |
+| Close Page | 访问后立即预充电 | 减少conflict | 无法利用局部性 | 随机访问、局部性差 |
+
+- **自适应策略**：根据访问模式动态切换
 
 ### 4. 地址映射策略
-CPU给的一个访存指令中的地址可能是32位数，或是48位数。 现代CPU访存当然不是按字节访问的，而是按 [cache line](https://zhida.zhihu.com/search?content_id=5581056&content_type=Article&match_order=1&q=cache+line&zhida_source=entity) 访问或双cache line访
+- **CPU地址**：32位或48位虚拟/物理地址
+- **访问粒度**：按cache line（通常64B）或双cache line
+- **映射目标**：分解为channel、DIMM、rank、bank、row、column
 
-### 5. DDR接口
-后面是DDR相关的内容了， DDR规范中即涉及DRAM本质，双涉及内存条的设计规范。
+| 映射方案 | 格式 | 特点 |
+|----------|------|------|
+| 方案1 | row::rank::bank::channel::column::blkoffset | 行局部性好 |
+| 方案2 | row::column::rank::bank::channel::blkoffset | 分散访问 |
+| 其他 | 多种变体 | 无统一标准 |
+
+- **设计考量**：并行度、局部性、冲突避免
+
+### 5. DDR接口规范要点
+- 同时涉及DRAM存储本质和内存条物理设计
+- 规范定义了电气特性、时序参数、命令集
+- 与DRAM内部组织架构密切相关
+
+## Key Quotes
+
+> "DRAM arrays实际上的名字应该叫array, 而DRAM array应该叫subarray，而且subarray之下还由MAT组成。"
+
+> "row buffer hit就是说数据已经在row buffer中，这时延时主要来自于从row buffer到把数据放在数据总线上的时延，这个过程需要大约20ns的时间。"
+
+> "Open Page Policy在完成一次访存后保留row buffer的内容，如果下一个访存命令恰好也在同一个row上，就会row buffer hit，节省访问时间。"
+
+> "实际计算机中怎么映射呢？实际上没有标准的，有多种方法，比如说：row::rank::bank::channel::column::blkoffset 或 row::column::rank::bank::channel::blkoffset，都是比较常见的用法。"
 
 ## Evidence
 
 - Source: [原始文章](raw/tech/dram/内存系统：DRAM, DDR 与Memory Controller-之二.md) [[../../raw/tech/dram/内存系统：DRAM, DDR 与Memory Controller-之二.md|原始文章]]
+
+## Key Quotes
+
+> "## DRAM的访问延时
+
+一条访存指令发到内存控制器，它的访存延时是存在不同的可能性的"
+
+> "row buffer hit 就是说数据已经在row buffer中，这时延时主要来自于从row buffer到把数据放在数据总线上的时延，这个过程需要大约20ns的时间。（可能是比较旧的数据了，欢迎评论区发出挑战）
+2"
+
+> "empty row buffer ，即row buffer是空的，访存延时除了从row buffer到数据总线时间，还包括从电容到sense amplifier再到row buffer的时序，需要的延时大约40ns"
+
+> "## 地址映射策略
+
+CPU给的一个访存指令中的地址可能是32位数，或是48位数"
+
+> "实际计算机中怎么映射呢？实际上没有标准的，有多种方法，比如说：  
+row::rank::bank::channel::column::blkoffset  
+row::column::rank::bank::channel::blkoffset  
+都是比较常见的用法"
 
 ## Open Questions
 

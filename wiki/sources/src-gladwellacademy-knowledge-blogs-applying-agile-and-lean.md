@@ -33,6 +33,12 @@ Gladwell Academy 的文章，探讨如何将敏捷和精益原则应用于半导
 - 使用 FPGA 进行早期原型和验证
 - 集合式设计 (set-based design) 保持多种设计选项
 
+## Key Quotes
+
+- Traditional waterfall models create bottlenecks and cascading delays in semiconductor development.
+- Agile hardware development emphasizes functional prototypes over complete designs, multi-disciplinary teams over single-specialty teams, and responding to change over following a plan.
+- Using FPGAs for early prototyping and verification, along with set-based design to maintain multiple options, are key practices for agile semiconductor development.
+
 ## 技术细节
 
 - 传统阶段：需求收集、设计输入、验证、物理设计、验证

@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/安全引导和加密数据存储.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/安全引导和加密数据存储.md|原始文章]]
 
+## Key Quotes
+
+> "一些TI Sitara处理器（AM335x）可能涉及TI对签名密钥和自定义零件号的工厂编程。"
+
+> "止黑客离线从设备中提取用户/应用程序数据（即使用外部硬件机制读取非易失性存储器，如NAND、eMMC）。"
+
+> "用户数据隐私和保护可能是合规性的要求，例如医疗设备上的HIPAA"
+
+> "用于加密数据的密钥也需要受到保护"
+
+> "将信任方案一直扩展到用户空间涉及建立信任链。"
+
 ## Open Questions
 
 - (To be determined)

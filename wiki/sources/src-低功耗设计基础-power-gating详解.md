@@ -30,6 +30,18 @@ Power switch cell相当于一般电路中的开关，所不同的是，它们并
 
 - Source: [原始文章](raw/tech/soc-pm/低功耗设计基础：Power Gating详解.md) [[../../raw/tech/soc-pm/低功耗设计基础：Power Gating详解.md|原始文章]]
 
+## Key Quotes
+
+> "Retention Register"
+
+> "重磅消息：小编亲自参与制作的数字后端ICC2实践课程上线网易云课堂啦！"
+
+> "## 关断方式
+
+关断方式主要有两种：关闭VDD或者关闭VSS，二者的基本原理也很简单，如下图所示。在实际应用方面以关闭VDD为主，小编接触过的也全部都是关闭VDD的类型"
+
+> "左侧的power switch cell摆放方式很像IO的排列，但是其cell大小一般来说比standard cell大却比IO cell小；右侧的switch cell一般和一般的standard cell差不多大小"
+
 ## Open Questions
 
 - (To be determined)

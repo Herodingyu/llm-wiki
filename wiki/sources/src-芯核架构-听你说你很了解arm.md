@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【芯核架构】听你说你很了解ARM？.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【芯核架构】听你说你很了解ARM？.md|原始文章]]
 
+## Key Quotes
+
+> "Cortex-A9微体系结构既可用于可伸缩的多核处理器（Cortex-A9 MPCore多核处理器），也可用于更传统的处理器（Cortex-A9单核处理器）"
+
+> "ARM的Cortex-A系列处理器中的Cortex-A9、Cortex-A15和Cortex-A17内核都可以用于多处理器配置，以满足高性能和高计算要求的应用需求。"
+
+> "一般不运行操作系统或只运行实时操作系统（RTOS）"
+
+> "通常需要使用高速缓存一致性协议，如MESI协议"
+
+> "确保当一个核心修改了共享数据时，其他核心能够立即或最终获得更新的数据。"
+
 ## Open Questions
 
 - (To be determined)

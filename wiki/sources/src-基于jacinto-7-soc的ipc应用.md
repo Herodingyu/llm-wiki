@@ -36,6 +36,14 @@ VRING是一对CPU之间的 [共享内存段](https://zhida.zhihu.com/search?cont
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/基于Jacinto 7 SoC的IPC应用.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/基于Jacinto 7 SoC的IPC应用.md|原始文章]]
 
+## Key Quotes
+
+> "每个CPU和操作系统上都提供了IPC库，以允许更高级别的应用程序相互通信。"
+
+> "PDK IPC库和Linux内核IPC驱动程序套件支持J7ES SoC中存在的所有内核之间的通信"
+
+> "RPMSG是Linux和TI-RTOS使用的通用消息传递框架"
+
 ## Open Questions
 
 - (To be determined)

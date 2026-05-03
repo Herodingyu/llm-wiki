@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-33AI编译器架构发展及优化.md) [[../../raw/tech/soc-pm/AI系统/AI系统-33AI编译器架构发展及优化.md|原始文章]]
 
+## Key Quotes
+
+> "Input Format of DL Models（输入格式）"
+
+> "Transformation（转换）"
+
+> "High-level IR / Graph IR（高级 IR/图 IR）"
+
+> "Computation Graph Optimizations（计算图优化策略）"
+
+> "Methods（计算图进一步优化方法）"
+
 ## Open Questions
 
 - (To be determined)

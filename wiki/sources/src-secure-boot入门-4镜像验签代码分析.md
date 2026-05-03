@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/Secure boot入门-4镜像验签代码分析.md) [[../../raw/tech/bsp/芯片底软及固件/Secure boot入门-4镜像验签代码分析.md|原始文章]]
 
+## Key Quotes
+
+> "你的qemu运行ATF代码环境搭建好了吗？"
+
+> "show me the code！"
+
+> "FWU Process Started"
+
+> "crypto\_lib\_desc"
+
+> "parser\_lib\_descs"
+
 ## Open Questions
 
 - (To be determined)

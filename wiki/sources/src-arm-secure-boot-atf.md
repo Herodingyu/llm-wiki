@@ -60,6 +60,12 @@ BL1 (EL3, ROM) → BL2 (EL3, Flash) → BL31 (EL3, Runtime) → BL32 (S-EL1, OP-
 - OP-TEE: https://www.op-tee.org/
 - ARM System Ready 计划支持 NXP 2160A
 
+## Key Quotes
+
+> "BL2：Trusted Boot Firmware"
+
+> "BL31：EL3 Runtime Firmware"
+
 ## Open Questions
 
 - ARM 服务器（鲲鹏、飞腾、Graviton）的安全启动差异

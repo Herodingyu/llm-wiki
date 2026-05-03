@@ -23,6 +23,14 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/DDR 学习时间 (Part A - 1)：一篇 2002 年的 DDR 控制器设计硕士论文.md) [[../../raw/tech/dram/DDR 学习时间 (Part A - 1)：一篇 2002 年的 DDR 控制器设计硕士论文.md|原始文章]]
 
+## Key Quotes
+
+> "DRAM 中有 4 （A）个 Bank，每个 Bank 有若干（B）个 row，每个 row 以 32bit(C bit) 为单位，划分为多个 column。"
+
+> "A、B、C 的值取决于具体颗粒的容量以及位宽。"
+
+> "~(Phrase & Reference Clk) and (posedge Clk x2 )"
+
 ## Open Questions
 
 - (To be determined)

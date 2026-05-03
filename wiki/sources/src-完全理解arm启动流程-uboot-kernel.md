@@ -36,6 +36,18 @@ Bootloader的启动方式主要有网络启动方式、磁盘启动方式和Flas
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/完全理解ARM启动流程：Uboot-Kernel.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/完全理解ARM启动流程：Uboot-Kernel.md|原始文章]]
 
+## Key Quotes
+
+> "什么是《编译地址》？什么是《运行地址》？"
+
+> "为什么要分配编译地址？这样做有什么好处，有什么作用？"
+
+> "rest\_init函数启动 init过程，创建系统第一个进程: init进程。"
+
+> "首先给出你内核启动的汇编部分的总流程如下："
+
+> "内核的链接地址采用的是虚拟地址，地址值为0xC0008000。"
+
 ## Open Questions
 
 - (To be determined)

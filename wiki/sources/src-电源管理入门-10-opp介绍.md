@@ -33,6 +33,23 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-10 OPP介绍.md) [[../../raw/tech/bsp/电源管理/电源管理入门-10 OPP介绍.md|原始文章]]
 
+## Key Quotes
+
+> "在SoC内，某些domain可以运行在较低的频率和电压下，而其他domain可以运行在较高的频率和电压下，某个domain所支持的<频率，电压>对的集合被称为Operating Performance Point，缩写OPP。"
+
+> "Linux驱动的套路其实就是DTS里面有个compatible，然后内核启动的时候走各种平台设备初始化就会去寻找加载，然后变成链表结构体。在使用的时候：用户通过设备节点或者中断产生或者内核进程触发就可以运行。"
+
+> "API介绍
+
+- dev\_pm\_opp\_add ：( WARNING: Do not use this function in interrupt context.)
+- 向指定的设备添加一个频率/电压（opp table）组合，频率和电压的单位分别是Hz和uV"
+
+> "- dev\_pm\_opp\_enable：
+- 用于使能指定的OPP，调用dev\_pm\_opp\_add添加进去的OPP，默认是enable的"
+
+> "> 后记：  
+> Linux驱动的套路其实就是DTS里面有个compatible，然后内核启动的时候走各种平台设备初始化就会去寻找加载，然后变成链表结构体。在使用的时候：用户通过设备节点或者中断产生或者内核进程触发就可以运行"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,12 @@ Remote teams need an intentional effort to build a cohesive and engaged work env
 
 - Source: [原始文章](raw/tech/soc-pm/ciglobaltech-blog-remote-engineering-teams-best-pract.md) [[../../raw/tech/soc-pm/ciglobaltech-blog-remote-engineering-teams-best-pract.md|原始文章]]
 
+## Key Quotes
+
+> "来源: ciglobaltech.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

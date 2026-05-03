@@ -36,6 +36,14 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/译文： DDR4 SDRAM - Understanding the Basics（下）.md) [[../../raw/tech/dram/译文： DDR4 SDRAM - Understanding the Basics（下）.md|原始文章]]
 
+## Key Quotes
+
+> "申请翻译授权中，如有侵权，将会删除"
+
+> "### 命令真值表 Command Truth Table
+
+至今为止，我们一直在使用 ”命令“ （Command）这一说法，激活命令，读写命令等等。但在本文开始的时候，我们并没有提到 DRAM 有"命令" IO，那么这些命令都是如何通过 IO 发送给 DRAM 的呢"
+
 ## Open Questions
 
 - (To be determined)

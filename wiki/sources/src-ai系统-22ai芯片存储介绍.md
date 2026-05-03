@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-22AI芯片存储介绍.md) [[../../raw/tech/soc-pm/AI系统/AI系统-22AI芯片存储介绍.md|原始文章]]
 
+## Key Quotes
+
+> "DDR 全称 Double Data Rate"
+
+> "服务器、云计算、网络、笔记本电脑、台式机和消费类应用"
+
+> "HBM（High Bandwidth Memory"
+
+> "总线flash，SPI flash"
+
+> "总线Flash和SPI flash区别"
+
 ## Open Questions
 
 - (To be determined)

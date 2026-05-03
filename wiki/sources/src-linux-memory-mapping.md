@@ -54,6 +54,18 @@ void __iomem *ioremap_nocache(unsigned long phys_addr, unsigned long size);
 - ARM/PowerPC 使用普通内存指令访问 I/O
 - ioremap 按页映射，即使只映射 1 字节也会映射整页
 
+## Key Quotes
+
+> "a – I/O 映射方式（I/O-mapped）"
+
+> "b – 内存映射方式（Memory-mapped）"
+
+> "二. Memory-mapped"
+
+> "（一）进程启动映射过程，并在虚拟地址空间中为映射创建虚拟映射区域"
+
+> "（二）调用内核空间的系统调用函数mmap（不同于用户空间函数），实现文件物理地址和进程虚拟地址的一一映射关系"
+
 ## Open Questions
 
 - ioremap 与 devm_ioremap_resource 的区别和使用场景

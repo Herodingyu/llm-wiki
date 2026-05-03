@@ -27,6 +27,10 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/最全最完整的Uboot资料，看完你就懂了.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/最全最完整的Uboot资料，看完你就懂了.md|原始文章]]
 
+## Key Quotes
+
+> "-- ![](https://pic3.zhimg.com/v2-c762999e76e70f61a2d05196181dadd4_1440w.jpg) ![](https://pica.zhimg.com/v2-664753d952fa336203f158de440ab508_1440w.jpg)"
+
 ## Open Questions
 
 - (To be determined)

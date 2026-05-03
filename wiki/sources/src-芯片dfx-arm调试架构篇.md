@@ -36,6 +36,18 @@ Linux是一个多任务的操作系统， **其每一个进程都有自己的进
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【芯片DFX】Arm调试架构篇.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【芯片DFX】Arm调试架构篇.md|原始文章]]
 
+## Key Quotes
+
+> "系统所提供的调试工具是要考虑的一个重要因素。"
+
+> "嵌入式系统只有有限的输入/输出设备"
+
+> "这意味着可能无法使用传统的台式机的调试方法（如实用printf()函数）"
+
+> "逻辑分析仪和示波器来观察程序的行为。"
+
+> "片外也许无法看到处理器的内部信号"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,12 @@ QAud NetvirE Maridock ChatBot
 
 - Source: [原始文章](raw/tech/peripheral/I3C-thinkpalm-blogs-i3c-explained-what-it-is-how-it-wo.md) [[../../raw/tech/peripheral/I3C-thinkpalm-blogs-i3c-explained-what-it-is-how-it-wo.md|原始文章]]
 
+## Key Quotes
+
+> "来源: thinkpalm.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

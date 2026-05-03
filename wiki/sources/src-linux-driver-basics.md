@@ -58,6 +58,14 @@ struct file_operations {
 - 一切皆文件，驱动也不例外
 - 驱动注册后出现在 /dev 目录
 
+## Key Quotes
+
+> "struct file\_operations"
+
+> "file\_operations"
+
+> "MODULE\_LICENSE(“GPL v2”);"
+
 ## Open Questions
 
 - 设备树（Device Tree）如何替代传统的硬编码设备信息

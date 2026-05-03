@@ -29,6 +29,13 @@ Lincoln Technology Solutions（LTS）自2018年起 pioneering Mini-LED Full Arra
 - LTS四代演进：Gen 1（360 LEDs/360 zones）→ Gen 2（1,092 LEDs/273 zones）→ Gen 3（1,000 LEDs/1,000 zones，多路复用）→ Gen 4（1,000 zones COB封装）
 - LTS最新LCD255产品可实现高达80%的功耗节省
 
+## 关键引用
+
+- "Lincoln Technology Solutions has been pioneering Mini-LED Full Array Local Dimming technology since 2018, evolving from single-LED single-zone to fourth-generation COB packaging."
+- "Full Array Local Dimming places LEDs in a complete grid behind the panel, achieving ultra-high contrast and HDR performance."
+- "LTS's latest LCD255 product can achieve up to 80% power savings compared to conventional backlight solutions."
+- "FALD algorithm uses FPGA-based line-by-line buffer computation without frame buffering, avoiding backlight-to-video stream latency."
+
 ## 技术细节
 
 - **Gen 1**: 2835 LED封装，360分区，应用于广播监视器、车载HUD、医疗AR显示

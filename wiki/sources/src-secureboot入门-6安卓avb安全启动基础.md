@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/secureboot入门-6安卓AVB安全启动基础.md) [[../../raw/tech/bsp/芯片底软及固件/secureboot入门-6安卓AVB安全启动基础.md|原始文章]]
 
+## Key Quotes
+
+> "bootloader验证vbmeta的签名"
+
+> "了Android系统主要的目录和文件"
+
+> "尽管ramdisk.img需要放在Linux内核镜像（boot.img）中"
+
+> "boot.img镜像文件，放到boot分区"
+
+> "bootloader会从boot分区开始启动。"
+
 ## Open Questions
 
 - (To be determined)

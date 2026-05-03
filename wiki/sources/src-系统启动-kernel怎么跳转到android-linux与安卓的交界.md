@@ -36,6 +36,18 @@ Android生在 [linux内核](https://zhida.zhihu.com/search?content_id=236931312&
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【系统启动】Kernel怎么跳转到Android：linux与安卓的交界.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【系统启动】Kernel怎么跳转到Android：linux与安卓的交界.md|原始文章]]
 
+## Key Quotes
+
+> "虽然是零零碎碎的学习了一些关于Linux的知识"
+
+> "start\_kernel开始的阶段。"
+
+> "后者与前者不同的是：它前面的代码是做自解压的，后面的代码都相同。"
+
+> "prepare\_namespace()"
+
+> "总结一个图：kernel 到android核心启动过程"
+
 ## Open Questions
 
 - (To be determined)

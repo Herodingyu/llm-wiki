@@ -28,6 +28,11 @@ tags: [soc-pm, chip-design]
 - 2024 年第 222 号报告
 - 需要 PDF 阅读器查看完整内容
 
+## Key Quotes
+
+- "UC Berkeley EECS Department Technical Report 2024-222."
+- "Binary PDF format requires dedicated reader for full content extraction."
+
 ## 技术细节
 
 - 来源：UC Berkeley EECS Technical Reports

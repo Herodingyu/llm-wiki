@@ -32,6 +32,12 @@ DisplaySpecifications报道索尼发布2025年BRAVIA电视产品线。旗舰BRAV
 - BRAVIA 5采用专有信号处理优化亮度，实现高亮低功耗
 - Eco Dashboard 2支持能耗监控
 
+## 关键引用
+
+- 旗舰BRAVIA 8 II采用QD-OLED面板和XR Processor，BRAVIA 5为Mini LED电视搭载XR Backlight Master Drive技术。
+- BRAVIA 5采用专有信号处理优化亮度，实现高亮低功耗。
+- 全系支持Dolby Vision/Atmos和Studio Calibrated模式。
+
 ## 市场洞察
 
 索尼2025年产品线清晰分层：QD-OLED主打高端画质，Mini LED（BRAVIA 5）覆盖中高端市场，入门LCD满足大众需求。XR Backlight Master Drive将专业监视器技术下放到消费级Mini LED电视。索尼将51%电视业务股权出售给TCL的传闻（后确认）可能重塑其长期战略。

@@ -36,6 +36,22 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/译文：DDR4 - Initialization, Training and Calibration.md) [[../../raw/tech/dram/译文：DDR4 - Initialization, Training and Calibration.md|原始文章]]
 
+## Key Quotes
+
+> "一文了解 DDR4 中的初始化(Initialization)、内存训练(Training )以及校准(Calibration)，简称 ITC。（ITC 只是译者自己想的缩写）。"
+
+> "申请翻译授权中，如有侵权，将会删除"
+
+> "上文是对 ZQ 校准一个大概的讲解：
+
+1"
+
+> "这是因为并联的电阻网络允许用户在不同的使用条件下对电阻进行调整，为读操作调整驱动强度，为写操作调整端接电阻值。此外，不同 PCB 具有不同的阻抗，可调整的电阻网络可针对每个 PCB 单独调整阻值，以提高信号完整性，最大化信号眼图，允许 DRAM 工作在更高的频率下"
+
+> "DDR4（POD），来自 Micron datasheet
+
+根据上图可以发现，在 DDR3 中接收方使用 Vdd/2 作为判决电平，判断信号为 0 或者为 1，上图中 DDR3 的接收实际上是一个分压电路"
+
 ## Open Questions
 
 - (To be determined)

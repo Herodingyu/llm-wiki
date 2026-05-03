@@ -36,6 +36,12 @@ KPI Value + Unit Change/Impact Platform debut May 20, 2025 Android XR announced 
 
 - Source: [原始文章](raw/industry/smart-glasses/glassalmanac-galaxy-xr-reveals-android-xr-support-and.md) [[../../raw/industry/smart-glasses/glassalmanac-galaxy-xr-reveals-android-xr-support-and.md|原始文章]]
 
+## Key Quotes
+
+> "来源: glassalmanac.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

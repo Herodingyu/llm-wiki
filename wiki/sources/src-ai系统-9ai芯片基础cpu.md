@@ -36,6 +36,18 @@ CPU 的工作流，主要分为 4 步： 1. **取指** ：从内存提取指令�
 
 - Source: [原始文章](raw/tech/soc-pm/AI系统/AI系统-9AI芯片基础CPU.md) [[../../raw/tech/soc-pm/AI系统/AI系统-9AI芯片基础CPU.md|原始文章]]
 
+## Key Quotes
+
+> "指令提取时延（Instruction Fetch Time）"
+
+> "指令解码时延（Instruction Decode Time）"
+
+> "执行时延（Execution Time）"
+
+> "存储器访问时延（Memory Access Time）"
+
+> "写回时延（Write-back Time）"
+
 ## Open Questions
 
 - (To be determined)

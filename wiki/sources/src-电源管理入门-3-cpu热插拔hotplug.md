@@ -33,6 +33,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-3 CPU热插拔hotplug.md) [[../../raw/tech/bsp/电源管理/电源管理入门-3 CPU热插拔hotplug.md|原始文章]]
 
+## Key Quotes
+
+> "cpu hotplug和idle的区别？"
+
+> "hotplug是从硬件上拔掉核下电，idle只是从软件上进行处理，也就是说调度器在idle时只是不去调用但是核还是可见的，hotplug直接没这个核了，软件完全不可见。"
+
+> "整体上电源管理也是策略和机制分离的，例如："
+
+> "hotplug是一个机制，谁去用？可以用户App制定的策略、温控策略、系统suspend时需要等。"
+
+> "CPUFreq是策略和机制都包含的。"
+
 ## Open Questions
 
 - (To be determined)

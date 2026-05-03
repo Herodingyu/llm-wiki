@@ -36,6 +36,12 @@ The main advantage of Agile semiconductor design is in significantly reducing co
 
 - Source: [原始文章](raw/tech/soc-pm/gladwellacademy-knowledge-blogs-applying-agile-and-lean-.md) [[../../raw/tech/soc-pm/gladwellacademy-knowledge-blogs-applying-agile-and-lean-.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.gladwellacademy.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

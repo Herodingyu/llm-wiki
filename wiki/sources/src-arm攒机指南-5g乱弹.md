@@ -23,6 +23,10 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/ARM攒机指南/ARM攒机指南-5G乱弹.md) [[../../raw/tech/soc-pm/ARM攒机指南/ARM攒机指南-5G乱弹.md|原始文章]]
 
+## Key Quotes
+
+> "不过我在想，这才是3Gbps而已，10Gbps的全速5G怎么办？难道基带也得用10核吗？是不是得像网络处理一样，加个ASIC自动合并类似的包，或者干脆都使用大包"
+
 ## Open Questions
 
 - (To be determined)

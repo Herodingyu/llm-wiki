@@ -36,6 +36,12 @@ Conventional DRAM manufacturing uses circuitry and memory cells on the same plan
 
 - Source: [原始文章](raw/tech/dram/allpcb-allelectrohub-3d-dram-roadmap-and-produc.md) [[../../raw/tech/dram/allpcb-allelectrohub-3d-dram-roadmap-and-produc.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.allpcb.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

@@ -8,26 +8,55 @@ raw_paths:
 domain: tech/bsp
 created: 2026-05-03
 updated: 2026-05-03
-tags: [bsp]
+tags: [bsp, linux, arm, boot, decompression]
 ---
 
 ## Summary
 
-[收录于 · Linux内核品读](https://www.zhihu.com/column/c_1287649322201272320) 30 人赞同了该文章 大家好，我是工具人老吴。
+本文详细解析了ARM Linux内核启动时的自解压（self-decompression）过程。ARM Linux通常使用压缩内核镜像（zImage）以节省存储空间和加快加载速度。文章从Bootloader加载内核开始，深入分析了arch/arm/boot/compressed/head.S中的解压启动代码，包括物理内存地址确定、解压空间检查、缓存和MMU处理、以及最终的decompress_kernel调用。核心在于理解zImage如何在无MMU、无缓存的原始环境下完成自解压，并将解压后的内核（vmlinux）放置到正确的物理内存位置，为后续内核启动做准备。
 
 ## Key Points
 
-### 1. Bootloader
-Bootloader，无论是 [RedBoot](https://zhida.zhihu.com/search?content_id=177134406&content_type=Article&match_order=1&q=RedBoot&zhida_source=entity) 、 [U-Boot](https://zhida.zhihu.com/search?content_id=1771
+### 1. 为什么使用压缩内核
+- **节省存储空间**：例如vmlinux 11.8MB，zImage仅4.8MB，节省50%+
+- **加快加载速度**：从NAND Flash等慢速存储加载时，解压时间通常小于传输未压缩镜像的时间
 
-### 2. zImage 的解压
-如果使用的是 [压缩内核](https://zhida.zhihu.com/search?content_id=177134406&content_type=Article&match_order=1&q=%E5%8E%8B%E7%BC%A9%E5%86%85%E6%A0%B8&zhida_source=entity) ，则执行开始于 arch/arm/boot/compressed/head.S
+### 2. Bootloader的准备工作
+- **加载位置**：将内核映像放置到物理内存的某个位置
+- **寄存器传参**：
+  - r0 = 0
+  - r1 = Machine ID（传统）/ 忽略（设备树时代）
+  - r2 = ATAG指针（传统）/ DTB指针（设备树时代）
+- **执行环境**：管理模式下跳转，中断、MMU、缓存均disabled
 
-### 3. 运行 vmlinux
-解压后的内核在符号 stext() 处开始执行，即文本段的开头。这段代码可以在 arch/arm/kernel/head.S 中找到。 这是另一个讨论的主题。但是请注意，此处的代码不会查找附加的设备树！如果要使用附加设备树，则必须使用压缩内核。使用 ATAG 扩充任何设备树也是如此，也必须使用压缩内核映像，因为执行此操作的代码是引导压缩内核的程序集的一部分。
+### 3. zImage解压启动流程（arch/arm/boot/compressed/head.S）
+- **入口**：`start`符号，以8/7个NOP指令开头（遗留原因）
+- **保存参数**：保存ATAG/DTB指针（r2）到r8，架构ID（r1）到r7
+- **确定物理内存起始地址**：
+  - 现代平台通过`AUTO_ZRELADDR`配置，将PC寄存器128MB对齐获得
+  - 假设内核加载在物理内存第一块的起始部分
+- **检查解压空间**：确保目标解压地址不会覆盖当前运行的解压代码
+- **缓存和MMU处理**：
+  - 若启用了缓存，需要处理一致性问题
+  - 关闭MMU（若已开启）
+- **调用解压代码**：`decompress_kernel()`将压缩内核解压到指定位置
 
-### 4. 具体平台的内核解压
-让我们仔细看看高通 APQ8060 的内核解压过程。 首先，你需要启用 CONFIG\_DEBUG\_LL，它使你能够在 UART 控制台上敲出字符，而无需任何高级打印机制的干预。它所做的只是为 UART 和其他代码提供物理地址以轮询以输出字符。需要设置 DEBUG\_UART\_PHYS，以便内核知道 UART I/O 物理地址位于何处。请确保这些定义是正确的。
+### 4. 解压后的启动
+- 解压完成后，跳转到解压后的内核入口（stext）
+- 此时进入真正的内核启动流程（setup_arch、start_kernel等）
+
+### 5. 新旧架构差异
+- **传统ARM（arch/arm）**：使用zImage自解压机制
+- **ARM64（arch/arm64）**：Image格式，通常由Bootloader（如UEFI）负责解压
+- **设备树支持**：现代内核使用DTB传递硬件信息，替代传统ATAG
+
+## Key Quotes
+
+> "ARM Linux 一般都使用压缩的内核，例如 zImage。"
+
+> "在我工作的平台上，vmlinux 未压缩的内核是 11.8 MB，而压缩后的 zImage 只有4.8MB，节省了 50% 以上的空间。"
+
+> "通常情况下，解压消耗的时间比从存储介质传输未压缩镜像的时间要短。"
 
 ## Evidence
 

@@ -36,6 +36,12 @@ The gold standard in SPICE circuit design &amp; reliability analysis.
 
 - Source: [原始文章](raw/tech/dram/ema-eda-ema-resources-blog-ddr5-signal-integrity.md) [[../../raw/tech/dram/ema-eda-ema-resources-blog-ddr5-signal-integrity.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.ema-eda.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

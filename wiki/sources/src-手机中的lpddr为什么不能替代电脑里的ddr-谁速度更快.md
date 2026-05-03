@@ -33,6 +33,10 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/手机中的LPDDR为什么不能替代电脑里的DDR？谁速度更快？.md) [[../../raw/tech/dram/手机中的LPDDR为什么不能替代电脑里的DDR？谁速度更快？.md|原始文章]]
 
+## Key Quotes
+
+> "每个LPDDR4颗粒提供2个Channel"
+
 ## Open Questions
 
 - (To be determined)

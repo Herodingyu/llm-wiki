@@ -53,6 +53,14 @@ tags: [bsp, acpi, devicetree, arm-server, uefi]
 - 服务器主板 BIOS 定制起关键作用
 - UEFI 标准化使其更适合服务器和 PC
 
+## Key Quotes
+
+> "要通用和互操作，这就要标准化，各个部件也要各自产品化，而不能是整个产品是一个产品就好了"
+
+> "但这些硬件和软件的各种产品都可以在上面顺利运行，主板上的BIOS定制起到了关键作用"
+
+> "主要通过ACPI来描述硬件，提供一个硬件抽象表述（另外一个是SMBIOS）"
+
 ## Open Questions
 
 - ACPI 表（DSDT、SSDT）的生成和维护

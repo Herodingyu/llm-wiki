@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【启动】芯片启动过程全解析.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/【启动】芯片启动过程全解析.md|原始文章]]
 
+## Key Quotes
+
+> "接收到了电平跳变，在一连串电路的作用下"
+
+> "他们组合成 20 位的地址正好等于 ROM 中存放第一条代码的位置。"
+
+> "之后取出这里的指令在跳转到别处。"
+
+> "对于 32 位的芯片，通电后，PC指针寄存器复位至零地址"
+
+> "随后从中断向量表表头的 reset 向量处获取下一个跳转的地址。"
+
 ## Open Questions
 
 - (To be determined)

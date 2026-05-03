@@ -36,6 +36,14 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/聊聊Secure Storage~.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/聊聊Secure Storage~.md|原始文章]]
 
+## Key Quotes
+
+> "数据加密和加扰机制
+
+对于DRAM和PSRAM等易失性存储器，应提供数据加密或加扰机制，确保即使在物理访问的情况下，数据也无法被轻易读取或篡改。数据加扰不同于加密，更多地关注于数据在传输或存储过程中的可靠性和稳定性。加扰通常是可逆的，且加扰和解扰过程使用相同或者容易推导的算法"
+
+> "通过这些措施，SoC的存储设备能够为数据提供一个更加安全的存储环境，从而保护用户的数据免受各种安全威胁。安全存储是数据安全的基石，随着技术的发展，我们有理由相信，未来的安全存储技术将更加成熟和可靠"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,12 @@ North America commanded the largest share of the global AI smart glasses consume
 
 - Source: [原始文章](raw/industry/smart-glasses/marketintelo-report-ai-smart-glasses-consumer-market.md) [[../../raw/industry/smart-glasses/marketintelo-report-ai-smart-glasses-consumer-market.md|原始文章]]
 
+## Key Quotes
+
+> "来源: marketintelo.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

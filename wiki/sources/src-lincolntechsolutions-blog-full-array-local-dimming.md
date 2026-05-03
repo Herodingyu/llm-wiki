@@ -36,6 +36,12 @@ Our Mini-LED journey has been driven by our customers’ bold vision and demandi
 
 - Source: [原始文章](raw/tech/tv-backlight/lincolntechsolutions-blog-full-array-local-dimming-mini-led-e.md) [[../../raw/tech/tv-backlight/lincolntechsolutions-blog-full-array-local-dimming-mini-led-e.md|原始文章]]
 
+## Key Quotes
+
+> "来源: lincolntechsolutions.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

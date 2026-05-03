@@ -36,6 +36,16 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/uboot入门-6移植要点.md) [[../../raw/tech/bsp/芯片底软及固件/uboot入门-6移植要点.md|原始文章]]
 
+## Key Quotes
+
+> "芯片是别人的，跟业务相关的底板是自己的"
+
+> "添加Kconfig配置选项和Makefile编译选项"
+
+> "头文件和编译所需的defconfig"
+
+> "串口、NAND、EMMC 或 SD 卡、网络和 LCD 驱动"
+
 ## Open Questions
 
 - (To be determined)

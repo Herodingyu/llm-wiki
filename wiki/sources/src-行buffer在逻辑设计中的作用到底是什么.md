@@ -36,6 +36,18 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/行buffer在逻辑设计中的作用到底是什么？.md) [[../../raw/tech/soc-pm/行buffer在逻辑设计中的作用到底是什么？.md|原始文章]]
 
+## Key Quotes
+
+> "line buffer不过是存储数据结构为line方式的SRAM，主要用来存储二维行列数据中的行数据，最典型的就是图像的一行像素。"
+
+> "总结起来，DRAM bit便宜，SRAM贵，所以SRAM更适合小块数据的存储，DRAM适合大数据存储"
+
+> "总结起来，DRAM（DDR）的读写消耗的平均时钟周期数要更多（1~n，视ddr controller设计和burst命令等因素决定），SRAM读写平均消耗的时钟周期一般为1。但是需要注意的是DRAM的频率与SRAM频率一般是不同的，所以，从访问周期数并不能得出DRAM速度快还是SRAM快。"
+
+> "相比DDR有限的带宽，SRAM的带宽近乎无限！DDR带宽成本要远高于SRAM带宽成本！"
+
+> "因为SoC芯片周围可以摆放的DDR是有限的，DDR的频率是有限的，DDR的数据位宽也是有限的！这也就意味着一个SoC系统的DDR带宽一定是受限制的，并且因为整个SoC系统中有大量模块需要访问DDR，DDR的带宽是共享的，所以分配给某个模块的带宽就极其有限了！"
+
 ## Open Questions
 
 - (To be determined)

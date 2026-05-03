@@ -36,6 +36,12 @@ Android XR is also paving the way for glasses that will assist users throughout 
 
 - Source: [原始文章](raw/industry/smart-glasses/fonearena-blog-442223-unveils-android-xr-next-gen-.md) [[../../raw/industry/smart-glasses/fonearena-blog-442223-unveils-android-xr-next-gen-.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.fonearena.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

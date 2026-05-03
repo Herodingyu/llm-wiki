@@ -36,6 +36,12 @@ James Goel Director – Technical Standards Qualcomm Technologies, Inc. Dale Sto
 
 - Source: [原始文章](raw/tech/peripheral/I3C-resources-mipi-i3c-sensor-sessions-at-mipi-devcon.md) [[../../raw/tech/peripheral/I3C-resources-mipi-i3c-sensor-sessions-at-mipi-devcon.md|原始文章]]
 
+## Key Quotes
+
+> "来源: resources.mipi.org"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

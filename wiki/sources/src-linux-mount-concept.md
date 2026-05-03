@@ -40,6 +40,11 @@ tags: [bsp, linux, mount, filesystem]
 - 挂载后：通过挂载点目录访问设备内容
 - `mount /dev/sdc /new_disk` → /new_disk 下可见完整文件系统
 
+## Key Quotes
+
+> "---
+title: "linux 挂载 到底是什么作用呢，可不可以回答得形象点啊"
+
 ## Open Questions
 
 - 自动挂载（fstab、systemd automount）的配置方法

@@ -36,6 +36,12 @@ Review how TechInsights supports the Semiconductor Industry with Technical to Ma
 
 - Source: [原始文章](raw/industry/smart-glasses/techinsights-about-techinsights-overview-newsroom-fea.md) [[../../raw/industry/smart-glasses/techinsights-about-techinsights-overview-newsroom-fea.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.techinsights.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

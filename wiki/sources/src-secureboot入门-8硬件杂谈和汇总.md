@@ -36,6 +36,18 @@ RPMB 是 " **Replay Protected Memory Block** " 的缩写，是一种用于安全
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/secureboot入门-8硬件杂谈和汇总.md) [[../../raw/tech/bsp/芯片底软及固件/secureboot入门-8硬件杂谈和汇总.md|原始文章]]
 
+## Key Quotes
+
+> "一般都要焼写 eFUSE 的内容，包括产品的运行模式：测试、开发、生产等"
+
+> "对称密钥 Secure Boot Key"
+
+> "Secure Boot Signing Key 公钥"
+
+> "Replay Protected Memory Block"
+
+> "保护车辆间通信、保护固件更新以及确保可信软件执行"
+
 ## Open Questions
 
 - (To be determined)

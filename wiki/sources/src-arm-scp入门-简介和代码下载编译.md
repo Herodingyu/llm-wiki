@@ -1,6 +1,6 @@
 ---
 doc_id: src-arm-scp入门-简介和代码下载编译
-title: ARM SCP入门 简介和代码下载编译
+title: ARM SCP入门-简介和代码下载编译
 page_type: source
 source_kind: raw_markdown
 raw_paths:
@@ -8,29 +8,57 @@ raw_paths:
 domain: tech/bsp
 created: 2026-05-03
 updated: 2026-05-03
-tags: [bsp]
+tags: [bsp, scp, arm, power-management, firmware]
 ---
 
 ## Summary
 
-[收录于 · 电源管理](https://www.zhihu.com/column/c_2022261694877975679) 3 人赞同了该文章 ![](https://pic2.zhimg.com/v2-0b5dcc27e122643c87165f1ee3b6eb21_1440w.jpg)
+本文介绍了ARM SoC中的系统控制处理器（SCP, System Control Processor）概念，它是SoC中负责功耗和系统资源管理的"太上皇"级组件。文章从SoC集成化带来的资源争夺问题出发，阐述了ARM PCSA（Power Control System Architecture）规范，详细解析了SCP的硬件架构、提供的服务（系统初始化、电源管理、事件响应、系统感知）、安全优势，以及电源管理软件协议栈。SCP作为一个独立的Cortex-M系列微控制器，拥有独立的固件和硬件资源，负责从AP（应用处理器）中抽象出电源和系统管理任务，实现集中式功耗控制。
 
 ## Key Points
 
-### 1. 1\. ARM PCSA规范
-![](https://pic3.zhimg.com/v2-aed692604c0b8fe200812f598ea53b9a_1440w.jpg) 上图所示是一个典型的SoC，里面除了CPU还有各种其他处理器。之前介绍的 [ARM ATF入门-安全固件软件介绍和代码运行](https://link.zhihu.com/?target=http%3A//mp.weixin.qq.com/s%3F__
+### 1. 为什么需要SCP
+- **SoC复杂性**：现代SoC集成大量模块（ISP、DSP、GPU、NPU等），资源争夺严重
+- **功耗管理复杂**：涉及时钟、电源域、传感器、事件等多方面协调
+- **CPU无法统管**：某些场景（如休眠关机）CPU自身需要关闭，无法管理其他模块
+- **SCP角色**：独立的系统控制处理器，拥有最高资源管理权限
 
-### 2. 2\. SCP简介
-![](https://picx.zhimg.com/v2-7655cdd123f8c897ae7b3db5158b8397_1440w.jpg) PCSA 定义了 **系统控制处理器** (SCP) 的概念，一般是一个硬件模块，例如 [cortex-M4](https://zhida.zhihu.com/search?content_id=272741614&content_type=Artic
+### 2. ARM PCSA规范
+- **全称**：Power Control System Architecture（功耗控制系统架构）
+- **目的**：规范芯片功耗控制的逻辑实现，提供标准基础设施组件和方法
+- **内容**：电压/电源/时钟划分、电源状态和模式、电源控制框架、低功耗Q-channel/P-channel接口
 
-### 3. 3\. 电源管理软件协议栈
-![](https://pic4.zhimg.com/v2-69290ceda3a06993855e7267b4347241_1440w.jpg) **用户层：** 首先用户发起的一些操作，通过用户空间的各service处理，会经过内核提供的sysfs，操作cpu hotplug、device
+### 3. SCP架构与服务
+- **硬件**：通常是Cortex-M4等微处理器 + 外围逻辑电路
+- **独立性**：拥有私有内存、计时器、中断控制器、系统配置寄存器
+- **核心服务**：
+  1. **系统初始化**：上电复位、电源顺序控制、AP启动
+  2. **OSPM定向操作**：电压变化、电源控制、时钟管理
+  3. **事件响应**：计时器唤醒、GIC唤醒、调试访问、看门狗复位
+  4. **系统感知**：共享资源协调、传感器监控、热保护、操作点优化
 
-### 4. 4\. 电压域和电源域划分
-为了更好地对电进行控制，ARM划分了两个电相关的概念： **电源域** （power domain）和 **电压域** （voltage domain）。 **电压域** 指使用同一个电压源的模块合集，如果几个模块使用相同的电压源，就认为这几个模块属于同一个电压域。 **电源域** 指的是在同一个电压域内，共享相同电源开关逻辑的模块合集。即在同一个电源域的模块被相同的电源开关逻辑控制，同时上、下电
+### 4. 电源域与电压域
+- **电压域（Voltage Domain）**：使用同一个电压源的模块合集
+- **电源域（Power Domain）**：同一个电压域内，共享相同电源开关逻辑的模块合集
+- 关系：一个电压域可包含多个电源域，实现精细化电源控制
 
-### 5. 5\. SCP代码下载编译和功能介绍
-![](https://pic2.zhimg.com/v2-5b01bfd115284aed6fcadba807fcd507_1440w.jpg) 官方开源代码路径： [github.com/ARM-software](https://link.zhihu.com/?target=https%3A//github.com/ARM-software/SCP-firmware) ，代码下载：
+### 5. SCP安全优势
+- 独立硬件模块 + 独立固件，内部资源不可被外界控制
+- 控制公共资源（时钟、电源、传感器），具有高权限
+- 配合安全引导，可作为可信软件模块
+
+### 6. 代码编译
+- **开源仓库**：`github.com/ARM-software/SCP-firmware`
+- **编译**：`make PRODUCT=<platform> MODE=<mode>`
+- **输出**：SCP固件二进制文件
+
+## Key Quotes
+
+> "在现代SoC芯片中CPU只能说是皇帝，掌握资源命脉的还得是太上皇SCP。"
+
+> "SCP用于从应用程序处理器中抽象出电源和系统管理任务，配合操作系统的功耗管理软件或驱动，来完成顶层的功耗控制。"
+
+> "由于其是一个独立的硬件模块和固件，其内部资源例如内存、外设不能够被外界控制，具有较高的权限。"
 
 ## Evidence
 

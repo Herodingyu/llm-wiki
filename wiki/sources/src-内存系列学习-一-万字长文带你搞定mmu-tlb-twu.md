@@ -36,6 +36,18 @@ CPU发出的虚拟地址由两部分组成：VPN和offset，VPN（virtual page n
 
 - Source: [原始文章](raw/tech/bsp/TrustZone--ARM_Linux嵌入式/内存系列学习（一）：万字长文带你搞定MMU&TLB&TWU.md) [[../../raw/tech/bsp/TrustZone--ARM_Linux嵌入式/内存系列学习（一）：万字长文带你搞定MMU&TLB&TWU.md|原始文章]]
 
+## Key Quotes
+
+> "MMU（Memory Management Unit，内存管理单元）是一种硬件模块"
+
+> "其主要功能是将虚拟地址转换为物理地址"
+
+> "与虚拟地址空间和虚拟地址相对应的则是物理地址空间和物理地址"
+
+> "大多数时候我们的系统所具备的物理地址空间只是虚拟地址空间的一个子集。"
+
+> "使系统能够运行多个任务，作为独立的程序运行在他们自己的"
+
 ## Open Questions
 
 - (To be determined)

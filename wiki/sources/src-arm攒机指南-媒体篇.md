@@ -23,6 +23,14 @@ tags: [soc-pm]
 
 - Source: [原始文章](raw/tech/soc-pm/ARM攒机指南/ARM攒机指南-媒体篇.md) [[../../raw/tech/soc-pm/ARM攒机指南/ARM攒机指南-媒体篇.md|原始文章]]
 
+## Key Quotes
+
+> "同样的性能所消耗的能量应该是一致的"
+
+> "低端手机完全可以用即时渲染的GPU，而中高端上还是得使用块渲染的GPU"
+
+> "而提高计算密度的秘密，就在于在一个核内塞入更多的线程数。"
+
 ## Open Questions
 
 - (To be determined)

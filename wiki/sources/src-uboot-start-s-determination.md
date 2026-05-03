@@ -18,29 +18,48 @@ tags: [bsp, uboot, bootloader, build-system]
 ## Key Points
 
 ### 1. 确定 start.S 的三种方法
-- **方法1**: 查看 `u-boot.map` 文件中的 `.text` 段，找到 `start.o` 的路径
-- **方法2**: 查看 `u-boot.lds` 链接脚本中的入口定义
-- **方法3**: 搜索编译产物 `find . -name "start.o"`
+| 方法 | 操作 | 输出示例 |
+|------|------|---------|
+| 方法1 | 查看 `u-boot.map` 中的 `.text` 段 | `arch/arm/cpu/armv8/start.o` |
+| 方法2 | 查看 `u-boot.lds` 链接脚本 | 入口定义位置 |
+| 方法3 | `find . -name "start.o"` | 匹配具体路径 |
 
 ### 2. make xxx_defconfig 执行流程
-- 触发顶层 Makefile 的 `%config` 模式目标
-- 依赖：`scripts_basic` → `outputmakefile` → `FORCE`
-- `scripts_basic`: 编译辅助工具（如 fixdep）
-- 调用 `scripts/kconfig` 生成 `.config` 文件
+```
+%config: scripts_basic outputmakefile FORCE
+  → $(MAKE) $(build)=scripts/kconfig $@
+```
+
+**依赖解析**:
+| 依赖 | 功能 |
+|------|------|
+| scripts_basic | 编译 fixdep 等辅助工具 |
+| outputmakefile | 源码与输出目录分离时生成 Makefile |
+| FORCE | 空目标，强制触发重新执行 |
 
 ### 3. Makefile.build 框架
 - `make -f scripts/Makefile.build obj=scripts/basic`
 - 通用构建框架，所有目录编译基于此
-- 编译 `fixdep` 工具（解析代码依赖）
+- 编译 `fixdep` 工具（解析代码依赖关系）
 
 ### 4. Kconfig 配置系统
-- `conf` 工具编译：读取 `configs/xxx_defconfig` + Kconfig 规则 → 生成 `.config`
-- 调用链：`%config` → `scripts/kconfig` → `conf` → `.config`
+```
+%config → scripts/kconfig → conf → .config
+```
+- `conf` 工具读取 `configs/xxx_defconfig` + Kconfig 规则
+- 生成根目录 `.config` 文件（后续编译的核心依据）
 
-### 5. U-Boot 驱动模型中的 driver 结构
-- `struct driver`: 描述驱动程序，包含 name、uclass_id、of_match、bind/probe/remove 等回调
-- `struct udevice`: 设备实例，通过 `U_BOOT_DEVICE` 或设备树定义
-- 绑定流程：`dm_init_and_scan()` → `lists_bind_fdt()` → 匹配 compatible → 创建 udevice → 绑定 driver
+### 5. U-Boot 驱动模型核心结构
+| 结构体 | 功能描述 |
+|--------|---------|
+| `struct driver` | 描述驱动程序，包含 name、uclass_id、of_match、bind/probe/remove 回调 |
+| `struct udevice` | 设备实例，通过设备树或 `U_BOOT_DEVICE` 定义 |
+
+**绑定流程**:
+```
+dm_init_and_scan() → lists_bind_fdt() → 匹配 compatible 
+  → 创建 udevice → 绑定 driver
+```
 
 ## Evidence
 
@@ -51,7 +70,17 @@ tags: [bsp, uboot, bootloader, build-system]
 ## Open Questions
 
 - 不同架构（ARM32/ARM64/RISC-V）的 start.S 选择逻辑
-- U-Boot 的 SPL 和 U-Boot  proper 使用不同 start.S 的情况
+- U-Boot 的 SPL 和 U-Boot proper 使用不同 start.S 的情况
+
+## Key Quotes
+
+> "最好的办法是先编译U-boot。如果你还不清楚如何编译U-boot，请先看我的文章： 没时间看也没关系，请继续往下看，我手把手教你： 步骤1：确定当前单板配置 比如我当前的单板 配置文件 为'qemu_arm64_defconfig'"
+
+> "总结 到此，你已经学会了如何确定当前 主板 U-boot运行的是哪个start.s。当然以上只是经验之上的技巧"
+
+> "（1）依赖项 1：FORCE目标 FORCE 是顶层 Makefile 定义的'空目标'： 1610 PHONY += FORCE 1611 FORCE: 作用： 强制触发目标更新"
+
+> "4.2 编译配置工具scripts/kconfig/conf 中定义了 工具的编译规则"
 
 ## Related Pages
 

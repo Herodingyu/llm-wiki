@@ -36,6 +36,18 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/uboot入门-1简介和运行.md) [[../../raw/tech/bsp/芯片底软及固件/uboot入门-1简介和运行.md|原始文章]]
 
+## Key Quotes
+
+> "电脑用来造组成电脑的更先进的技术来替换自己"
+
+> "没有一个时代另一个时代也不会凭空到来"
+
+> "secondary program loader"
+
+> "bootrom --> spl（init ddr） --> bootrom --> tpl（load and run uboot）--> uboot"
+
+> "u-boot-defconfig"
+
 ## Open Questions
 
 - (To be determined)

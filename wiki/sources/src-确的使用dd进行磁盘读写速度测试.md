@@ -23,6 +23,12 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/确的使用dd进行磁盘读写速度测试.md) [[../../raw/tech/bsp/确的使用dd进行磁盘读写速度测试.md|原始文章]]
 
+## Key Quotes
+
+> "dd if=/dev/zero of=/xiaohan/test.iso bs=1024M count=1;sync
+
+这种情况下测试显示的跟上一种情况是一样的，两个命令是先后执行的，当sync开始执行的时候，dd命令已经将速度信息打印到了屏幕上，仍然无法显示从内存写硬盘时的真正速度"
+
 ## Open Questions
 
 - (To be determined)

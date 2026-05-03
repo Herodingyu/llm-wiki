@@ -32,6 +32,14 @@ MicroLED-Info网站关于MicroLED电视的综合概览。MicroLED是下一代自
 - LG推出Micro RGB Evo电视（75/86/100英寸），起价$4,999
 - Sony开发True RGB LED背光LCD技术，计划2026年发布
 
+## 关键引用
+
+- "MicroLED is a true self-emissive display technology suitable for everything from smartwatches to large TVs."
+- "Tiled MicroLED TVs are commercially available but extremely expensive (over $100,000)."
+- "Consumer-grade MicroLED TVs need to reduce costs by approximately 100x to achieve mass-market adoption."
+- "A 4K TV requires approximately 25 million individual MicroLED chips, highlighting the massive manufacturing challenge."
+- "Samsung launched its first MicroLED-backlit LCD TV in August 2025 at approximately $30,000 for 115 inches."
+
 ## 市场洞察
 
 MicroLED市场仍处于早期阶段，2025年营收约5240万美元。短期内增长主要来自AR微显示和大型商用标牌。MicroLED背光LCD（RGB MicroLED背光）成为中间路线，Samsung、LG和海信等厂商正在布局。Sony将电视业务51%股权出售给TCL，可能影响其MicroLED战略。

@@ -27,6 +27,12 @@ Download / File Link More News NVIDIA Sets Conference Call for First-Quarter Fin
 
 - Source: [原始文章](raw/industry/car-infotainment/nvidianews-news-nvidia-unveils-drive-thor-centraliz.md) [[../../raw/industry/car-infotainment/nvidianews-news-nvidia-unveils-drive-thor-centraliz.md|原始文章]]
 
+## Key Quotes
+
+> "来源: nvidianews.nvidia.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

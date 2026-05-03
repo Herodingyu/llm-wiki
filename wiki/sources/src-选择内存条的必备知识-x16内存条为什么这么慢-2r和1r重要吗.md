@@ -36,6 +36,14 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/选择内存条的必备知识：x16内存条为什么这么慢？2R和1R重要吗？.md) [[../../raw/tech/dram/选择内存条的必备知识：x16内存条为什么这么慢？2R和1R重要吗？.md|原始文章]]
 
+## Key Quotes
+
+> "1R和2R的内存条性能有没差异？"
+
+> "## 结论
+
+综上，购买笔电或者台式机内存应该选择x8的内存条，避免x16的内存条。1R还是2R可以不必担心"
+
 ## Open Questions
 
 - (To be determined)

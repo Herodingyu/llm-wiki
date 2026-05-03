@@ -30,6 +30,13 @@ Hitachi Energy 的 Milad Maleki 和 Markus Thut 在 Scrum Master Toolbox Podcast
 - 早期客户反馈至关重要，通过评估套件实现真实环境测试
 - 跨职能团队、沟通和专注资源是敏捷硬件开发的关键成功因素
 
+## 关键引用
+
+- "RoadPak technology evolved from Formula E racing prototypes to consumer EV solutions through agile hardware development."
+- "Using progressive sample iterations (A, B, C, D samples) with rapid iteration cycles enables continuous improvement."
+- "Early customer feedback is critical, achieved through evaluation kits for real-world environment testing."
+- "Cross-functional teams, communication, and dedicated resources are key success factors for agile hardware development."
+
 ## 技术细节
 
 - 迭代样品开发：A1, A2, A2b 等快速迭代

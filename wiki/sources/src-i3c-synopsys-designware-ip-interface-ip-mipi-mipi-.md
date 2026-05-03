@@ -36,6 +36,12 @@ Closing this window clears your chat history and ends your session. Are you sure
 
 - Source: [原始文章](raw/tech/peripheral/I3C-synopsys-designware-ip-interface-ip-mipi-mipi-i3c.md) [[../../raw/tech/peripheral/I3C-synopsys-designware-ip-interface-ip-mipi-mipi-i3c.md|原始文章]]
 
+## Key Quotes
+
+> "来源: www.synopsys.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

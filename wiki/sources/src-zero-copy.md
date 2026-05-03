@@ -54,6 +54,22 @@ tags: [bsp, linux, zero-copy, io, dma]
 - CPU COPY 需要暂停现有处理逻辑协助内存读写
 - Page Cache 和 Buffer Cache 的层级关系
 
+## Key Quotes
+
+> "标注：VFS（virtual File System） 的作用就是采用标准的 Unix 系统调用读写位于不同物理介质上的不同文件系统"
+
+> "支持 scatter-gather 特性的 sendFile。"
+
+> ""零拷贝"中的"拷贝"是指操作系统在I/O操作中,将数据从一个内存区域复制到另外一个内存区域，而"零"并不是指0次复制, 更多的是指在用户态和内核态之间的复制是0次"
+
+> "从内核态到用户态时会发生上下文切换，上下文切换时指由用户态切换到内核态, 以及由内核态切换到用户态"
+
+> "## \- 原理篇 -
+
+## 1、内存管理
+
+Linux 内存管理结构的历史：在 Linux 内核2.4版本之前，内存管理结构中 page cache 和 buffer cache 是分开的，分别是两个独立的"
+
 ## Open Questions
 
 - sendfile、splice、mmap 等零拷贝 API 的具体实现差异

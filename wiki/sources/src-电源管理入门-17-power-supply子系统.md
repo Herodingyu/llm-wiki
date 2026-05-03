@@ -36,6 +36,21 @@ power\_supply\_core.c主要负责设备 **状态变化逻辑** ，power\_supply\
 
 - Source: [原始文章](raw/tech/bsp/电源管理/电源管理入门-17 Power supply子系统.md) [[../../raw/tech/bsp/电源管理/电源管理入门-17 Power supply子系统.md|原始文章]]
 
+## Key Quotes
+
+> "Native 层：Healthd 守护进程"
+
+> "power supply framework"
+
+> "power supply class"
+
+> "supplied_to;
+    size_t num_supplicants;
+
+    char"
+
+> "power\_supply\_changed"
+
 ## Open Questions
 
 - (To be determined)

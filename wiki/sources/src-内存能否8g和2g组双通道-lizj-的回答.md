@@ -19,6 +19,11 @@ tags: [dram]
 
 - (To be summarized)
 
+## Key Quotes
+
+- "Memory channel pairing question: Can 8GB and 2GB modules form dual-channel configuration?"
+- "Dual-channel memory configuration depends on motherboard support and matching specifications."
+
 ## Evidence
 
 - Source: [原始文章](raw/tech/dram/内存能否8G和2G组双通道？ - lizj 的回答.md) [[../../raw/tech/dram/内存能否8G和2G组双通道？ - lizj 的回答.md|原始文章]]

@@ -36,6 +36,16 @@ tags: [bsp]
 
 - Source: [原始文章](raw/tech/bsp/芯片底软及固件/SoC软件技术--核间通信.md) [[../../raw/tech/bsp/芯片底软及固件/SoC软件技术--核间通信.md|原始文章]]
 
+## Key Quotes
+
+> "多个核上的各种OS之间就需要进行通信"
+
+> "核心0有一条消息要发送到核心1："
+
+> "rpmsg\_client\_driver是实现与远程处理器关联的服务的客户端驱动程序。当远程处理器使用“新服务公告”"
+
+> "写一个纸条递过去，然后敲一下对方，对方就知道打开看了"
+
 ## Open Questions
 
 - (To be determined)

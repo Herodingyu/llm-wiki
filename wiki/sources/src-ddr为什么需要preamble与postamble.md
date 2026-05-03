@@ -23,6 +23,10 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/DDR为什么需要preamble与postamble？.md) [[../../raw/tech/dram/DDR为什么需要preamble与postamble？.md|原始文章]]
 
+## Key Quotes
+
+> "preamble与postamble。"
+
 ## Open Questions
 
 - (To be determined)

@@ -57,6 +57,10 @@ tags: [bsp, linux, power-management, pm]
 - 外设支持低功耗模式或供电可开关
 - 上层 service 协调各 service 进入休眠/唤醒
 
+## Key Quotes
+
+> "芯片上支持的低功耗机制：power domain、reset、clock、系统休眠/唤醒、cpu的低功耗、ddr自刷新等。系统一般是通过pmic芯片控制供应给各个器件电压、电流大小及有无。外设也支持低功耗模式，或者它们的供电能被开、关"
+
 ## Open Questions
 
 - Runtime PM 与系统休眠的协作关系

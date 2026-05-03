@@ -36,6 +36,22 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/一篇论文讲透Cache优化.md) [[../../raw/tech/dram/一篇论文讲透Cache优化.md|原始文章]]
 
+## Key Quotes
+
+> "- 当NPAD>7时类似
+
+一方面，因为每次预取通常只是减少MemoryStall，无法完全消除，平均每次访问所需要的预取次数越多，耗时越多。另一方面，更多的预取也可能占用更多的内存带宽，降低速率"
+
+> "- 超出L2后需要访问内存，4条线的差异很大，主要有三个原因：
+- Prefetch无法完全消除Memory Stall。被访问的数据虽然被预取，但是在访问时还没有完全加载到Cache中。这个原因可以解释NPAD >= 7的3条线高于NPAD=0，但是无法解释NPAD7，15，31的差异"
+
+> "- PageBoundaries的影响。一个物理页通常是4KB，在物理页边界时无法预取，因为PageFault需要操作系统来调度，CPU做不了。当NPAD越大，达到PageBoundaries所需要的元素个数越少，每次PageBoundaries开销均摊下来也就越大"
+
+> "- 也就是说，同样是64B的WorkingSize，OnCacheLine消耗真实内存64B，OnPage消耗真实内存是4K
+	- 为啥做这么奇怪的规定？因为数组元素的大小只是决定顺序访问的Stride，每次访问的只有第一个指针，只访问一个CacheLine"
+
+> "- 虽然Stride是一个Page，但是每次只是访问一个CacheLine，为什么Cache没有生效？L2的key是物理地址，需要先经过TLB的转换，所以失效。L1通常是依照逻辑地址，但是载入L1之前需要先载入到L2，所以也受TLB限制"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,12 @@ The premium TV market features a three-way competition between MiniLED QD, QD-OL
 
 - Source: [原始文章](raw/industry/tv/displaydaily-tv-market-recovering-getting-bigger-brig.md) [[../../raw/industry/tv/displaydaily-tv-market-recovering-getting-bigger-brig.md|原始文章]]
 
+## Key Quotes
+
+> "来源: displaydaily.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

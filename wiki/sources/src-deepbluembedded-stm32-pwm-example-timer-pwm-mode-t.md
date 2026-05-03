@@ -36,6 +36,12 @@ The PWM&#8217;s duty cycle is the most important feature that we&#8217;re always
 
 - Source: [原始文章](raw/tech/peripheral/deepbluembedded-stm32-pwm-example-timer-pwm-mode-tutoria.md) [[../../raw/tech/peripheral/deepbluembedded-stm32-pwm-example-timer-pwm-mode-tutoria.md|原始文章]]
 
+## Key Quotes
+
+> "来源: deepbluembedded.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

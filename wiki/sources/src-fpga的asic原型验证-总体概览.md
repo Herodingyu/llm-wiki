@@ -36,6 +36,25 @@ FPGA仿真平台选型主要关心一下几个方面： 1. 容量：门数按照
 
 - Source: [原始文章](raw/tech/soc-pm/FPGA的ASIC原型验证——总体概览.md) [[../../raw/tech/soc-pm/FPGA的ASIC原型验证——总体概览.md|原始文章]]
 
+## Key Quotes
+
+> "但是，我们也要看到FPGA原型的一些限制：
+
+1"
+
+> "速度限制：芯片的频率在一般1GHz以上，但是FPGA中的频率在20MHz以下，在多片FPGA的芯片验证中甚至低于5MHz；
+3"
+
+> "在FPGA的ASIC验证中，我们需要对ASIC的代码做相应修改，以完成对应功能，甚至有些IP是无法覆盖的"
+
+> "## FPGA资源
+
+下面对FPGA的资源逐一对比，如下表格所示。除了普通的RTL逻辑和基本端口，其他的类似存储时钟DSP等，最好都手动映射，这也意味着ASIC在转为FPGA验证平台中哪些内容是需要重点关注的，并手动分配的"
+
+> "### ASIC代码转为FPGA代码
+
+一般纯的RTL可以直接综合成对应资源，但是pad、Gate-level netlists、SOC cell、SOC Memory、特殊IP、BIST、Gated Clock、Clock无法这样做，我们需要做特殊的调整"
+
 ## Open Questions
 
 - (To be determined)

@@ -36,6 +36,12 @@ About Us Careers Responsible Business Investor Relations Office Locations Ecosys
 
 - Source: [原始文章](raw/tech/dram/news-2024-04-24-Synopsys-Accelerates-Next-Lev.md) [[../../raw/tech/dram/news-2024-04-24-Synopsys-Accelerates-Next-Lev.md|原始文章]]
 
+## Key Quotes
+
+> "来源: news.synopsys.com"
+
+> "收集时间: 2026-05-01"
+
 ## Open Questions
 
 - (To be determined)

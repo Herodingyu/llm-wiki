@@ -23,6 +23,18 @@ tags: [dram]
 
 - Source: [原始文章](raw/tech/dram/寄存器的速度为何比内存更快？ - psubunwell 的回答.md) [[../../raw/tech/dram/寄存器的速度为何比内存更快？ - psubunwell 的回答.md|原始文章]]
 
+## Key Quotes
+
+> "注意，SRAM的功能本来也可以由FF实现，但是！"
+
+> "*CMOS VLSI Design*, Weste & Harris"
+
+> "但是举一反三地问自己一下：Register的速度为何比Cache（SRAM）更快？还是因为两者先天速度么？Register是DFF做的，SRAM都是6T Cell做的，都是利用触发或锁存来存取数据，貌似速度上先天差不多？（这个我也不是很确定。。）是否有其他因素呢"
+
+> "Register由FF组成。因为Register数量很小，相对的读写操作外围电路（peripheral circuitry）占大头，所以外围电路要尽量简单。FF虽然面积很大（2个Latch，约30颗MOS），但换来的正好是外围电路的简单！再加上速度要快快快！因此Register要选择用FF"
+
+> "锁存器（Latch）。锁存器是电平敏感的，一般来讲作为构成寄存器（register）一部分出现。在时序电路中不会单独出现，不然容易引起时序错误"
+
 ## Open Questions
 
 - (To be determined)
