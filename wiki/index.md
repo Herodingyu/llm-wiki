@@ -39,7 +39,10 @@ tags: [index, catalog]
 | [[src-cxl-q1-2025-whitepaper|CXL Q1 2025 白皮书]] | src-cxl-q1-2025-whitepaper | CXL 联盟白皮书 |
 | [[src-dlep-micron-cadence|Micron DLEP]] | src-dlep-micron-cadence | 内存 ECC 协议 |
 | [[src-synopsys-tsmc-advanced-processes|Synopsys TSMC 先进工艺]] | src-synopsys-tsmc-advanced-processes | PHY IP 与先进工艺 |
-| *(已处理 76 篇)* | — | raw/tech/dram/ |
+| [[src-dram-memory-system-ch7-8-9-10-11|DRAM 内存系统 (7-11章)]] | src-dram-memory-system-ch7-8-9-10-11 | DRAM 基础、架构演进、接口修改 |
+| [[src-dram-memory-system-ch12-13-14-15|DRAM 内存系统 (12-15章)]] | src-dram-memory-system-ch12-13-14-15 | DRAM 设备演化、控制器设计、FB-DIMM |
+| [[src-memory-system-cache-dram-disk-overview|内存系统概述]] | src-memory-system-cache-dram-disk-overview | Cache、DRAM、Disk 层次结构 |
+| *(已处理 79 篇)* | — | raw/tech/dram/ |
 
 #### Peripheral (`wiki/sources/`)
 

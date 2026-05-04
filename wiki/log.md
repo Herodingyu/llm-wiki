@@ -18,6 +18,19 @@ updated: 2026-05-03
   - 后台子代理并行处理中: 8个批次共 229 篇
 - **当前完成度**: 约 50% (276/556 篇 source notes 完成)
 
+
+## [2026-05-04] ingest | 新增3篇DRAM文章
+
+- **来源**: raw/tech/dram/
+  - 内存系统---DRAM（7891011章）.md — DRAM基础、架构演进、接口修改
+  - 内存系统---DRAM（part 2：12131415章）.md — DRAM设备演化、控制器设计、FB-DIMM
+  - 内存系统：cache、DRAM和disk---概述.md — 内存层次概述、局部性原理
+- **生成 Source Notes**: 3 篇
+  - src-dram-memory-system-ch7-8-9-10-11.md
+  - src-dram-memory-system-ch12-13-14-15.md
+  - src-memory-system-cache-dram-disk-overview.md
+- **更新统计**: Source Notes 559 → 562 (+3)
+
 ## [2026-05-03] batch-fill-2 | 大规模后台填充进行中
 
 - **后台子代理批量处理**: 8个并行批次处理骨架文件
