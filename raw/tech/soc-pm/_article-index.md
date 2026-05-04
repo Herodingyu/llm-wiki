@@ -27,6 +27,10 @@
 | 控制寄存器 CR 的本质 | cr-control-register-onechan.md | https://mp.weixin.qq.com/s/1pqqbEkEUXwdjceyP_RG0A |
 | 状态寄存器 SR 的本质 | sr-status-register-onechan.md | https://mp.weixin.qq.com/s/bG5dB_v-_2AiasfuenV_3A |
 | Flash/RAM/OTP 启动方式的本质差异 | flash-ram-otp-boot-onechan.md | https://mp.weixin.qq.com/s/G_HTfFkQ99vp9SoOqRT_Qg |
+| 只读、只写、读写寄存器的设计意图 | register-types-ro-rw-wo-onechan.md | https://mp.weixin.qq.com/s/-bDz9zU0869bCnlqttuFuw |
+| 寄存器地址偏移、对齐与 Stride | register-offset-alignment-stride-onechan.md | https://mp.weixin.qq.com/s/kaj70_dL_WcTSRsGDfw38g |
+| 多核 IPC 通信：硬件队列、门铃中断与共享内存 | multicore-ipc-onechan.md | https://mp.weixin.qq.com/s/e9jccXbkgH-cnn-rH6hFog |
+| 三类复位：外设复位、核复位与系统级复位 | peripheral-core-system-reset-onechan.md | https://mp.weixin.qq.com/s/GNdptYjZeBQ6YSzR-_AVNw |
 
 ---
-*共收录 22 篇文章*
+*共收录 26 篇文章*
