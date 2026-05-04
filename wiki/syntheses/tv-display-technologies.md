@@ -3,7 +3,7 @@ doc_id: tv-display-technologies
 title: 电视显示技术对比：LCD vs OLED vs Mini-LED vs Micro-LED
 page_type: synthesis
 scope: cross-domain
-sources: [src-trendforce-news-2024-08-29-2024-mini-led-backlight, src-redaktor-tech-lg-oled-evo-g5, src-microled-info-microled-tv, src-ithome-0-841-993htm, src-lincolntechsolutions-blog-full-array-local-dimming-mini-led-e, src-ledinside-news-2025-2-2025-02-20-01, src-koreaherald-article-3394189, src-changhong-bconless-first-launch, src-macroblock-mcu-less-mini-led-backlight, src-mingweidz-sm6228n-bconless]
+sources: [src-trendforce-news-2024-08-29-2024-mini-led-backlight, src-redaktor-tech-lg-oled-evo-g5, src-microled-info-microled-tv, src-ithome-0-841-993htm, src-lincolntechsolutions-blog-full-array-local-dimming-mini-led-e, src-ledinside-news-2025-2-2025-02-20-01, src-koreaherald-article-3394189, src-changhong-bconless-first-launch, src-macroblock-mcu-less-mini-led-backlight, src-mingweidz-sm6228n-bconless, src-huayuan-hyasic-mini-led-driver, src-xsignal-xp7008q-mini-led-driver]
 created: 2026-05-02
 updated: 2026-05-04
 tags: [synthesis, display, tv, comparison, oled, mini-led, micro-led]
@@ -78,6 +78,9 @@ Mini-LED 背光系统传统上采用三层架构：SoC → MCU（背光控制器
 
 **产业链格局变化**:
 - 驱动芯片厂商（Macroblock、明微电子）推出 SoC 直连兼容产品
+- **国内驱动 IC 厂商成为主力**：
+  - **华源智信**：2024 年出货量突破 10 亿颗，2025 年获 Bcon-less 关键专利（CN222813301U），SPB 协议支持 16MHz 通信
+  - **芯格诺**：2024 年国内 Mini LED 电视背光驱动市场份额超 25%，推出多合一画质增强芯片（TCON + 背光控制集成），XP7008Q 为中国大陆首款 AEC-Q100 认证车规芯片
 - 传统 MCU 供应商（Nuvoton 等）在 Mini LED TV 市场面临份额侵蚀
 - 群智咨询将 Bcon-less 列为 Mini LED 电视向更大规模普及的核心降本路径
 
