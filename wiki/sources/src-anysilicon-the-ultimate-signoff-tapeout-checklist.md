@@ -1,59 +1,45 @@
 ---
 doc_id: src-anysilicon-the-ultimate-signoff-tapeout-checklist
-title: The Ultimate Signoff (TapeOut) Checklist
+title: The Ultimate Signoff (TapeOut) Checklist - AnySilicon
 page_type: source
 source_kind: raw_markdown
 raw_paths:
   - raw/tech/soc-pm/anysilicon-the-ultimate-signoff-tapeout-checklist.md
 domain: tech/soc-pm
-created: 2026-05-02
-updated: 2026-05-02
-tags: [soc-pm, tapeout, chip-design]
+created: 2026-05-04
+updated: 2026-05-04
+tags: [soc-pm]
 ---
 
-# The Ultimate Signoff (TapeOut) Checklist
+## Summary
 
-## 来源
+> 来源: anysilicon.com > 原URL: https://anysilicon.com/the-ultimate-signoff-tapeout-checklist/ > 收集时间: 2026-05-01
 
-- **原始文件**: raw/tech/soc-pm/anysilicon-the-ultimate-signoff-tapeout-checklist.md
-- **提取日期**: 2026-05-02
+## Key Points
 
-## 摘要
+### 1. The Ultimate Signoff (TapeOut) Checklist
+Translate --> In semiconductor design, &#8220;sign-off&#8221; during the tape-out (tapeout) of a chip refers to the formal approval process to ensure that the chip design is error-free, meets all spec
 
-AnySilicon 提供的完整流片签核检查清单，涵盖从设计规则检查 (DRC) 到功能验证的所有关键签核活动，确保芯片设计在送交代工前满足所有要求。
+### 2. Design Rule Checks
+&nbsp; Design Rule Checks are automated checks performed on the layout of a semiconductor chip to ensure that the design adheres to the specific design rules and constraints provided by the semiconduc
 
-## 关键要点
+### 3. Timing Analysis
+&nbsp; Timing analysis is a crucial sign-off activity to ensure that the design meets the frequency specification as advertised. It comprises of two main buckets:
 
-- 签核是芯片制造过程中的关键质量控制检查点
-- 涵盖七大类签核检查：DRC、时序分析、功耗分析、电源完整性、ERC、信号完整性、热分析
-- 还包括 ESD 保护验证、LVS 和功能验证
-- 工具包括 Calibre、PrimeTime、Redhawk、VCS 等
-## 关键引用
+### 4. Power Analysis
+&nbsp; Power analysis quantifies the power dissipation of the design under various operating conditions and across myriad functional scenarios. It is a critical sign-off activity to ensure that the ch
 
-- 签核是芯片制造过程中的关键质量控制检查点，涵盖七大类签核检查：DRC、时序分析、功耗分析、电源完整性、ERC、信号完整性、热分析。
-- 签核还包括ESD保护验证、LVS（版图与原理图对比）和功能验证，确保芯片设计在送交代工前满足所有要求。
-- 签核工具包括Calibre、PrimeTime、Redhawk、VCS等，覆盖从设计规则检查到功能验证的全流程。
+### 5. Power Integrity Analysis
+&nbsp; Power integrity checks, including dynamic and static IR drop analysis, are essential steps in the verification process of electronic designs. These checks help ensure that the distribution of e
 
+## Evidence
 
-## 技术细节
+- Source: [原始文章](raw/tech/soc-pm/anysilicon-the-ultimate-signoff-tapeout-checklist.md)
 
-- **DRC**: 最小特征尺寸、间距、虚拟填充、天线规则
-- **时序分析**: 约束验证、时序收敛 (setup/hold、时钟域跨越)
-- **功耗分析**: 动态/静态功耗、时钟门控、电源门控
-- **电源完整性**: 静态/动态 IR 压降、电迁移 (Power EM、Signal EM)
-- **ERC**: 连通性检查、短路/开路检查
-- **LVS**: 版图与原理图对比，确保物理版图与逻辑设计一致
-- **功能验证**: 仿真、测试平台、覆盖率分析、形式验证
+## Open Questions
 
-## Related Pages
+- (To be determined)
 
-- [[tapeout]] — 流片签核检查清单
-- [[verification]] — 流片前必须完成充分验证
-- [[agile-hardware]] — 敏捷方法旨在加速流片周期
-- [[chiplet]] — Chiplet 架构可分解流片风险
-- [[synopsys]] — 提供 PrimeTime、IC Validator 等签核工具
+## Related Links
 
-## 开放问题
-
-- 在先进节点 (7nm 及以下)，签核检查的复杂度如何变化？
-- AI 辅助签核工具的实际效果如何？
+- [原始文章](raw/tech/soc-pm/anysilicon-the-ultimate-signoff-tapeout-checklist.md)

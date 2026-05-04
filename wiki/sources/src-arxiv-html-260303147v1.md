@@ -6,53 +6,40 @@ source_kind: raw_markdown
 raw_paths:
   - raw/tech/soc-pm/arxiv-html-260303147v1.md
 domain: tech/soc-pm
-created: 2026-05-02
-updated: 2026-05-02
-tags: [soc-pm, verification, agile]
+created: 2026-05-04
+updated: 2026-05-04
+tags: [soc-pm]
 ---
 
-# Agentic AI-based Coverage Closure for Formal Verification
+## Summary
 
-## 来源
+> 来源: arxiv.org > 原URL: https://arxiv.org/html/2603.03147v1 > 收集时间: 2026-05-01
 
-- **原始文件**: raw/tech/soc-pm/arxiv-html-260303147v1.md
-- **提取日期**: 2026-05-02
+## Key Points
 
-## 摘要
+### 1. Report GitHub Issue
+× Title: Content selection saved. Describe the issue below: Description: Submit without GitHub Submit in GitHub
 
-本文提出了一种基于代理式 AI 的形式验证覆盖率闭合工作流，利用大语言模型 (LLM) 自动化覆盖率分析、识别覆盖率缺口并生成所需的形式属性。
+### 2. Agentic AI-based Coverage Closure for Formal Verification
+Sivaram Pothireddypalli1, Ashish Raman2, Deepak Narayan Gadde3, Aman Kumar1
 
-## 关键要点
+### 3. Abstract
+Coverage closure is a critical requirement in  Integrated Chip (IC) development process and key metric for verification sign-off. However, traditional exhaustive approaches often fail to achieve full
 
-- 覆盖率闭合是 IC 开发过程中的关键要求
-- 传统穷举方法常在项目时间线内无法实现完全覆盖
-- Saarthi 框架使用多智能体协作实现端到端形式验证
-- 覆盖率代理持续增加覆盖率指标 10%-20%，复杂设计增益更大
-## 关键引用
+### 4. Acknowledgement
+Under grant 101194371, Rigoletto is supported by the Chips Joint Undertaking and its members, including the top-up funding by the National Funding Authorities from involved countries.
 
-- Saarthi框架使用多智能体协作实现端到端形式验证，覆盖率代理可持续增加覆盖率指标10%-20%，复杂设计增益更大。
-- 传统穷举方法常在项目时间线内无法实现完全覆盖，基于LLM的自动化覆盖率分析能够识别覆盖率缺口并生成所需的形式属性。
-- 该工作流包含三个核心贡献：自动化缺口分类、定向属性生成和迭代代理式覆盖率闭合，使用Cadence Jasper Gold进行形式验证。
+### 5. References
+[1] M. Abdollahi, S. F. Yeganli, M. (. Baharloo, and A. Baniasadi (2025) Hardware Design and Verification with Large Language Models: A Scoping Review, Challenges, and Open Issues.
 
+## Evidence
 
-## 技术细节
+- Source: [原始文章](raw/tech/soc-pm/arxiv-html-260303147v1.md)
 
-- 主要贡献：
-  1. 自动化缺口分类：分析覆盖率报告，分区未覆盖 RTL 区域
-  2. 定向属性生成：LLM 生成 SystemVerilog 属性
-  3. 迭代代理式覆盖率闭合：循环直到满足阈值
-- 基准测试：ECC、CIC Decimator、AXI4LITE、Automotive IP、Memory Scheduler
-- 性能最佳：GPT-5 模型，其次是 GPT-4.1，Llama3.3 最低
-- 使用 Cadence Jasper Gold 进行形式验证
+## Open Questions
 
-## Related Pages
+- (To be determined)
 
-- [[verification]] — Agentic AI 覆盖收敛
-- [[agile-hardware]] — AI 改变芯片设计验证流程
-- [[synopsys]] — Synopsys.ai AI 驱动 EDA
-- [[chiplet]] — Chiplet 设计自动化
+## Related Links
 
-## 开放问题
-
-- 生成属性的证明率下降问题如何解决？
-- 人机协同 (HIL) 在覆盖率闭合中的最佳集成点在哪里？
+- [原始文章](raw/tech/soc-pm/arxiv-html-260303147v1.md)

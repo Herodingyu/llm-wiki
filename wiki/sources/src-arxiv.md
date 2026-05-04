@@ -1,46 +1,45 @@
 ---
 doc_id: src-arxiv
-title: arXiv.org e-Print Archive
+title: arXiv.org e-Print archive
 page_type: source
 source_kind: raw_markdown
 raw_paths:
   - raw/tech/soc-pm/arxiv.md
 domain: tech/soc-pm
-created: 2026-05-02
-updated: 2026-05-02
-tags: [soc-pm, chip-design]
+created: 2026-05-04
+updated: 2026-05-04
+tags: [soc-pm]
 ---
 
-# arXiv.org e-Print Archive
+## Summary
 
-## 来源
+> 来源: arxiv.org > 原URL: https://arxiv.org > 收集时间: 2026-05-01
 
-- **原始文件**: raw/tech/soc-pm/arxiv.md
-- **提取日期**: 2026-05-02
+## Key Points
 
-## 摘要
+### 1. quick links
+Login Help Pages About arXiv is a free distribution service and an open-access archive for nearly 2.4 million
 
-arXiv 是一个免费的学术论文分发服务和开放获取存档，涵盖物理学、数学、计算机科学、电气工程和系统科学等领域。包含近 240 万篇学术文章。
+### 2. Physics
+Astrophysics (astro-ph new, recent, search) Astrophysics of Galaxies; Cosmology and Nongalactic Astrophysics; Earth and Planetary Astrophysics; High Energy Astrophysical Phenomena; Instrumentation and
 
-## 关键要点
+### 3. Mathematics
+Mathematics (math new, recent, search) includes: (see detailed description): Algebraic Geometry; Algebraic Topology; Analysis of PDEs; Category Theory; Classical Analysis and ODEs; Combinatorics; Comm
 
-- 覆盖物理、数学、计算机科学、定量生物学、定量金融、统计学、电气工程和系统科学、经济学
-- 材料未经同行评审
-- 提供按主题的搜索和浏览功能
-- 包括会议论文、技术报告和预印本
-## 关键引用
+### 4. Computer Science
+Computing Research Repository (CoRR new, recent, search) includes: (see detailed description): Artificial Intelligence; Computation and Language; Computational Complexity; Computational Engineering, F
 
-- arXiv是一个免费的学术论文分发服务和开放获取存档，涵盖物理学、数学、计算机科学、电气工程和系统科学等领域，包含近240万篇学术文章。
-- arXiv材料未经同行评审，提供按主题的搜索和浏览功能，包括会议论文、技术报告和预印本。
+### 5. Quantitative Biology
+Quantitative Biology (q-bio new, recent, search) includes: (see detailed description): Biomolecules; Cell Behavior; Genomics; Molecular Networks; Neurons and Cognition; Other Quantitative Biology; Pop
 
+## Evidence
 
-## 技术细节
+- Source: [原始文章](raw/tech/soc-pm/arxiv.md)
 
-- 主要类别：物理 (astro-ph, cond-mat, hep-* 等)、数学、计算机科学 (CoRR)
-- 电气工程和系统科学：音频语音处理、图像视频处理、信号处理、系统控制
-- 支持高级搜索和全文检索
+## Open Questions
 
-## 开放问题
+- (To be determined)
 
-- 如何建立针对半导体/芯片设计领域的 arXiv 论文追踪机制？
-- 哪些子类别与 SoC 项目管理最相关？
+## Related Links
+
+- [原始文章](raw/tech/soc-pm/arxiv.md)

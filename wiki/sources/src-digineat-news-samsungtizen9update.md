@@ -1,56 +1,45 @@
 ---
 doc_id: src-digineat-news-samsungtizen9update
-title: Tizen Update for Samsung TVs: What It Means for Smart TV Applications
+title: Tizen Update for Samsung TVs: What It Means for Owners of Smart TV Applications | Digineat News
 page_type: source
 source_kind: raw_markdown
 raw_paths:
   - raw/industry/tv/digineat-news-SamsungTizen9Update.md
 domain: industry/tv
-created: 2026-05-02
-updated: 2026-05-02
-tags: [tv-industry, tv-product, soc]
+created: 2026-05-04
+updated: 2026-05-04
+tags: [tv]
 ---
 
-# Tizen Update for Samsung TVs: What It Means for Smart TV Applications
+## Summary
 
-## 来源
+> 来源: digineat.com > 原URL: https://digineat.com/news/SamsungTizen9Update/ > 收集时间: 2026-05-01
 
-- **原始文件**: raw/industry/tv/digineat-news-SamsungTizen9Update.md
-- **提取日期**: 2026-05-02
+## Key Points
 
-## 摘要
+### 1. Tizen Update for Samsung TVs: What It Means for Owners of Smart TV Applications
+Samsung has begun rolling out Tizen 9.0 to its 2024 lineup of TVs. In 2025, the update will also be received by 2023
 
-DigiNeat分析三星Tizen 9.0系统更新对智能电视应用的影响。2024年款电视已开始接收更新，2023年款将在2025年内获得更新。三星承诺2023年及更新的Tizen电视将获得7年OS更新支持。
+### 2. What is known about Tizen 9.0: timelines, models, support
+In early 2025, Samsung confirmed that the new Tizen 9.0 operating system version is being distributed to 2024 Smart
 
-## 关键要点
+### 3. List of Samsung TVs already compatible with Tizen 9.0:
+S95D OLED S90D OLED S85D OLED QN900D 8K Mini-LED QN800D 8K Mini-LED QN95D Mini-LED QN90D Mini-LED QN85D Mini-LED
 
-- Tizen 9.0已推送给2024年款三星电视（欧洲和韩国首发）
-- 2023年款将在2025年内获得更新（预计5-6个月间隔）
-- 首批支持机型：S95D/S90D/S85D OLED、QN900D/QN800D 8K Mini-LED、QN95D/QN90D/QN85D Mini-LED等
-- 三星承诺2023年及更新的Tizen电视7年OS更新支持
-- Tizen 9.0新功能：实时字幕翻译（AI）、重新设计界面、CryptoCore安全模块
-- 新API支持实时字幕和新的导航格式
-- 界面元素更大、导航更直观，设置菜单可自定义大小/位置/透明度
+### 4. What’s new in Tizen 9.0:
+Real-time subtitles: TVs now automatically translate subtitles. This feature uses built-in AI and simplifies
 
-## 关键引用
+### 5. Changes to consider when working with Tizen 9.0:
+The system update not only affects the appearance of the TV but also how users perceive installed applications.
 
-- 三星承诺2023年及更新的Tizen电视将获得7年OS更新支持。
-- Tizen 9.0已推送给2024年款三星电视，新功能包括实时字幕翻译（AI）、重新设计界面和CryptoCore安全模块。
-- 新API支持实时字幕和新的导航格式，界面元素更大、导航更直观。
+## Evidence
 
-## 市场洞察
+- Source: [原始文章](raw/industry/tv/digineat-news-SamsungTizen9Update.md)
 
-三星7年更新承诺与LG的5年、webOS Re:New计划形成竞争，成为电视购买决策的重要因素。Tizen 9.0的安全增强（CryptoCore）和AI功能（实时字幕）提升了平台的吸引力。对于应用开发者，需要适配新的界面规范和API变化，以确保应用在更新后的电视上正常运行。
+## Open Questions
 
-## Related Pages
+- (To be determined)
 
-- [[samsung]] — Samsung Tizen 9.0 更新
-- [[lg]] — webOS 竞争者
-- [[mini-led]] — Neo QLED Mini LED 系列
-- [[oled]] — QD-OLED 产品线
+## Related Links
 
-## 开放问题
-
-- 7年更新承诺对三星的维护成本意味着什么？
-- Tizen 9.0的新API能否吸引更多开发者加入三星生态系统？
-- 实时字幕翻译的准确性和多语言支持范围？
+- [原始文章](raw/industry/tv/digineat-news-SamsungTizen9Update.md)
