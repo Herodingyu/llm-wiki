@@ -23,5 +23,10 @@
 | SoC Labs - VLSI System Design |  | https://www.vlsisystemdesign.com/soc-labs/ |
 | Untitled |  | https://www2.eecs.berkeley.edu/Pubs/TechRpts/2024/EECS-2024-... |
 
+| 数据寄存器 DR 的本质 | dr-data-register-onechan.md | https://mp.weixin.qq.com/s/L7w6thW5h2dCwyfB80VPmw |
+| 控制寄存器 CR 的本质 | cr-control-register-onechan.md | https://mp.weixin.qq.com/s/1pqqbEkEUXwdjceyP_RG0A |
+| 状态寄存器 SR 的本质 | sr-status-register-onechan.md | https://mp.weixin.qq.com/s/bG5dB_v-_2AiasfuenV_3A |
+| Flash/RAM/OTP 启动方式的本质差异 | flash-ram-otp-boot-onechan.md | https://mp.weixin.qq.com/s/G_HTfFkQ99vp9SoOqRT_Qg |
+
 ---
-*共收录 18 篇文章*
+*共收录 22 篇文章*
