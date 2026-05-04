@@ -101,6 +101,8 @@ Mini-LED 背光系统传统上采用三层架构：SoC → MCU（背光控制器
 - [[src-changhong-bconless-first-launch]] — 长虹首发 Bconless 技术
 - [[src-macroblock-mcu-less-mini-led-backlight]] — Macroblock MCU-less 方案
 - [[src-mingweidz-sm6228n-bconless]] — 明微电子 SM6228N 支持 Bconless
+- [[src-huayuan-hyasic-mini-led-am-driver]] — 华源智信 Mini LED AM 驱动技术
+- [[src-xsignal-xp7008q-mini-led-driver]] — 芯格诺 XP7008Q 车规级驱动芯片
 
 ## 相关概念
 

@@ -26,5 +26,5 @@
 
 | 标题 | 文件名 | 说明 |
 |------|--------|------|
-| Bcon-less Mini-LED 背光技术分析 | bcon-less-mini-led-backlight-analysis.md | 整合行业术语溯源、技术架构、专利布局、产业链分析的综合文档 |
+| 华源智信 & 芯格诺 Bcon-less 对比分析 | huayuan-vs-xsignal-bconless-comparison.md | 国内两大 Bcon-less Mini LED 驱动 IC 供应商的综合对比 |
 | Bcon-less 技术分析报告（用户整理） | bcon-less-report-by-kimi-20260504.md | 用户整理的中文技术报告，含长虹/明微电子/群智咨询等来源 |
