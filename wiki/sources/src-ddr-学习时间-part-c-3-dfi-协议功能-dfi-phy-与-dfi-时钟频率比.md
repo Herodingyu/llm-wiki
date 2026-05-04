@@ -1,6 +1,6 @@
----
+﻿---
 doc_id: src-ddr-学习时间-part-c-3-dfi-协议功能-dfi-phy-与-dfi-时钟频率比
-title: DDR 学习时间 (Part C   3)：DFI 协议功能   DFI PHY 与 DFI 时钟频率比
+title: DDR 学习时间 (Part C - 3)：DFI 协议功能 - DFI PHY 与 DFI 时钟频率比
 page_type: source
 source_kind: raw_markdown
 raw_paths:
@@ -69,11 +69,17 @@ tags: [dram]
 
 > "下表是以 DDR4-3200 系统为例，列出了系统中存在的时钟/数据频率，帮助读者更清楚这几个频率间的关系"
 
-> "> 注： 如果你阅读协议原文会发现，原文的视角是从 DFI PHY 时钟频率可以是 MC 时钟频率的倍数出发。本文选择了对向的视角，觉得更好理解一点"
+> "MC/DFI 时钟频率可以小于 DFI PHY 时钟频率对于 DDR DFI 架构实现有很大的好处。MC 部分的逻辑要比 PHY 部分复杂一些，因此 MC 的时钟频率很难做的和 PHY 一样高。"
+
+> "dfi_odt_p1 信号是个例外，DRAM 的 ODT 信号是一个脉宽受控制的脉冲信号。"
+
+> "PHY 可以在一个 DFI 时钟周期内同时返回 dfi_rddata_w0 和 dfi_rddata_w1，所以信号本身不和相位对应，这也是 DFI 协议在这里着重区分写数据相位和读数据 word 的原因。"
 
 ## Open Questions
 
-- (To be determined)
+- DFI 频率比动态切换（DFI Frequency Ratio Update）的具体握手流程是怎样的？MC 和 PHY 如何确保切换过程中不丢失命令和数据？
+- 在 1:4 频率比下，DFI 接口的信号数量大幅增加（256-bit 数据位宽 + 多相位地址/控制），对芯片 floorplan 和布线有何具体挑战？
+- 读数据返回顺序错乱后的恢复机制（dfi_ctrlupd/dfi_phyupd）在实际实现中如何验证？是否存在 corner case 导致顺序永久丢失？
 
 ## Related Links
 

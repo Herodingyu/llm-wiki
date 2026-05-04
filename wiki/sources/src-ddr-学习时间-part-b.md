@@ -1,6 +1,6 @@
----
+﻿---
 doc_id: src-ddr-学习时间-part-b
-title: DDR 学习时间 (Part B
+title: DDR 学习时间 (Part B)：Gear-down 模式
 page_type: source
 source_kind: raw_markdown
 raw_paths:
@@ -67,19 +67,23 @@ tags: [dram]
 
 ## Key Quotes
 
-> "内存延迟Latency数值由85ns大幅度降低到68.8ns"
+> "Gear-down 模式下 DRAM 内部的 CA 总线采样时钟频率减半为 1/4 DDR4 数据速率，但是 DRAM 总线上的 CK 时钟频率不变。"
 
-> "内存Read读取性能由37790MB/S提升到41528MB/S。"
+> "建立和保持时序分别扩大到 tGEAR_setup 和 tGEAR_hold，放松了原本的建立与保持时序。"
 
-> "Gear 1 means processor memory controller and memory speed are equal."
+> "DRAM 只能在初始化或者退出 self-refresh 时进入 Gear-down 模式"
 
-> "Gear 2 means pocessor memory controller operates at half the memory speed (such as CPU memory controller is at 1600MHz while memory speed is at 3200MHz when operating as Gear 2)."
+> "唯一 JEDEC 认证退出 Gear-down 模式的方法：进入自刷新模式。"
 
-> "For DDR4-2933 (or lower speed):"
+> "Gear-down 模式好比是个和 1T/2T 并排的 2.5T 模式，有更好的时序兼容性，但在多 Rank 系统中会受到更大的性能惩罚。"
+
+> "Gear-down 模式对于系统的影响大小还是取决于具体的数据流量类型，以及应用对于性能的需求。"
 
 ## Open Questions
 
-- (To be determined)
+- Gear-down 模式与 1T/2T 模式在物理实现上有何具体差异？为何 BIOS 中打开 Gear-down 后无法单独设置 1T/2T？
+- 在 DDR5 中是否仍然存在 Gear-down 模式？其进入/退出机制与 DDR4 有何异同？
+- 对于需要极致性能的服务器场景，Gear-down 模式带来的 latency 增加是否可以通过其他时序优化补偿？
 
 ## Related Links
 
