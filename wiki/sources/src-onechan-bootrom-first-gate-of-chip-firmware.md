@@ -4,8 +4,8 @@ title: "BootROM：芯片固件的第一道城门"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/chip-firmware/bootrom-first-gate-of-chip-firmware.md
-domain: tech/chip-firmware
+  - raw/tech/bsp/bootrom-first-gate-of-chip-firmware.md
+domain: tech/bsp
 created: 2026-05-04
 updated: 2026-05-04
 tags: [chip-firmware, bootrom, secure-boot, root-of-trust, semiconductor, trust-anchor, otp, firmware-security]
