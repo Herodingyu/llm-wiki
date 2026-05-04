@@ -13,7 +13,7 @@ related_sources:
   - src-displaydaily-tv-market-recovering-getting-bigger-brig
 related_entities: []
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-04
 tags: [concept, display, backlight]
 ---
 
@@ -63,6 +63,12 @@ Mini LED 是指芯片尺寸在 100-200 微米范围内的 LED 器件。与传统
 - [[src-content-fileadmin-media-download-impulse-codico]] — CODICO Impulse 显示技术杂志
 - [[src-ledinside-interview-2025-4-2025-04-23-09]] — WG Tech 玻璃基板 Mini LED 专访
 - [[src-eureka-blog-electronics-edge-lit-vs-direct-lit]] — 侧入式 vs 直下式背光对比
+- [[src-macroblock-mcu-less-mini-led-backlight]] — Macroblock MCU-less 方案
+- [[src-innolux-mini-led-bcon-controller]] — Innolux Bcon 控制器定义
+- [[src-changhong-bconless-first-launch]] — 长虹首发 Bconless 技术
+- [[src-mingweidz-sm6228n-bconless]] — 明微电子 SM6228N 支持 Bconless
+- [[src-sigmaintell-mini-led-cost-down]] — 群智咨询 Mini LED 降本路径分析
+- [[src-ti-e2e-local-dimming-architecture]] — TI E2E Local Dimming 架构讨论
 
 ## 相关概念
 
@@ -71,6 +77,7 @@ Mini LED 是指芯片尺寸在 100-200 微米范围内的 LED 器件。与传统
 - [[pwm]] — Mini LED 调光的核心控制技术
 - [[oled]] — 与 Mini LED 背光 LCD 竞争的显示技术
 - [[micro-led]] — 比 Mini LED 更小的下一代 LED 技术
+- [[bcon-less]] — 取消独立背光 MCU 的系统架构创新
 
 ## 相关实体
 

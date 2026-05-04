@@ -3,9 +3,9 @@ doc_id: tv-display-technologies
 title: 电视显示技术对比：LCD vs OLED vs Mini-LED vs Micro-LED
 page_type: synthesis
 scope: cross-domain
-sources: [src-trendforce-news-2024-08-29-2024-mini-led-backlight, src-redaktor-tech-lg-oled-evo-g5, src-microled-info-microled-tv, src-ithome-0-841-993htm, src-lincolntechsolutions-blog-full-array-local-dimming-mini-led-e, src-ledinside-news-2025-2-2025-02-20-01, src-koreaherald-article-3394189]
+sources: [src-trendforce-news-2024-08-29-2024-mini-led-backlight, src-redaktor-tech-lg-oled-evo-g5, src-microled-info-microled-tv, src-ithome-0-841-993htm, src-lincolntechsolutions-blog-full-array-local-dimming-mini-led-e, src-ledinside-news-2025-2-2025-02-20-01, src-koreaherald-article-3394189, src-changhong-bconless-first-launch, src-macroblock-mcu-less-mini-led-backlight, src-mingweidz-sm6228n-bconless]
 created: 2026-05-02
-updated: 2026-05-02
+updated: 2026-05-04
 tags: [synthesis, display, tv, comparison, oled, mini-led, micro-led]
 ---
 
@@ -59,7 +59,27 @@ tags: [synthesis, display, tv, comparison, oled, mini-led, micro-led]
 - **OLED坚守高端阵地**：在对比度和响应速度上不可替代，LG和三星通过MLA、四叠层技术持续提升亮度和寿命
 - **Micro-LED的AR路线更现实**：消费级电视仍需5-10年，但AR微显示（超高PPI）已是明确应用方向
 - **TCON和Driver IC是关键差异点**：Local Dimming算法、分区控制精度决定Mini-LED的画质上限
+- **Bcon-less架构是降本新路径**：取消独立背光MCU，将调光控制集成到主SoC中，降低BOM成本和系统延迟
 - **量子点是共同趋势**：Mini-LED和QD-OLED都依赖量子点色转换技术提升色域
+
+## Mini-LED 背光架构演进：Bcon-less
+
+Mini-LED 背光系统传统上采用三层架构：SoC → MCU（背光控制器/Bcon）→ LED Driver IC → Mini LED 灯板。2022 年起，行业开始出现 **Bcon-less（无背光控制器）** 架构，将背光调光控制直接集成到主 SoC 中，取消独立的 MCU 层级。
+
+**关键发展节点**:
+- **2021**: Macroblock MBI6322/MBI6334 推出中小尺寸 MCU-less 方案，无需 MCU 即可配合 T-con IC 工作
+- **2022.07**: 长虹智慧显示首发 TV 级 Bconless 方案，在 Mini LED 电视中率先量产
+- **2025**: 明微电子 SM6228N 明确标注 "适用于降本 BCONLESS 场景"
+
+**Bcon-less 优势**:
+- BOM 成本降低：省去 MCU 芯片及外围器件
+- 系统延迟减少：减少一级通信链路，改善 Halo 效应
+- 算法灵活：调光算法直接运行于 SoC，OTA 迭代方便
+
+**产业链格局变化**:
+- 驱动芯片厂商（Macroblock、明微电子）推出 SoC 直连兼容产品
+- 传统 MCU 供应商（Nuvoton 等）在 Mini LED TV 市场面临份额侵蚀
+- 群智咨询将 Bcon-less 列为 Mini LED 电视向更大规模普及的核心降本路径
 
 ## 趋势预测
 
@@ -78,6 +98,9 @@ tags: [synthesis, display, tv, comparison, oled, mini-led, micro-led]
 - [[src-lincolntechsolutions-blog-full-array-local-dimming-mini-led-e]] — 全阵列调光与Mini LED
 - [[src-ledinside-news-2025-2-2025-02-20-01]] — LEDinside显示产业新闻
 - [[src-koreaherald-article-3394189]] — 韩国OLED产业动态
+- [[src-changhong-bconless-first-launch]] — 长虹首发 Bconless 技术
+- [[src-macroblock-mcu-less-mini-led-backlight]] — Macroblock MCU-less 方案
+- [[src-mingweidz-sm6228n-bconless]] — 明微电子 SM6228N 支持 Bconless
 
 ## 相关概念
 
@@ -86,3 +109,4 @@ tags: [synthesis, display, tv, comparison, oled, mini-led, micro-led]
 - [[micro-led]] — 芯片尺寸<50μm的自发光显示技术
 - [[local-dimming]] — 分区背光调光技术
 - [[qd-oled]] — 量子点OLED技术
+- [[bcon-less]] — 取消独立背光MCU的Mini LED系统架构创新

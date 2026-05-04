@@ -20,4 +20,11 @@
 | TCL Introduces the QM8K Precise Dimming QD-Mini LED TV |  | https://us.tcl.com/blogs/press-releases/tcl-introduces-the-q... |
 
 ---
-*共收录 14 篇文章*
+*共收录 15 篇文章*
+
+## 新增综合技术文档
+
+| 标题 | 文件名 | 说明 |
+|------|--------|------|
+| Bcon-less Mini-LED 背光技术分析 | bcon-less-mini-led-backlight-analysis.md | 整合行业术语溯源、技术架构、专利布局、产业链分析的综合文档 |
+| Bcon-less 技术分析报告（用户整理） | bcon-less-report-by-kimi-20260504.md | 用户整理的中文技术报告，含长虹/明微电子/群智咨询等来源 |
