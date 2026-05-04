@@ -19,5 +19,7 @@
 | Display Timing Controller (TCON) Market Size ($5.1 Billion) 2030 |  | https://www.strategicmarketresearch.com/market-report/displa... |
 | 2024 Mini LED Backlight Market In-depth Analysis of Four Major Aspects : Industry, Technology, Market, Manufacturers |  | https://www.trendforce.com/news/2024/08/29/2024-mini-led-bac... |
 
+| 2026年Q1电视行业动态研究报告（11维度深度研究） | tv-industry-q1-2026-report.md | Kimi深度研究（2026-05-04） |
+
 ---
-*共收录 14 篇文章*
+*共收录 15 篇文章*
