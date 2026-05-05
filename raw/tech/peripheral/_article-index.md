@@ -4,6 +4,7 @@
 
 | 标题 | 文件名 | 原URL |
 |------|--------|-------|
+| I3C 协议详解：从 I2C 痛点到动态地址分配与 HDR-DDR 传输 | hywelstar-i3c-vs-i2c-detailed-guide.md | https://mp.weixin.qq.com/s/YU0bUDxV6YC4eCgDzMkw9w |
 | MIPI I3C - Professional, Portable, Quick Start Instrument - Acute |  | https://www.acute.com.tw/en/Popular/551 |
 | From I2C to I3C: Evolution of Two-Wire Communication in Embedded Systems - Chip Interfaces | Interface IPs |  | https://chipinterfaces.com/from-i2c-to-i3c-evolution-of-two-... |
 | Untitled |  | https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/... |
@@ -44,4 +45,4 @@
 | UART Protocol: Understanding Serial Communication for Engineers |  | https://www.wevolver.com/article/uart-protocol-understanding... |
 
 ---
-*共收录 38 篇文章*
+*共收录 39 篇文章*
