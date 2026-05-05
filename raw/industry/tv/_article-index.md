@@ -21,6 +21,9 @@
 
 | 2026年Q1电视行业动态研究报告（11维度深度研究） | tv-industry-q1-2026-report.md | Kimi深度研究（2026-05-04） |
 | **【预测分析】TV SOC 三档规划（Premier/Main/Entry）** | tv-soc-3-tier-analysis-PREDICTION-2026.md | AI预测分析（2026-05-05） |
+| AV2 Draft Spec Released; Real-Time Decoding Demoed on Laptops | gigazine-av2-realtime-decoding-demo-20260319.md | https://gigazine.net/gsc_news/en/20260319-av2-realtime-decoding-demo/ |
+| AV2 Arriving: What We Know and What We Don't Know | streamingmedia-av2-arriving-20250919.md | https://www.streamingmedia.com/Articles/News/Online-Video-News/AV2-Arriving-What-We-Know-and-What-We-Dont-Know-171548.aspx |
+| Inside AV2: Architecture, Performance, and Adoption Outlook | streaminglearningcenter-inside-av2-architecture-20251013.md | https://streaminglearningcenter.com/codecs/inside-av2-architecture-performance-and-adoption-outlook.html |
 | **研究过程完整记录** | | |
 | 研究计划 | tv-q1-2026-00-research-plan.md | Kimi深度研究内部文档 |
 | 研究方法论 | tv-q1-2026-00-methodology.md | Kimi深度研究内部文档 |
@@ -34,4 +37,4 @@
 | DOCX转换过程 | tv-q1-2026-08-docx-conversion.md | Kimi深度研究内部文档 |
 
 ---
-*共收录 26 篇文章/文件*
+*共收录 29 篇文章/文件*
