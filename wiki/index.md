@@ -221,6 +221,7 @@ tags: [index, catalog]
 | [[lcos]] | lcos | 硅基液晶显示 |
 | [[waveguide]] | waveguide | 光波导光学 |
 | [[slam]] | slam | 同步定位与地图构建 |
+| [[smart-glasses-soc]] | smart-glasses-soc | 智能眼镜 SOC 选型 |
 
 ### Automotive 概念
 
