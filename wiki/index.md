@@ -211,6 +211,13 @@ tags: [index, catalog]
 | [[led-driver]] | led-driver | LED 驱动芯片 |
 | [[tcon]] | tcon | 显示时序控制器 |
 
+### Video Codec 概念
+
+| 概念 | 文档 ID | 说明 |
+|------|---------|------|
+| [[av2]] | av2 | AV2 下一代免版税视频编码标准 |
+| [[av1]] | av1 | AV1 视频编码标准 |
+
 ### Smart Glasses 概念
 
 | 概念 | 文档 ID | 说明 |
