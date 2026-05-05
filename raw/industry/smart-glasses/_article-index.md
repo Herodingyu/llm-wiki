@@ -23,6 +23,7 @@
 | 两万字汇总｜2025光博会，看到AR产业全面商业化爆发的曙光_VR陀螺 |  | https://www.vrtuoluo.cn/543632.html |
 | 年度专题：2025年度备受关注的十大XR技术 | 人人都是产品经理 |  | https://www.woshipm.com/ai/6341694.html |
 | News - How Silicon Carbide (SiC) is crossing into AR glasses？ |  | https://www.xkh-semitech.com/news/how-silicon-carbide-sic-is... |
+| 2026年Q1智能眼镜行业动态报告 — 核心摘要 | smartglasses-q1-2026-report-summary.md | Kimi对话 | https://www.kimi.com/share/19df65f3-af22-847a-8000-000058be7a08 |
 
 ---
-*共收录 19 篇文章*
+*共收录 20 篇文章*
