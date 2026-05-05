@@ -1,12 +1,8 @@
 {
-  "created": 5,
-  "skipped": 600,
-  "total_raw": 522,
+  "created": 1,
+  "skipped": 605,
+  "total_raw": 523,
   "new_files": [
-    "industry\\tv\\gigazine-av2-realtime-decoding-demo-20260319.md",
-    "industry\\tv\\streaminglearningcenter-inside-av2-architecture-20251013.md",
-    "industry\\tv\\streamingmedia-av2-arriving-20250919.md",
-    "industry\\tv\\tv-soc-3-tier-analysis-PREDICTION-2026.md",
-    "tech\\peripheral\\hywelstar-i3c-vs-i2c-detailed-guide.md"
+    "tech\\dram\\ddr_sa_report_full.md"
   ]
 }
