@@ -1,10 +1,12 @@
 {
-  "created": 3,
-  "skipped": 597,
-  "total_raw": 517,
+  "created": 5,
+  "skipped": 600,
+  "total_raw": 522,
   "new_files": [
-    "industry\\car-infotainment\\26Q1-automotive.agent.final.md",
-    "industry\\smart-glasses\\26Q1-smartglasses.agent.final.md",
-    "industry\\tv\\26Q1-TV_Report.agent.final.md"
+    "industry\\tv\\gigazine-av2-realtime-decoding-demo-20260319.md",
+    "industry\\tv\\streaminglearningcenter-inside-av2-architecture-20251013.md",
+    "industry\\tv\\streamingmedia-av2-arriving-20250919.md",
+    "industry\\tv\\tv-soc-3-tier-analysis-PREDICTION-2026.md",
+    "tech\\peripheral\\hywelstar-i3c-vs-i2c-detailed-guide.md"
   ]
 }
