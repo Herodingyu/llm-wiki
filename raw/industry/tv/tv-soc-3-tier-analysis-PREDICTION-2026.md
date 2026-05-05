@@ -34,7 +34,7 @@ tags: [prediction, tv-soc, 4k-premier, 4k-main, 4k-entry, chip-planning]
 | **背光控制** | 支持 **2000+ 分区** Local Dimming，或 RGB-Mini LED 光色同控 | 联发科展示 15,000+ 分区 RGB Mini-LED 引擎；海信 H7 Pro 支持 43,008 分区。RGB-Mini LED 是 2026 年最高端技术路线 |
 | **制程** | **4nm/5nm** | Pentonic 800 为中高端 4K 标配，Pentonic 2000（8K）用 4nm。先进制程是 AI 算力 + 功耗的唯一解法 |
 | **内存** | **LPDDR5X**，容量 ≥ 4GB | 4K 120Hz + AI 并发处理需要高带宽。存储涨价下，高端机型通过提价 4-15% 对冲，是唯一可以承受 LPDDR5X 成本的档位 |
-| **视频解码** | H.265/266、VP9、**AV1**、AVS3 High Profile | AV1 是流媒体平台主流编码（Netflix、YouTube），必须硬件解码 |
+| **视频解码** | H.265/266、VP9、**AV1**、AVS3 High Profile，**AV2 硬件解码预留/支持** | AV1 是流媒体平台主流编码（Netflix、YouTube），必须硬件解码。AV2（AOMedia Video 2）已于 2026.03 发布 Draft Spec，压缩效率比 AV1 再提升 28-32%，预计 2027-2028 年进入硬件落地周期。Premier 档生命周期 3-5 年，2026 年规划的 SOC 应**预留 AV2 解码能力或确保芯片架构可扩展** |
 | **Dolby 生态** | **Dolby Vision 2** + Dolby Atmos | Pentonic 800 首款公开支持 Dolby Vision 2，环境光感应 + 双向色调映射成为高端标配 |
 
 **预测结论**：Premier 档位的 SOC 规划，已经从"多媒体解码芯片"变成"家庭 AI 计算终端的算力底座"。NPU 算力、HDMI 2.1 满血带宽、RGB-Mini LED 分区控制精度，三者共同定义了 2026 年的高端门槛。
@@ -53,6 +53,7 @@ tags: [prediction, tv-soc, 4k-premier, 4k-main, 4k-entry, chip-planning]
 | **制程** | **6nm/7nm** 或 12nm 成熟制程 | 晶晨 S905X5 用 6nm，是 Main 档的标杆。6nm 相比 28nm 功耗 -50%，面积 -20%，CPU +25%，GPU +130% |
 | **内存** | **4GB DDR4/DDR5**，带宽够用即可 | 不需要 LPDDR5X 的极限带宽。但 2026 年 DDR4 一年涨超 4 倍，需评估国产替代（兆易创新利基型 DRAM） |
 | **分区背光** | 支持 **几百到一千分区** Mini-LED | Main 档 Mini-LED 电视是 2026 年的走量主力。TrendForce 上修 Mini LED 渗透率至 10%（约 2000 万台） |
+| **视频解码** | H.265/AV1 硬解为主，**AV2 可选/预留** | 不需要 H.266 硬解。AV2 在 2028-2029 前硬件支持属于加分项，非必需。下一代平台（2027-2028）建议纳入 AV2 解码能力 |
 | **AI 语音** | 端侧语音唤醒 + 基础 AI 助手 | 瑞昱 MatriX、联发科 Pentonic 800 均支持端侧 AI 语音。Main 档用户期望"能动口不动手" |
 
 **关键风险预测**：Main 档 SOC 的 BOM 占比约 **30-40%**，存储涨价后整机成本结构恶化。TrendForce 已指出"过往低价策略不可持续"，Main 档必须上探价格带或压缩低端 SKU。
@@ -66,7 +67,7 @@ tags: [prediction, tv-soc, 4k-premier, 4k-main, 4k-entry, chip-planning]
 | 维度 | 规划重点 | 依据 |
 |------|---------|------|
 | **成本控制** | **SOC 单价 <$10**，整机 BOM 极致压缩 | Entry 档利润最薄，存储涨价后直接亏损。TrendForce 预判"低端电视部分产品线将停产" |
-| **基础解码** | 4K 60Hz H.265/AV1 硬件解码即可 | 不需要 H.266 或 AVS3 High Profile。Pentonic 600 覆盖此档 |
+| **基础解码** | 4K 60Hz H.265/AV1 硬件解码即可，**AV2 软件解码或云端转码兜底** | 不需要 H.266 或 AVS3 High Profile。Pentonic 600 覆盖此档。AV2 在 Entry 档 2030 前不必硬件支持——靠云端转码或 H.265/AV1 硬解即可，成本收益比不划算 |
 | **无 NPU 或极小 NPU** | 可能仅保留语音唤醒 DSP，无 AI 画质 | 成本压力下，AI 画质是首先被砍的功能。Entry 档的"AI"往往只是云端语音助手 |
 | **内存最小化** | **2GB/4GB DDR4** + eMMC 8GB/16GB | eMMC 8GB 价格从 $10 涨至 $15（2026 Q1），且 16GB/32GB 价格倒挂。存储涨价对 Entry 档打击最大 |
 | **接口** | **HDMI 2.0** 足够，无需 VRR/ALLM | 不需要游戏相关接口。USB 2.0 + HDMI 2.0 + 百兆网口是基础配置 |
@@ -89,15 +90,30 @@ tags: [prediction, tv-soc, 4k-premier, 4k-main, 4k-entry, chip-planning]
 | **制程** | 4nm/5nm | 6nm/7nm/12nm | 12nm/22nm |
 | **内存** | LPDDR5X ≥4GB | DDR4/DDR5 4GB | DDR4 2-4GB |
 | **Dolby Vision** | Dolby Vision 2 | 基础 Dolby Vision | 无 |
+| **AV2 解码** | **2027-2028 必须预留/支持** | 2028-2029 建议纳入 | 2030 前不必 |
 | **风险预测** | 存储涨价传导至终端 | 毛利压缩，被迫上探 | **产品线可能停产** |
+
+---
+
+## 附录：AV2 视频编码标准对三档 SOC 的影响
+
+AV2（AOMedia Video 2）是 AV1 的继任者，2026.03 已发布 Draft Spec，压缩效率比 AV1 提升 **28-32%**（Random Access 配置，VMAF），主观画质测试甚至可达 **~38%** 比特率降低。作为免版税标准，Google/YouTube/Netflix 是主要推动者。
+
+| 档位 | AV2 必要性 | 落地时间预测 | 规划建议 |
+|------|-----------|-------------|---------|
+| **4K Premier** | **必须预留/支持** | 2027-2028 | 高端电视生命周期 3-5 年，2026 年发布的 SOC 应确保芯片架构可扩展或直接支持 AV2 硬件解码 |
+| **4K Main** | **建议纳入** | 2028-2029 | 中端电视更新周期较长，下一代平台（2027-2028）应开始规划 AV2 解码能力 |
+| **4K Entry** | **不必** | 2030 前无需 | 靠云端转码或 H.265/AV1 硬解即可，AV2 成本收益比不划算 |
+
+**关键判断**：AV2 的硬件支持空白是目前最大障碍——无消费级芯片支持 AV2 硬件解码，生产级编码器（类似 SVT-AV1）尚未出现。参考 AV1 的节奏（2018 发布 → 2020 首批电视支持），AV2 硬件落地预计有 2-3 年滞后。SOC 规划上，Premier 档现在就要留好接口，Main 档下一代平台再说，Entry 档暂时不用管。
 
 ---
 
 ## 核心预测建议
 
 - **4K Entry 要极度谨慎**：存储涨价 + 国补一级能效门槛正在联手绞杀这个档位，除非能用 Mini LED Entry 化或国产存储替代（兆易创新/长鑫）撑住成本。
-- **4K Main 是走量基本盘**：MEMC 必须是硬件级、AI PQ 不能省，同时制程上 6nm 是甜点（参考晶晨 S905X5）。
-- **4K Premier 的重点不是视频解码，而是 NPU 算力密度**：谁能支持端侧 LLM + RGB-Mini LED 光色同控 + 4K 120Hz 并发，谁就能定义 2026 下半年的高端标杆。
+- **4K Main 是走量基本盘**：MEMC 必须是硬件级、AI PQ 不能省，同时制程上 6nm 是甜点（参考晶晨 S905X5）。下一代平台（2027-2028）建议预留 AV2 解码扩展性。
+- **4K Premier 的重点不是视频解码，而是 NPU 算力密度**：谁能支持端侧 LLM + RGB-Mini LED 光色同控 + 4K 120Hz 并发，谁就能定义 2026 下半年的高端标杆。同时，AV2 硬件解码支持（或至少架构可扩展）应在 2026 年芯片定义中纳入，否则 2027-2028 平台可能错过第一波 AV2 硬件落地窗口。
 
 ---
 
