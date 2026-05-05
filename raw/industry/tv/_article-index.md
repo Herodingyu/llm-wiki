@@ -20,6 +20,7 @@
 | 2024 Mini LED Backlight Market In-depth Analysis of Four Major Aspects : Industry, Technology, Market, Manufacturers |  | https://www.trendforce.com/news/2024/08/29/2024-mini-led-bac... |
 
 | 2026年Q1电视行业动态研究报告（11维度深度研究） | tv-industry-q1-2026-report.md | Kimi深度研究（2026-05-04） |
+| **【预测分析】TV SOC 三档规划（Premier/Main/Entry）** | tv-soc-3-tier-analysis-PREDICTION-2026.md | AI预测分析（2026-05-05） |
 | **研究过程完整记录** | | |
 | 研究计划 | tv-q1-2026-00-research-plan.md | Kimi深度研究内部文档 |
 | 研究方法论 | tv-q1-2026-00-methodology.md | Kimi深度研究内部文档 |
@@ -33,4 +34,4 @@
 | DOCX转换过程 | tv-q1-2026-08-docx-conversion.md | Kimi深度研究内部文档 |
 
 ---
-*共收录 25 篇文章/文件*
+*共收录 26 篇文章/文件*

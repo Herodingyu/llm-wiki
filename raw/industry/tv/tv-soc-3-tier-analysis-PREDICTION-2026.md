@@ -1,0 +1,105 @@
+---
+original_author: kimi-coding/k2p6
+author_note: 此为AI基于LLM Wiki数据的预测分析，非已验证事实
+domain: raw/industry/tv
+created: 2026-05-05
+tags: [prediction, tv-soc, 4k-premier, 4k-main, 4k-entry, chip-planning]
+---
+
+# TV SOC 三档规划预测分析（2026-2027）
+
+> **声明**：本文件为 AI 基于 2026 Q1 行业报告数据的推演与预测，非厂商官方 roadmap 或已验证事实。供内部规划参考，关键决策需以厂商官方规格书为准。
+
+---
+
+## 背景
+
+用户提出的三档划分：
+- **4K Premier**：4K 120Hz 最高端
+- **4K Main**：4K 60Hz，带 MEMC + PQ 效果
+- **4K Entry**：4K 60Hz 入门级，不带 MEMC/PQ
+
+2026 年 TV SOC 规划的最大外部变量是**存储危机**（DRAM 合约价季增 90-95%，NAND 季增 55-60%）与**国补一级能效门槛**，二者正在重塑每个档位的成本可行性与技术路线选择。
+
+---
+
+## 4K Premier（4K 120Hz）：AI 算力 + 接口带宽 + 先进制程
+
+这是唯一有利润空间消化存储涨价的档位。
+
+| 维度 | 规划重点 | 依据 |
+|------|---------|------|
+| **NPU/AI 算力** | 必须支持 **5 TOPS 以上**，端侧大模型落地 | Pentonic 800 NPU +50%，Alpha 11 Gen3 NPU +5.6×，NQ9 AI Gen4 端侧 LLM。高端电视的差异化已从"解码格式数量"转向"AI 画质 + 光色同控" |
+| **显示接口** | **HDMI 2.1 FRL 48Gbps**（满血），VRR/ALLM/eARC | 4K 120Hz 需要 48Gbps 带宽。Pentonic 800 支持 4K 165Hz VRR。游戏主机和体育大年（世界杯）驱动高刷刚需 |
+| **背光控制** | 支持 **2000+ 分区** Local Dimming，或 RGB-Mini LED 光色同控 | 联发科展示 15,000+ 分区 RGB Mini-LED 引擎；海信 H7 Pro 支持 43,008 分区。RGB-Mini LED 是 2026 年最高端技术路线 |
+| **制程** | **4nm/5nm** | Pentonic 800 为中高端 4K 标配，Pentonic 2000（8K）用 4nm。先进制程是 AI 算力 + 功耗的唯一解法 |
+| **内存** | **LPDDR5X**，容量 ≥ 4GB | 4K 120Hz + AI 并发处理需要高带宽。存储涨价下，高端机型通过提价 4-15% 对冲，是唯一可以承受 LPDDR5X 成本的档位 |
+| **视频解码** | H.265/266、VP9、**AV1**、AVS3 High Profile | AV1 是流媒体平台主流编码（Netflix、YouTube），必须硬件解码 |
+| **Dolby 生态** | **Dolby Vision 2** + Dolby Atmos | Pentonic 800 首款公开支持 Dolby Vision 2，环境光感应 + 双向色调映射成为高端标配 |
+
+**预测结论**：Premier 档位的 SOC 规划，已经从"多媒体解码芯片"变成"家庭 AI 计算终端的算力底座"。NPU 算力、HDMI 2.1 满血带宽、RGB-Mini LED 分区控制精度，三者共同定义了 2026 年的高端门槛。
+
+---
+
+## 4K Main（4K 60Hz + MEMC + PQ）：MEMC 引擎 + PQ 算法 + 成本平衡
+
+这个档位是走量主力，但也是成本压力最复杂的区间——既要 MEMC/PQ，又要在存储涨价下保住毛利。
+
+| 维度 | 规划重点 | 依据 |
+|------|---------|------|
+| **MEMC 引擎** | **独立硬件 MEMC**，支持 24p→60p/120p 低延迟插帧 | MEMC 是区分 Main 和 Entry 的核心硬指标。需要独立的运动估计/运动补偿硬件，不能靠 CPU 软解 |
+| **PQ 处理** | HDR Tone Mapping、色彩管理、**AI-Contrast**、AI-SR | Pentonic 800 支持 AI-SR 3.0 + AI-Contrast 2.0。中端方案可以裁剪算力（如 2-5 TOPS），但必须有 AI 画质增强 |
+| **显示输出** | HDMI 2.1（非满血，18Gbps 或 24Gbps），4K 60Hz 稳定 | 不需要 48Gbps，但需支持 eARC 和基础 VRR（如 40-60Hz） |
+| **制程** | **6nm/7nm** 或 12nm 成熟制程 | 晶晨 S905X5 用 6nm，是 Main 档的标杆。6nm 相比 28nm 功耗 -50%，面积 -20%，CPU +25%，GPU +130% |
+| **内存** | **4GB DDR4/DDR5**，带宽够用即可 | 不需要 LPDDR5X 的极限带宽。但 2026 年 DDR4 一年涨超 4 倍，需评估国产替代（兆易创新利基型 DRAM） |
+| **分区背光** | 支持 **几百到一千分区** Mini-LED | Main 档 Mini-LED 电视是 2026 年的走量主力。TrendForce 上修 Mini LED 渗透率至 10%（约 2000 万台） |
+| **AI 语音** | 端侧语音唤醒 + 基础 AI 助手 | 瑞昱 MatriX、联发科 Pentonic 800 均支持端侧 AI 语音。Main 档用户期望"能动口不动手" |
+
+**关键风险预测**：Main 档 SOC 的 BOM 占比约 **30-40%**，存储涨价后整机成本结构恶化。TrendForce 已指出"过往低价策略不可持续"，Main 档必须上探价格带或压缩低端 SKU。
+
+---
+
+## 4K Entry（4K 60Hz，无 MEMC/PQ）：极致成本控制 + 基础解码 + 国补合规
+
+这个档位正在经历生存危机。
+
+| 维度 | 规划重点 | 依据 |
+|------|---------|------|
+| **成本控制** | **SOC 单价 <$10**，整机 BOM 极致压缩 | Entry 档利润最薄，存储涨价后直接亏损。TrendForce 预判"低端电视部分产品线将停产" |
+| **基础解码** | 4K 60Hz H.265/AV1 硬件解码即可 | 不需要 H.266 或 AVS3 High Profile。Pentonic 600 覆盖此档 |
+| **无 NPU 或极小 NPU** | 可能仅保留语音唤醒 DSP，无 AI 画质 | 成本压力下，AI 画质是首先被砍的功能。Entry 档的"AI"往往只是云端语音助手 |
+| **内存最小化** | **2GB/4GB DDR4** + eMMC 8GB/16GB | eMMC 8GB 价格从 $10 涨至 $15（2026 Q1），且 16GB/32GB 价格倒挂。存储涨价对 Entry 档打击最大 |
+| **接口** | **HDMI 2.0** 足够，无需 VRR/ALLM | 不需要游戏相关接口。USB 2.0 + HDMI 2.0 + 百兆网口是基础配置 |
+| **制程** | **12nm/22nm 成熟制程**，或国产低成本方案 | 晶晨 S905X5 以下、紫光展锐 W517 等国产方案。成熟制程代工价格相对稳定 |
+| **国补合规** | **一级能效**是获得 15% 补贴的硬门槛 | 2026 年国补要求一级能效，Entry 档传统 LCD 能效难以达标，Mini-LED Entry 化或成为出路 |
+
+**最大变量预测**：国补政策的一级能效门槛 + 存储涨价，正在联手淘汰纯 Entry 档传统 LCD。TrendForce 明确指出补贴门槛"进一步利好 Mini LED"，因为 Mini LED 在高亮度模式下能效显著优于传统 LCD。2026 年 Entry 档的出路可能是"Mini LED 背光的 Entry 级电视"，而非传统侧入式 LCD。
+
+---
+
+## 三档 SOC 规划核心差异预测总结
+
+| 维度 | 4K Premier | 4K Main | 4K Entry |
+|------|-----------|---------|---------|
+| **核心差异点** | AI 算力 + 120Hz + 光色同控 | MEMC + PQ + 成本平衡 | 极致低成本 + 基础解码 |
+| **NPU 算力** | 5-50 TOPS | 2-5 TOPS | 无或 <1 TOPS |
+| **HDMI 接口** | 2.1 满血 48Gbps | 2.1 中带宽 18-24Gbps | 2.0 |
+| **刷新率/VRR** | 4K 120Hz VRR/ALLM | 4K 60Hz + MEMC | 4K 60Hz 原生 |
+| **背光分区** | 2000-15000+ | 200-1000 | 无分区或侧入式 |
+| **制程** | 4nm/5nm | 6nm/7nm/12nm | 12nm/22nm |
+| **内存** | LPDDR5X ≥4GB | DDR4/DDR5 4GB | DDR4 2-4GB |
+| **Dolby Vision** | Dolby Vision 2 | 基础 Dolby Vision | 无 |
+| **风险预测** | 存储涨价传导至终端 | 毛利压缩，被迫上探 | **产品线可能停产** |
+
+---
+
+## 核心预测建议
+
+- **4K Entry 要极度谨慎**：存储涨价 + 国补一级能效门槛正在联手绞杀这个档位，除非能用 Mini LED Entry 化或国产存储替代（兆易创新/长鑫）撑住成本。
+- **4K Main 是走量基本盘**：MEMC 必须是硬件级、AI PQ 不能省，同时制程上 6nm 是甜点（参考晶晨 S905X5）。
+- **4K Premier 的重点不是视频解码，而是 NPU 算力密度**：谁能支持端侧 LLM + RGB-Mini LED 光色同控 + 4K 120Hz 并发，谁就能定义 2026 下半年的高端标杆。
+
+---
+
+*预测日期：2026-05-05*
+*数据来源：26Q1-TV_Report.agent.final.md 及 LLM Wiki 相关概念*
