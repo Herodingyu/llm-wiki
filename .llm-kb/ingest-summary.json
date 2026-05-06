@@ -1,8 +1,8 @@
 {
   "created": 1,
-  "skipped": 605,
-  "total_raw": 523,
+  "skipped": 606,
+  "total_raw": 524,
   "new_files": [
-    "tech\\dram\\ddr_sa_report_full.md"
+    "tech\\peripheral\\soc_ip_design.agent.final.md"
   ]
 }
