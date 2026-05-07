@@ -39,6 +39,7 @@
 | 从可配置性到芯片实现：A53的物理设计约束与硅基现实 | 从可配置性到芯片实现-A53的物理设计约束与硅基现实-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485832&idx=1&sn=b4b6938d98fe28194ea0ab5b85736a1d |
 | 复位与启动的黑暗森林：从冷复位到第一条指令的100个陷阱 | 复位与启动的黑暗森林-从冷复位到第一条指令的100个陷阱-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485864&idx=1&sn=b171c1b43da793b3ca5a7435636646fc |
 | 安全启动基石：TrustZone在A53中的硬件实现 | 安全启动基石-TrustZone在A53中的硬件实现-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485874&idx=2&sn=fa360fc866dca68edf704aba297751b9 |
+| A53 缓存体系（上）：L1数据Cache的VIPT魔法与别名问题 | A53缓存体系上-L1数据Cache的VIPT魔法与别名问题-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485884&idx=2&sn=4288ad375bff4581a282732848d9b44c |
 
 ---
-*共收录 34 篇文章*
+*共收录 35 篇文章*
