@@ -331,7 +331,7 @@ tags: [index, catalog]
 - [raw/tech/peripheral/_article-index.md](raw/tech/peripheral/_article-index.md) — 72 篇文章
 - [raw/tech/tv-backlight/_article-index.md](raw/tech/tv-backlight/_article-index.md) — 19 篇文章
 - [raw/tech/soc-pm/_article-index.md](raw/tech/soc-pm/_article-index.md) — 124 篇文章
-- [raw/tech/bsp/_article-index.md](raw/tech/bsp/_article-index.md) — 196 篇文章
+- [raw/tech/bsp/_article-index.md](raw/tech/bsp/_article-index.md) — 208 篇文章
 
 ### Industry
 
