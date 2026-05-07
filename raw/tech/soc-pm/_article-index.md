@@ -31,6 +31,7 @@
 | 寄存器地址偏移、对齐与 Stride | register-offset-alignment-stride-onechan.md | https://mp.weixin.qq.com/s/kaj70_dL_WcTSRsGDfw38g |
 | 多核 IPC 通信：硬件队列、门铃中断与共享内存 | multicore-ipc-onechan.md | https://mp.weixin.qq.com/s/e9jccXbkgH-cnn-rH6hFog |
 | 三类复位：外设复位、核复位与系统级复位 | peripheral-core-system-reset-onechan.md | https://mp.weixin.qq.com/s/GNdptYjZeBQ6YSzR-_AVNw |
+| 时钟系统 Bringup：从晶振到 PLL | 时钟系统bringup-从晶振到PLL-onechan.md | https://mp.weixin.qq.com/s/NdewmDGe4yoRiCKdSD17CA |
 
 ---
-*共收录 26 篇文章*
+*共收录 27 篇文章*
