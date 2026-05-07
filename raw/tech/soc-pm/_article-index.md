@@ -32,6 +32,7 @@
 | 多核 IPC 通信：硬件队列、门铃中断与共享内存 | multicore-ipc-onechan.md | https://mp.weixin.qq.com/s/e9jccXbkgH-cnn-rH6hFog |
 | 三类复位：外设复位、核复位与系统级复位 | peripheral-core-system-reset-onechan.md | https://mp.weixin.qq.com/s/GNdptYjZeBQ6YSzR-_AVNw |
 | 时钟系统 Bringup：从晶振到 PLL | 时钟系统bringup-从晶振到PLL-onechan.md | https://mp.weixin.qq.com/s/NdewmDGe4yoRiCKdSD17CA |
+| SYSCFG 深度解析：引脚复用、中断路由与内存重映射 | SYSCFG深度解析-引脚复用中断路由与内存重映射-onechan.md | https://mp.weixin.qq.com/s/UYTOQ6ZezGSFcqL6qZxMuw |
 
 ---
-*共收录 27 篇文章*
+*共收录 28 篇文章*
