@@ -33,6 +33,8 @@
 | 三类复位：外设复位、核复位与系统级复位 | peripheral-core-system-reset-onechan.md | https://mp.weixin.qq.com/s/GNdptYjZeBQ6YSzR-_AVNw |
 | 时钟系统 Bringup：从晶振到 PLL | 时钟系统bringup-从晶振到PLL-onechan.md | https://mp.weixin.qq.com/s/NdewmDGe4yoRiCKdSD17CA |
 | SYSCFG 深度解析：引脚复用、中断路由与内存重映射 | SYSCFG深度解析-引脚复用中断路由与内存重映射-onechan.md | https://mp.weixin.qq.com/s/UYTOQ6ZezGSFcqL6qZxMuw |
+| ARMv8-A 架构革命：超越64位寻址的三大范式转移 | ARMv8-A架构革命-超越64位寻址的三大范式转移-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485820&idx=1&sn=76dbd2801b4b477c381a391305174544 |
+| A53 微架构解码：顺序执行中的"乱序"智慧 | A53微架构解码-顺序执行中的乱序智慧-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485821&idx=1&sn=e69e1a38b6333fb043bfb28fd44011e8 |
 
 ---
-*共收录 28 篇文章*
+*共收录 30 篇文章*
