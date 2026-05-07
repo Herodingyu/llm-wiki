@@ -35,6 +35,8 @@
 | SYSCFG 深度解析：引脚复用、中断路由与内存重映射 | SYSCFG深度解析-引脚复用中断路由与内存重映射-onechan.md | https://mp.weixin.qq.com/s/UYTOQ6ZezGSFcqL6qZxMuw |
 | ARMv8-A 架构革命：超越64位寻址的三大范式转移 | ARMv8-A架构革命-超越64位寻址的三大范式转移-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485820&idx=1&sn=76dbd2801b4b477c381a391305174544 |
 | A53 微架构解码：顺序执行中的"乱序"智慧 | A53微架构解码-顺序执行中的乱序智慧-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485821&idx=1&sn=e69e1a38b6333fb043bfb28fd44011e8 |
+| AMBA ACE 协议实战：一致性总线的代价与收益 | AMBA ACE协议实战-一致性总线的代价与收益-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485831&idx=1&sn=f349f615ee967685d08ead494ce08c41 |
+| 从可配置性到芯片实现：A53的物理设计约束与硅基现实 | 从可配置性到芯片实现-A53的物理设计约束与硅基现实-onechan.md | https://mp.weixin.qq.com/s?__biz=Mzg3ODEzNjg5OQ==&mid=2247485832&idx=1&sn=b4b6938d98fe28194ea0ab5b85736a1d |
 
 ---
-*共收录 30 篇文章*
+*共收录 32 篇文章*
