@@ -78,12 +78,17 @@ tags: [index, catalog]
 
 | 标题 | 文档 ID | 说明 |
 |------|---------|------|
+| [[src-onechan-soc-peripheral-subsystem|SoC（1）：浅谈外设子系统]] | src-onechan-soc-peripheral-subsystem | UART/I2C/SPI/GPIO/PWM/DMA 设计要点 |
+| [[src-onechan-soc-interconnect-subsystem|SoC（2）：浅谈互联子系统]] | src-onechan-soc-interconnect-subsystem | AXI/AHB/APB/NoC 架构与仲裁 |
+| [[src-onechan-soc-memory-subsystem|SoC（3）：一文看懂存储子系统]] | src-onechan-soc-memory-subsystem | Cache/SPM/SRAM/DDR/Flash 层级设计 |
+| [[src-onechan-soc-processor-subsystem|SoC（4）：一文详解AI时代下的处理器子系统]] | src-onechan-soc-processor-subsystem | CPU/GPU/NPU/DSP 异构计算 |
+| [[src-onechan-soc-low-power-design|SoC（5）：架构级低功耗设计]] | src-onechan-soc-low-power-design | DVFS/门控/电源域/低功耗策略 |
 | [[src-anysilicon-the-ultimate-signoff-tapeout-checklist|Tapeout 签核清单]] | src-anysilicon-the-ultimate-signoff-tapeout-checklist | 完整签核检查 |
 | [[src-vlsisystemdesign-soc-labs|SoC 实验室]] | src-vlsisystemdesign-soc-labs | RISC-V SoC 流片 |
 | [[src-scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu|敏捷硬件开发]] | src-scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu | 硬件敏捷案例 |
 | [[src-semiengineering-how-ai-and-connected-workflows-will-clos|AI 与验证]] | src-semiengineering-how-ai-and-connected-workflows-will-clos | AI 解决验证瓶颈 |
 | [[src-synopsys-blogs-chip-design-ai-driven-bug-discover|Synopsys AI Bug 发现]] | src-synopsys-blogs-chip-design-ai-driven-bug-discover | AI 驱动芯片设计 |
-| *(已处理 124 篇)* | — | raw/tech/soc-pm/ |
+| *(已处理 129 篇)* | — | raw/tech/soc-pm/ |
 
 #### BSP (`wiki/sources/`)
 
@@ -243,6 +248,12 @@ tags: [index, catalog]
 
 | 概念 | 文档 ID | 说明 |
 |------|---------|------|
+| [[soc]] | soc | SoC 系统级芯片总览 |
+| [[peripheral-subsystem]] | peripheral-subsystem | 外设子系统 |
+| [[interconnect-subsystem]] | interconnect-subsystem | 互联子系统 |
+| [[memory-subsystem]] | memory-subsystem | 存储子系统 |
+| [[processor-subsystem]] | processor-subsystem | 处理器子系统 |
+| [[low-power-design]] | low-power-design | 架构级低功耗设计 |
 | [[agile-hardware]] | agile-hardware | 敏捷硬件开发 |
 | [[tapeout]] | tapeout | 芯片流片 |
 | [[verification]] | verification | 芯片验证 |
@@ -314,6 +325,19 @@ tags: [index, catalog]
 
 ---
 
+## 综合分析 (Syntheses)
+
+| 标题 | 文档 ID | 说明 |
+|------|---------|------|
+| [[soc-subsystems-overview]] | soc-subsystems-overview | SoC 五大子系统综合对比 |
+| [[dram-evolution]] | dram-evolution | DRAM 技术演进路线 |
+| [[tv-display-technologies]] | tv-display-technologies | 电视显示技术对比 |
+| [[smart-glasses-vs-car-infotainment]] | smart-glasses-vs-car-infotainment | 智能眼镜 vs 车载信息娱乐 |
+| [[ai-in-consumer-electronics]] | ai-in-consumer-electronics | 消费电子 AI 应用 |
+| [[display-interface-evolution]] | display-interface-evolution | 显示接口演进 |
+
+---
+
 ## 索引目录
 
 - `wiki/_indexes/sources.md` — 来源笔记索引
@@ -341,4 +365,4 @@ tags: [index, catalog]
 
 ---
 
-*最后更新: 2026-05-03*
+*最后更新: 2026-05-09*
