@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-安全启动基石-trustzone在a53中的硬件实现
+title: "安全启动基石：TrustZone在A53中的硬件实现"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/安全启动基石-TrustZone在A53中的硬件实现-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# 安全启动基石：TrustZone在A53中的硬件实现
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/安全启动基石-TrustZone在A53中的硬件实现-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 从复位到第一条指令的启动全流程
 
 ## 关键内容
 
-- DDR training sequence
+- 开篇：回答上篇进阶思考
+- 引子：那个被远程攻破的智能锁
+- 问题提出：硬件安全真的"硬"吗？
+- 硬件安全的五个层次
+- TrustZone在硬件安全中的定位
 
 ## 技术亮点
 

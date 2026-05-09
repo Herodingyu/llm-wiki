@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-linux启动第四篇-嵌入式启动为什么比pc复杂
+title: "Linux启动第四篇-嵌入式启动为什么比PC复杂"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/bsp/Linux启动第四篇-嵌入式启动为什么比PC复杂.md
+domain: tech/bsp
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, bsp, onechan]
 ---
 
-# DDR-training
+# Linux启动第四篇-嵌入式启动为什么比PC复杂
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/bsp/Linux启动第四篇-嵌入式启动为什么比PC复杂.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 从复位到第一条指令的启动全流程
 
 ## 关键内容
 
-- DDR training sequence
+- 一句话先讲明白
+- 第一，PC 的启动环境更标准，嵌入式的平台差异却非常大
+- 第二，PC 上很多初始化被固件封装了，嵌入式里你常常要直接面对
+- 第三，PC 上"默认正确"的东西，在嵌入式里经常都要自己保证
+- 第四，嵌入式的启动介质和链路组合更多，问题自然也更多
 
 ## 技术亮点
 

@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-a53-reset-boot
+title: "A53 复位启动：跨越黑暗森林的六个时间尺度"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/a53-reset-boot-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# A53 复位启动：跨越黑暗森林的六个时间尺度
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/a53-reset-boot-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 冷复位与热复位的底层机制
 
 ## 关键内容
 
-- DDR training sequence
+- 核心观点
+- 案例：持续 3 个月的"随机启动"谜团
+- 复位启动的六个时间尺度
+- 五个物理域交互
+- A53 复位系统的复杂性维度
 
 ## 技术亮点
 

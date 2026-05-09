@@ -1,22 +1,22 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-amba-ace协议实战-一致性总线的代价与收益
+title: "使用形式化方法验证一致性属性"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/AMBA ACE协议实战-一致性总线的代价与收益-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# 使用形式化方法验证一致性属性
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/AMBA ACE协议实战-一致性总线的代价与收益-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
@@ -26,11 +26,15 @@ tags: [tech, dram, onechan]
 
 ## 核心主题
 
-DDR-training的核心技术要点
+使用形式化方法验证一致性属性的核心技术要点
 
 ## 关键内容
 
-- DDR training sequence
+- 开篇：回答上篇进阶思考
+- 引子：那个让八核变四核的"一致性风暴"
+- 问题提出：一致性是免费的午餐吗？
+- 硬件探秘：ACE协议的状态机与事务流
+- ACE协议基础：五个关键状态
 
 ## 技术亮点
 

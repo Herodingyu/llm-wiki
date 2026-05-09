@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-内存管理单元上-页表遍历的硬件加速与tlb管理
+title: "内存管理单元（上）：页表遍历的硬件加速与TLB管理"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/内存管理单元上-页表遍历的硬件加速与TLB管理-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# 内存管理单元（上）：页表遍历的硬件加速与TLB管理
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/内存管理单元上-页表遍历的硬件加速与TLB管理-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 内存管理单元与地址翻译
 
 ## 核心主题
 
-DDR-training的核心技术要点
+内存管理单元（上）：页表遍历的硬件加速与TLB管理的核心技术要点
 
 ## 关键内容
 
-- DDR training sequence
+- 开篇：回答上篇进阶思考
+- 引子：那个让数据库性能下降80%的"TLB颠簸"
+- 问题提出：虚拟内存真的是"免费午餐"吗？
+- 地址转换的三大开销
+- A53 MMU的设计目标
 
 ## 技术亮点
 

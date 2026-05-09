@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-smmu与noc的协同设计
+title: "SMMU与NoC的协同设计"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/bsp/SMMU与NoC的协同设计.md
+domain: tech/bsp
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, bsp, onechan]
 ---
 
-# DDR-training
+# SMMU与NoC的协同设计
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/bsp/SMMU与NoC的协同设计.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 内存管理单元与地址翻译
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 MMU 的页表遍历、TLB 与硬件加速
 
 ## 关键内容
 
-- DDR training sequence
+- SMMU与PE组件的基本连接关系
+- 为何需要SMMU
+- SMMU系统级集成
+- SMMU的实现方式
+- 考虑一致性支持
 
 ## 技术亮点
 

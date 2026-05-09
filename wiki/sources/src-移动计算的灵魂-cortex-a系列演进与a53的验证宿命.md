@@ -1,22 +1,22 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-移动计算的灵魂-cortex-a系列演进与a53的验证宿命
+title: "传统高性能CPU的验证重点："
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/移动计算的灵魂-Cortex-A系列演进与A53的验证宿命-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# 传统高性能CPU的验证重点：
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/移动计算的灵魂-Cortex-A系列演进与A53的验证宿命-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
@@ -26,11 +26,15 @@ tags: [tech, dram, onechan]
 
 ## 核心主题
 
-DDR-training的核心技术要点
+传统高性能CPU的验证重点：的核心技术要点
 
 ## 关键内容
 
-- DDR training sequence
+- 引子：一个价值百万美元的"性能缺陷"
+- 问题提出：为什么是A53？
+- 硬件探秘：A53在ARM版图中的精准定位
+- 性能-功耗-面积的铁三角博弈
+- 微架构的"克制"设计
 
 ## 技术亮点
 

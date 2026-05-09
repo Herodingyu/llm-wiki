@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-dvfs-thermal-management
+title: "DVFS 与热管理：智能手机的"冷静艺术""
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/dvfs-thermal-management-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# DVFS 与热管理：智能手机的"冷静艺术"
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/dvfs-thermal-management-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 电源管理与低功耗设计
 
 ## 核心主题
 
-DDR-training的核心技术要点
+DVFS 与热管理的硬件实现机制
 
 ## 关键内容
 
-- DDR training sequence
+- 核心观点
+- 案例：2019 年某旗舰手机热失控事件
+- DVFS 的物理基础
+- DVFS 四层控制系统
+- DVFS 实时控制原则
 
 ## 技术亮点
 

@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-linux启动第十二篇-内核early-boot卡死
+title: "Linux启动第十二篇-内核early-boot卡死"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/bsp/Linux启动第十二篇-内核early-boot卡死.md
+domain: tech/bsp
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, bsp, onechan]
 ---
 
-# DDR-training
+# Linux启动第十二篇-内核early-boot卡死
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/bsp/Linux启动第十二篇-内核early-boot卡死.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 从复位到第一条指令的启动全流程
 
 ## 关键内容
 
-- DDR training sequence
+- 一句话先讲明白
+- 第一，什么叫 early boot？
+- 第二，内核在 early boot 里到底先干什么？
+- 1. 先把 CPU 运行环境站稳
+- 2. 把最早期内存管理立起来
 
 ## 技术亮点
 

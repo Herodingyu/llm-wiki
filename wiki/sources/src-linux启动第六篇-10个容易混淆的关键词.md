@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-linux启动第六篇-10个容易混淆的关键词
+title: "Linux启动第六篇-10个容易混淆的关键词"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/bsp/Linux启动第六篇-10个容易混淆的关键词.md
+domain: tech/bsp
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, bsp, onechan]
 ---
 
-# DDR-training
+# Linux启动第六篇-10个容易混淆的关键词
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/bsp/Linux启动第六篇-10个容易混淆的关键词.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 从复位到第一条指令的启动全流程
 
 ## 关键内容
 
-- DDR training sequence
+- 一句话先讲明白
+- 1. bootcmd：U-Boot 阶段的"启动脚本"
+- 2. bootargs：传给 Linux 内核的命令行参数
+- 3. Image：Linux 原生内核镜像
+- 4. dtb：设备树二进制文件
 
 ## 技术亮点
 

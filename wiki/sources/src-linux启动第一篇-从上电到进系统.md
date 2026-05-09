@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-linux启动第一篇-从上电到进系统
+title: "Linux启动第一篇-从上电到进系统"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/bsp/Linux启动第一篇-从上电到进系统.md
+domain: tech/bsp
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, bsp, onechan]
 ---
 
-# DDR-training
+# Linux启动第一篇-从上电到进系统
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/bsp/Linux启动第一篇-从上电到进系统.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 从复位到第一条指令的启动全流程
 
 ## 关键内容
 
-- DDR training sequence
+- 一. 一句话先讲明白
+- 二. 第一阶段：上电之后，谁先开始工作？
+- 三. 第二阶段：为什么还需要 SPL / TF-A / U-Boot？
+- 四. 第三阶段：U-Boot 到底做了什么？
+- 五. 第四阶段：内核起来后，为什么系统还不算"进系统"？
 
 ## 技术亮点
 

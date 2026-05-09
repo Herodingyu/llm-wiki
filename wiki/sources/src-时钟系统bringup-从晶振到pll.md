@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-时钟系统bringup-从晶振到pll
+title: "时钟系统bringup-从晶振到PLL-onechan"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/时钟系统bringup-从晶振到PLL-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# 时钟系统bringup-从晶振到PLL-onechan
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/时钟系统bringup-从晶振到PLL-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 时钟系统与 PLL
 
 ## 核心主题
 
-DDR-training的核心技术要点
+SoC 时钟系统的 bringup：从晶振到 PLL
 
 ## 关键内容
 
-- DDR training sequence
+- 为什么这是你必须啃透的第一块硬骨头
+- 一、晶振振荡：不是通电就会响
+- 1.1 石英晶体的等效电路
+- 1.2 起振的本质：负阻抵消正阻
+- 1.3 匹配电容：不是随便选个 22pF 就行
 
 ## 技术亮点
 

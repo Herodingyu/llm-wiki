@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-linux启动第八篇-bootrom选中启动介质
+title: "Linux启动第八篇-BootROM选中启动介质"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/bsp/Linux启动第八篇-BootROM选中启动介质.md
+domain: tech/bsp
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, bsp, onechan]
 ---
 
-# DDR-training
+# Linux启动第八篇-BootROM选中启动介质
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/bsp/Linux启动第八篇-BootROM选中启动介质.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 从复位到第一条指令的启动全流程
 
 ## 关键内容
 
-- DDR training sequence
+- 一句话先讲明白
+- 第一，BootROM 是怎么选启动介质的？
+- 第二，BootROM 选中的，不只是"设备名字"
+- 第三，SD 启动为什么最常见？
+- 第四，eMMC 为什么比 SD 更容易踩坑？
 
 ## 技术亮点
 

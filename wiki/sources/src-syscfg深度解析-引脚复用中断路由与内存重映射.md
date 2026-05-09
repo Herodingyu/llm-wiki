@@ -1,22 +1,22 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-syscfg深度解析-引脚复用中断路由与内存重映射
+title: "SYSCFG深度解析-引脚复用中断路由与内存重映射-onechan"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/SYSCFG深度解析-引脚复用中断路由与内存重映射-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# SYSCFG深度解析-引脚复用中断路由与内存重映射-onechan
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/SYSCFG深度解析-引脚复用中断路由与内存重映射-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
@@ -26,11 +26,15 @@ tags: [tech, dram, onechan]
 
 ## 核心主题
 
-DDR-training的核心技术要点
+STM32 SYSCFG 的引脚复用、中断路由与内存重映射
 
 ## 关键内容
 
-- DDR training sequence
+- 导火索：一个由引脚复用引发的"幽灵外设"问题
+- 第一性原理：SYSCFG 设计的根本逻辑
+- 架构本质：为什么需要集中式的系统配置控制器？
+- 引脚复用：从固定连接到动态路由的演进
+- 中断映射：从静态表到动态路由的变革
 
 ## 技术亮点
 

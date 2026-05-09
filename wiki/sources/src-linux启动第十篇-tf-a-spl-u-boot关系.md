@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-linux启动第十篇-tf-a-spl-u-boot关系
+title: "Linux启动第十篇-TF-A-SPL-U-Boot关系"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/bsp/Linux启动第十篇-TF-A-SPL-U-Boot关系.md
+domain: tech/bsp
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, bsp, onechan]
 ---
 
-# DDR-training
+# Linux启动第十篇-TF-A-SPL-U-Boot关系
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/bsp/Linux启动第十篇-TF-A-SPL-U-Boot关系.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 从复位到第一条指令的启动全流程
 
 ## 关键内容
 
-- DDR training sequence
+- 一句话先讲明白
+- 第一：为什么它们最容易被混？
+- 第二：先按启动链顺序理解，就不容易乱
+- 第三：U-Boot 是什么？它是你最熟的那一层
+- 第四：SPL 是什么？它为什么经常更关键？
 
 ## 技术亮点
 

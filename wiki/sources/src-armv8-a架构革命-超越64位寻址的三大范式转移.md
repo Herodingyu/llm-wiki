@@ -1,22 +1,22 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-armv8-a架构革命-超越64位寻址的三大范式转移
+title: "生成所有可能的寄存器操作组合"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/ARMv8-A架构革命-超越64位寻址的三大范式转移-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# 生成所有可能的寄存器操作组合
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/ARMv8-A架构革命-超越64位寻址的三大范式转移-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
@@ -26,11 +26,15 @@ tags: [tech, dram, onechan]
 
 ## 核心主题
 
-DDR-training的核心技术要点
+生成所有可能的寄存器操作组合的核心技术要点
 
 ## 关键内容
 
-- DDR training sequence
+- 引子：一次代价高昂的兼容性危机
+- 问题提出：ARMv8真的是"ARMv7加64位"吗？
+- 硬件探秘：三大范式转移的技术细节
+- 范式转移一：寄存器文件的重构——从稀缺到充裕
+- 范式转移二：异常模型的革命——从模式到层级
 
 ## 技术亮点
 

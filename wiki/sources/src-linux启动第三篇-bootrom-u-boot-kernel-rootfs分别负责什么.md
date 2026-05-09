@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-linux启动第三篇-bootrom-u-boot-kernel-rootfs分别负责什么
+title: "Linux 启动链四层职责边界：BootROM、U-Boot、Kernel、rootfs"
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/bsp/Linux启动第三篇-BootROM-U-Boot-Kernel-rootfs分别负责什么.md
+domain: tech/bsp
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, bsp, onechan]
 ---
 
-# DDR-training
+# Linux 启动链四层职责边界：BootROM、U-Boot、Kernel、rootfs
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/bsp/Linux启动第三篇-BootROM-U-Boot-Kernel-rootfs分别负责什么.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+技术深度 / 芯片启动与复位机制
 
 ## 核心主题
 
-DDR-training的核心技术要点
+A53 从复位到第一条指令的启动全流程
 
 ## 关键内容
 
-- DDR training sequence
+- 一句话总结
+- 第一层：BootROM 负责"把系统拉出第一步"
+- 第二层：U-Boot 负责"把内核启动条件准备好"
+- 第三层：Kernel 负责"把系统底座搭起来"
+- 第四层：rootfs 负责"把用户空间接起来"
 
 ## 技术亮点
 

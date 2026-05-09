@@ -1,22 +1,22 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-verification-collaboration
+title: "验证协同共建：从旁观者到共建者的"灵魂三问""
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/verification-collaboration-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# 验证协同共建：从旁观者到共建者的"灵魂三问"
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/verification-collaboration-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
@@ -26,11 +26,15 @@ tags: [tech, dram, onechan]
 
 ## 核心主题
 
-DDR-training的核心技术要点
+验证协同共建：从旁观者到共建者的"灵魂三问"的核心技术要点
 
 ## 关键内容
 
-- DDR training sequence
+- 核心观点
+- 视角切换：从"功能验证清单"到"集成风险地图"
+- 第一问：可观测性之问
+- 寄存器映射完备性
+- 错误传播路径显性化
 
 ## 技术亮点
 

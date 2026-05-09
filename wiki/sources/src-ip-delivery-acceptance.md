@@ -1,36 +1,40 @@
 ---
-doc_id: src-ddr-training-csdn
-title: "DDR-training"
+doc_id: src-ip-delivery-acceptance
+title: "IP 交付物与验收：从"交付清单"到"信任契约""
 page_type: source
 source_kind: raw_markdown
 raw_paths:
-  - raw/tech/dram/DDR-training-csdn.md
-domain: tech/dram
+  - raw/tech/soc-pm/ip-delivery-acceptance-onechan.md
+domain: tech/soc-pm
 created: 2026-05-09
 updated: 2026-05-09
-tags: [tech, dram, onechan]
+tags: [tech, soc-pm, onechan]
 ---
 
-# DDR-training
+# IP 交付物与验收：从"交付清单"到"信任契约"
 
 ## 来源
 
-- **原始文件**: raw/tech/dram/DDR-training-csdn.md
-- **来源平台**: CSDN
+- **原始文件**: raw/tech/soc-pm/ip-delivery-acceptance-onechan.md
+- **来源平台**: 微信公众号
 - **作者**: 未知
 - **收录日期**: 2026-05-09
 
 ## 文章类型
 
-技术深度 / 芯片架构详解
+工程管理 / IP 交付与验收
 
 ## 核心主题
 
-DDR-training的核心技术要点
+IP 交付物的验收标准与"终点线"定义
 
 ## 关键内容
 
-- DDR training sequence
+- 核心观点
+- 交付物清单
+- 1. 硬件交付物
+- 2. 软件交付物
+- 3. 文档交付物
 
 ## 技术亮点
 
