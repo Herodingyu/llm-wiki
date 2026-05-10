@@ -84,6 +84,7 @@ tags: [index, catalog]
 | [[src-onechan-soc-processor-subsystem|SoC（4）：一文详解AI时代下的处理器子系统]] | src-onechan-soc-processor-subsystem | CPU/GPU/NPU/DSP 异构计算 |
 | [[src-onechan-soc-low-power-design|SoC（5）：架构级低功耗设计]] | src-onechan-soc-low-power-design | DVFS/门控/电源域/低功耗策略 |
 | [[src-onechan-soc-integration|SoC（6）：SoC 集成不是把 IP 拼起来，而是让系统真正跑起来]] | src-onechan-soc-integration | 系统集成方法论：四条流/模块化/标准化/自动化 |
+| [[src-onechan-avs-adaptive-voltage-scaling|SoC（7）：AVS 自适应电压缩放——DVFS 的进阶扩展]] | src-onechan-avs-adaptive-voltage-scaling | 片上性能监测与闭环反馈控制实现极致能效 |
 | [[src-anysilicon-the-ultimate-signoff-tapeout-checklist|Tapeout 签核清单]] | src-anysilicon-the-ultimate-signoff-tapeout-checklist | 完整签核检查 |
 | [[src-vlsisystemdesign-soc-labs|SoC 实验室]] | src-vlsisystemdesign-soc-labs | RISC-V SoC 流片 |
 | [[src-scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu|敏捷硬件开发]] | src-scrum-master-toolbox-2024-11-podcast-agile-in-hardware-the-fu | 硬件敏捷案例 |
