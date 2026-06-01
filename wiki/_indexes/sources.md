@@ -3,6 +3,7 @@
 | Title | doc_id | Domain | Summary |
 |-------|--------|--------|---------|
 | [3D DRAM Roadmap and Production Timeline](sources/src-3d-dram-roadmap-allpcb.md) | src-3d-dram-roadmap-allpcb | tech/dram | 3D DRAM技术发展路线图与量产时间线 |
+| [瑞芯微 RK3568/RK3588 启动时序](sources/src-rk3568-rk3588-boot-sequence.md) | src-rk3568-rk3588-boot-sequence | tech/soc-pm | 瑞芯微RK3568/RK3588从BootROM到Kernel的五级启动链路详解 |
 | [Apple Vision Pro vs Meta Quest 3](sources/src-alibaba-product-insights-apple-vision-pro-vs-met.md) | src-alibaba-product-insights-apple-vision-pro-vs-met | industry/smart-glasses | Apple Vision Pro与Meta Quest 3对比分析 |
 | [The Ultimate Signoff (TapeOut) Checklist](sources/src-anysilicon-the-ultimate-signoff-tapeout-checklist.md) | src-anysilicon-the-ultimate-signoff-tapeout-checklist | tech/soc-pm | 芯片流片前的终极签核检查清单 |
 | [CarPlay Ultra发布](sources/src-apple-newsroom-2025-05-carplay-ultra-the-next-.md) | src-apple-newsroom-2025-05-carplay-ultra-the-next- | industry/car-infotainment | Apple CarPlay Ultra新一代车机系统发布 |
