@@ -2,6 +2,10 @@
 
 | Title | doc_id | Domain | Summary |
 |-------|--------|--------|---------|
+| [DDR Training 到底在训练什么？](sources/src-ddr-training-what-it-trains.md) | src-ddr-training-what-it-trains | tech/dram | DDR Training机制详解：时间/电压/窗口训练与SIPI工程实践 |
+| [DDR系统角色：Controller、PHY、DRAM、DIMM](sources/src-ddr-system-roles.md) | src-ddr-system-roles | tech/dram | DDR系统四大角色分工与一次读写操作的完整流程 |
+| [CA/CLK/CS/CKE/RESET：命令地址通道](sources/src-ddr-ca-clk-control.md) | src-ddr-ca-clk-control | tech/dram | DDR命令地址通道详解：控制系统视角下的CLK/CA/CS/CKE/RESET |
+| [DQ/DQS/DM/Byte Lane：DDR数据通道](sources/src-ddr-dq-dqs-byte-lane.md) | src-ddr-dq-dqs-byte-lane | tech/dram | DDR数据通道详解：源同步接口、Byte Lane约束与SIPI仿真要点 |
 | [3D DRAM Roadmap and Production Timeline](sources/src-3d-dram-roadmap-allpcb.md) | src-3d-dram-roadmap-allpcb | tech/dram | 3D DRAM技术发展路线图与量产时间线 |
 | [瑞芯微 RK3568/RK3588 启动时序](sources/src-rk3568-rk3588-boot-sequence.md) | src-rk3568-rk3588-boot-sequence | tech/soc-pm | 瑞芯微RK3568/RK3588从BootROM到Kernel的五级启动链路详解 |
 | [Apple Vision Pro vs Meta Quest 3](sources/src-alibaba-product-insights-apple-vision-pro-vs-met.md) | src-alibaba-product-insights-apple-vision-pro-vs-met | industry/smart-glasses | Apple Vision Pro与Meta Quest 3对比分析 |
