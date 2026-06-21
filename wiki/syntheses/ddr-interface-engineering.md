@@ -7,6 +7,7 @@ sources:
   - src-ddr-ca-clk-control.md
   - src-ddr-dq-dqs-byte-lane.md
   - src-ddr-training-what-it-trains.md
+  - src-ddr-eye-diagram.md
 ---
 
 # DDR 高速接口工程实践
@@ -181,6 +182,50 @@ SIPI 仿真的价值是在板子做出来之前，判断通道是否有足够基
 
 ---
 
-## 七、一句话总结
+## 七、眼图：不是终点，是入口
+
+眼图不是"好不好看"的波形图，而是一张系统 Margin 地图。真正专业的看法，是把眼图拆成多个维度，再反推哪类工程问题在吃掉 Margin。
+
+### 7.1 眼图的核心维度
+
+| 维度 | 含义 | 被吃掉的原因 |
+|------|------|-------------|
+| **眼宽** | 时间 Margin，Setup/Hold 安全 | DQ/DQS 相位差、走线 skew、过孔 stub、通道损耗、串扰、SSN |
+| **眼高** | 电压 Margin，0/1 判决安全 | 电源噪声、Vref 漂移、串扰、驱动不足、端接不合适 |
+| **中心点** | 采样点到四边边界的距离 | Training 偏移、温度/电压漂移、抖动 |
+| **边缘形态** | 振铃、拖尾、斜率变慢、毛刺 | 反射、ISI、串扰 |
+
+### 7.2 七步看眼图法
+
+1. **确认场景**：Read/Write？哪个 Byte Lane/bit？什么 ODT/Drive/Vref/Pattern？
+2. **找最差 bit**：不按平均，按最弱链路看
+3. **看眼宽**：时间 Margin、Setup/Hold、采样点左右是否均衡
+4. **看眼高**：电压 Margin、Vref 位置、电源噪声条件
+5. **看中心点**：采样点到上下左右边界的距离 = 工程风险地图
+6. **做参数扫描**：ODT/Drive/Vref/Delay/Pattern 切换，定位问题来源
+7. **转成工程动作**：Layout、Package、PDN、模型、配置修改
+
+### 7.3 常见误判
+
+| 误判 | 真相 |
+|------|------|
+| 眼睛大就一定安全 | 要看采样点居中、最差 bit 安全、Corner 覆盖、Vref 余量 |
+| 眼图差就是等长问题 | 反射、串扰、ODT、电源噪声、模型配置也会吃眼图 |
+| 仿真 pass = 板子 pass | 模型、边界条件、实测场景必须一致 |
+| 只看 DQ 就够了 | DQS 相位、Vref、VDDQ/VSSQ、CA/CLK、ODT 都要一起看 |
+| Training 能过就不用管眼图 | Training pass 只是找到可用点，Margin 窄一样可能在量产/温漂/电源扰动下失败 |
+
+### 7.4 仿真 vs 实测
+
+关键不是波形一模一样，而是：
+- 趋势是否一致
+- 最差点是否一致
+- Margin 变化方向是否一致
+
+仿真要可信，至少需对齐：IBIS 模型版本、ODT/驱动强度、Vref、速率、拓扑、Package 模型、PCB 提取、过孔结构、probe 点、Pattern、读写方向、Rank 状态、训练参数。
+
+---
+
+## 八、一句话总结
 
 > **DDR 真正难的地方不是线多，而是这些线必须在极短时间窗口内互相配合。Controller 决定做什么，PHY 把它变成电信号，DRAM 存储数据，DIMM 组织成模块。而 Training 是 PHY 在正式工作前，对整条物理链路做的一次自我校准和健康检查。**
