@@ -8,6 +8,7 @@ sources:
   - src-ddr-dq-dqs-byte-lane.md
   - src-ddr-training-what-it-trains.md
   - src-ddr-eye-diagram.md
+  - src-lpddr5-training.md
 ---
 
 # DDR 高速接口工程实践
@@ -226,6 +227,44 @@ SIPI 仿真的价值是在板子做出来之前，判断通道是否有足够基
 
 ---
 
-## 八、一句话总结
+## 八、LPDDR5 特有训练机制
+
+LPDDR5 将地址/命令时钟(CK)与高速数据接口解耦，CK 最高 800-1200MHz，WCK 可达 3200-4800MHz。系统启动时必须完成 6 大训练步骤。
+
+### 8.1 6 大训练步骤
+
+| 步骤 | 名称 | 速率 | 训练目标 |
+|------|------|------|----------|
+| 1 | **命令总线训练(CBT)** | 800/1600 Mbps | SoC: CA/CS 延迟；DRAM: Vref(CA) |
+| 2 | **WCK2CK 校准** | CK 800MHz, WCK 3200MHz | SoC: WCK 延迟 |
+| 3 | **WCK 占空比训练(DCA)** | WCK 3200MHz | DRAM: DCA 代码 |
+| 4 | **读门训练** | RDQS 3200MHz | SoC: 读门延迟 |
+| 5 | **读数据训练** | 6400 Mbps | SoC: Rx 延迟, Vref(DQ) |
+| 6 | **写数据训练** | 6400 Mbps | SoC: Tx 延迟；DRAM: Vref(DQ), DFE |
+
+### 8.2 与 DDR4/DDR5 的关键差异
+
+- **CK/WCK 解耦**：命令地址通道和数据通道使用不同时钟域，需要 WCK2CK 校准
+- **源同步 DQS → WCK**：写操作以 WCK 为参考，读操作以 RDQS 为参考
+- **占空比敏感**：WCK 占空比直接影响 RDQS 和奇/偶 DQ 捕获，需 DCA 校准
+- **训练 FIFO**：LPDDR5 提供专用训练 FIFO(8×BL16)，无需激活/预充电/刷新，比主存储器训练开销更小
+- **DMI 和 RDQS_t 需迭代训练**：DMI 和 RDQS_t(奇偶校验)不能同时训练，需两次迭代
+
+### 8.3 DFE(判决反馈均衡)
+
+- 1 抽头，8 种设置(3 位可编程)
+- 可独立编程到每个 Rank 和每个字节
+- 用于补偿信道符号间干扰(ISI)
+- 可选功能
+
+### 8.4 周期性重训练
+
+电压和温度漂移会导致：
+- tWCK2DQO：RDQS+DQ 读响应时序变化 → 需更新读门训练
+- tWCK2DQI：写操作 WCK 到 DQ 偏移变化 → 需更新写数据训练
+
+---
+
+## 九、一句话总结
 
 > **DDR 真正难的地方不是线多，而是这些线必须在极短时间窗口内互相配合。Controller 决定做什么，PHY 把它变成电信号，DRAM 存储数据，DIMM 组织成模块。而 Training 是 PHY 在正式工作前，对整条物理链路做的一次自我校准和健康检查。**

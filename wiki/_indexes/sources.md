@@ -2,6 +2,7 @@
 
 | Title | doc_id | Domain | Summary |
 |-------|--------|--------|---------|
+| [LPDDR5系统训练全解析](sources/src-lpddr5-training.md) | src-lpddr5-training | tech/dram | LPDDR5 6大训练步骤详解：CBT/WCK2CK/DCA/Read Gate/读写训练/DFE |
 | [DDR眼图怎么看？别只看"眼睛大不大"](sources/src-ddr-eye-diagram.md) | src-ddr-eye-diagram | tech/dram | DDR眼图工程解读：眼宽/眼高/采样点/Margin分析与SIPI诊断方法 |
 | [DDR Training 到底在训练什么？](sources/src-ddr-training-what-it-trains.md) | src-ddr-training-what-it-trains | tech/dram | DDR Training机制详解：时间/电压/窗口训练与SIPI工程实践 |
 | [DDR系统角色：Controller、PHY、DRAM、DIMM](sources/src-ddr-system-roles.md) | src-ddr-system-roles | tech/dram | DDR系统四大角色分工与一次读写操作的完整流程 |
