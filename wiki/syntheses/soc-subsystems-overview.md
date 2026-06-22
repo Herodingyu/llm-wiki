@@ -8,6 +8,7 @@ related_sources:
   - src-onechan-soc-memory-subsystem
   - src-onechan-soc-processor-subsystem
   - src-onechan-soc-low-power-design
+  - src-soc-register-default-values
 related_concepts:
   - soc
   - peripheral-subsystem
@@ -15,8 +16,9 @@ related_concepts:
   - memory-subsystem
   - processor-subsystem
   - low-power-design
+  - register-default-values
 created: 2026-05-09
-updated: 2026-05-09
+updated: 2026-06-22
 tags: [synthesis, soc, architecture, system-design]
 ---
 
@@ -45,6 +47,39 @@ tags: [synthesis, soc, architecture, system-design]
                     │  电源域管理)   │
                     └─────────────┘
 ```
+
+## 寄存器与硬件契约：默认值不是"无人值守"，而是设计决策
+
+寄存器默认值是芯片上电后、固件写第一行代码之前，数字设计工程师在 RTL 里一个触发器一个触发器指定的初始状态。它是芯片和固件之间的沉默契约。
+
+### 默认值的物理来源
+
+| 类型 | 机制 | 状态 | 说明 |
+|------|------|------|------|
+| 带异步复位端 | POR 强制拉回复位值 | 确定（0 或 1） | RTL 里 FDCE/FDPE 例化时指定 |
+| 无复位端 | 热噪声/工艺偏差 | 随机（undefined） | 手册标 "u"，不能依赖 |
+| 硬件自动加载 | POR 后状态机自动写入 | 确定但需等待 | 某些外设需等若干微秒 |
+
+### 为什么不是全 0？
+
+1. **上电安全**：某些"关闭"电平在物理上是高电平 → 复位值必须指定为 1
+2. **覆盖常用场景**：数字设计工程师替固件写初始化（如 PLL 默认 8 倍频、Flash 默认 1 等待周期）
+3. **面积/功耗取舍**：高速路径/FIFO 省略复位端，用硬件自动加载补偿
+
+### 固件三大陷阱
+
+1. **依赖默认值**：芯片版本/换 IP 后默认值可能变化 → 全部显式写入
+2. **对只写寄存器读-修改-写**：读返回的 0 是总线接口假象 → 用影子变量维护状态
+3. **自动加载未完成就访问**：换电源芯片后上电斜率变化 → 遵守手册延迟
+
+### 固件铁律
+
+- 不依赖任何默认值，初始化阶段全部显式写入
+- 只写寄存器用影子变量，完整赋值
+- 上电先验证芯片ID、复位状态、时钟状态（生存基线）
+- 手册标 "default: u" 的位必须显式初始化
+
+---
 
 ## 子系统核心职责对比
 
@@ -113,6 +148,7 @@ Camera → ISP → DDR(framebuffer) → NPU → DDR(result)
 - [[src-onechan-soc-memory-subsystem]] — 存储子系统
 - [[src-onechan-soc-processor-subsystem]] — 处理器子系统
 - [[src-onechan-soc-low-power-design]] — 低功耗设计
+- [[src-soc-register-default-values]] — 寄存器默认值与硬件契约
 
 ## 相关概念
 

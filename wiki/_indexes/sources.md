@@ -9,6 +9,7 @@
 | [CA/CLK/CS/CKE/RESET：命令地址通道](sources/src-ddr-ca-clk-control.md) | src-ddr-ca-clk-control | tech/dram | DDR命令地址通道详解：控制系统视角下的CLK/CA/CS/CKE/RESET |
 | [DQ/DQS/DM/Byte Lane：DDR数据通道](sources/src-ddr-dq-dqs-byte-lane.md) | src-ddr-dq-dqs-byte-lane | tech/dram | DDR数据通道详解：源同步接口、Byte Lane约束与SIPI仿真要点 |
 | [3D DRAM Roadmap and Production Timeline](sources/src-3d-dram-roadmap-allpcb.md) | src-3d-dram-roadmap-allpcb | tech/dram | 3D DRAM技术发展路线图与量产时间线 |
+| [寄存器默认值：芯片上电后，谁替你写了那些你不写的值](sources/src-soc-register-default-values.md) | src-soc-register-default-values | tech/soc-pm | RTL设计决策与固件初始化：触发器复位值、硬件自动加载、固件三大陷阱 |
 | [瑞芯微 RK3568/RK3588 启动时序](sources/src-rk3568-rk3588-boot-sequence.md) | src-rk3568-rk3588-boot-sequence | tech/soc-pm | 瑞芯微RK3568/RK3588从BootROM到Kernel的五级启动链路详解 |
 | [Apple Vision Pro vs Meta Quest 3](sources/src-alibaba-product-insights-apple-vision-pro-vs-met.md) | src-alibaba-product-insights-apple-vision-pro-vs-met | industry/smart-glasses | Apple Vision Pro与Meta Quest 3对比分析 |
 | [The Ultimate Signoff (TapeOut) Checklist](sources/src-anysilicon-the-ultimate-signoff-tapeout-checklist.md) | src-anysilicon-the-ultimate-signoff-tapeout-checklist | tech/soc-pm | 芯片流片前的终极签核检查清单 |
