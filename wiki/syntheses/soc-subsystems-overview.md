@@ -9,6 +9,7 @@ related_sources:
   - src-onechan-soc-processor-subsystem
   - src-onechan-soc-low-power-design
   - src-soc-register-default-values
+  - src-soc-efuse-security-bringup
 related_concepts:
   - soc
   - peripheral-subsystem
@@ -17,8 +18,12 @@ related_concepts:
   - processor-subsystem
   - low-power-design
   - register-default-values
+  - security-subsystem
+  - efuse
+  - secure-boot
+  - trustzone
 created: 2026-05-09
-updated: 2026-06-22
+updated: 2026-06-23
 tags: [synthesis, soc, architecture, system-design]
 ---
 
@@ -45,6 +50,13 @@ tags: [synthesis, soc, architecture, system-design]
                     │   低功耗设计   │  ← 贯穿所有子系统
                     │ (DVFS/门控/   │
                     │  电源域管理)   │
+                    └─────────────┘
+                           │
+                    ┌──────┴──────┐
+                    │   安全子系统   │  ← 最高仲裁者
+                    │ (eFuse/Trust │     先于任何用户代码执行
+                    │  Zone/Secure│     物理不可逆
+                    │  Boot/Lifecycle)
                     └─────────────┘
 ```
 
@@ -81,24 +93,63 @@ tags: [synthesis, soc, architecture, system-design]
 
 ---
 
+---
+
+## 安全子系统：启动的最高仲裁者
+
+安全子系统不是"最后加的一把锁"，而是**芯片启动时第一个说话的神**。它的决定先于任何一行用户代码，且物理上无法被后续软件推翻。
+
+### 核心组件
+
+| 组件 | 功能 | 不可逆性 |
+|------|------|----------|
+| **eFuse** | 一次性编程单元，存储密钥哈希、生命周期、调试权限 | 物理永久，烧断后无法恢复 |
+| **Secure Boot** | BootROM 验证固件签名，建立信任链 | 失败即静默死锁 |
+| **TrustZone** | ARM 安全扩展，隔离安全世界（EL3）和非安全世界（EL1） | 架构级隔离 |
+| **生命周期管理** | 芯片从开发→量产→现场的逐级收紧 | 单向门，不可逆 |
+
+### 三大不可逆关卡
+
+**关卡一：安全启动**
+- BootROM 读取 eFuse 公钥哈希 → 验证固件签名 → 失败则拒绝执行用户代码
+- 灾难：eFuse 公钥哈希误烧 → 正确固件永远被拒；安全版本计数器只增不减 → 旧版本无法回滚
+
+**关卡二：生命周期**
+- 开发阶段：JTAG/SWD 可用，eFuse 可编程
+- 量产阶段：调试口永久锁死，启动源受限，关键 eFuse 写保护
+- **单向门**：开发 → 量产不可逆
+
+**关卡三：调试授权**
+- eFuse 控制 JTAG/SWD：烧断即永久禁止
+- 或通过密码哈希的挑战-响应临时解锁
+
+### Bringup 安全铁律
+
+1. **只读安全状态，绝不执行不可逆 eFuse 编程**
+2. 启动早期读取生命周期、检查安全启动状态、确认调试授权
+3. 用 `BRINGUP_PHASE` 宏包裹所有 eFuse 烧写代码路径
+4. EL1（非安全世界）通过 SMC 与 EL3 安全固件交互，绝不绕过安全监视器
+
+---
+
 ## 子系统核心职责对比
 
-| 维度 | 处理器子系统 | 存储子系统 | 互联子系统 | 外设子系统 | 低功耗设计 |
-|------|-----------|-----------|-----------|-----------|-----------|
-| **核心问题** | 谁来算？怎么算？ | 数据放哪？怎么取？ | 模块怎么连？谁优先？ | 怎么连外设？ | 怎么省电？ |
-| **关键指标** | 性能、能效比 | 带宽、延迟、容量 | 带宽、延迟、仲裁效率 | 接口种类、速率 | 功耗、唤醒时间 |
-| **设计哲学** | 专用优于通用 | 热数据靠近计算 | 合适的路给合适的流量 | 事件驱动优于轮询 | 会干活优于少干活 |
-| **最常见坑** | 大小核调度失衡 | Cache 一致性 Bug | 总线死锁/带宽不足 | DMA 与 CPU 冲突 | 电源域隔离不彻底 |
+| 维度 | 处理器子系统 | 存储子系统 | 互联子系统 | 外设子系统 | 低功耗设计 | **安全子系统** |
+|------|-----------|-----------|-----------|-----------|-----------|-------------|
+| **核心问题** | 谁来算？怎么算？ | 数据放哪？怎么取？ | 模块怎么连？谁优先？ | 怎么连外设？ | 怎么省电？ | **谁可信？谁准入？** |
+| **关键指标** | 性能、能效比 | 带宽、延迟、容量 | 带宽、延迟、仲裁效率 | 接口种类、速率 | 功耗、唤醒时间 | **不可篡改、单向生命周期** |
+| **设计哲学** | 专用优于通用 | 热数据靠近计算 | 合适的路给合适的流量 | 事件驱动优于轮询 | 会干活优于少干活 | **先验证后执行，不可逆** |
+| **最常见坑** | 大小核调度失衡 | Cache 一致性 Bug | 总线死锁/带宽不足 | DMA 与 CPU 冲突 | 电源域隔离不彻底 | **Bringup 阶段误烧 eFuse** |
 
 ## 设计权衡矩阵
 
-| 场景 | 处理器选择 | 存储策略 | 互联方案 | 外设重点 | 功耗策略 |
-|------|----------|---------|---------|---------|---------|
-| **手机 SoC** | 大小核 + GPU + NPU | LPDDR + 大 Cache | AXI Crossbar | USB/Camera/Display | DVFS + Aggressive 门控 |
-| **车载 SoC** | 多核 A76 + 安全核 | ECC DDR + 双备份 | NoC + 冗余 | CAN/Ethernet/摄像头 | 功能安全优先 |
-| **IoT MCU** | Cortex-M 单核 | 小 SRAM + Flash | AHB/APB | I2C/SPI/GPIO | 深度睡眠 + 事件唤醒 |
-| **AI 加速器** | NPU 阵列 + 控制核 | HBM + 本地 SRAM | 高带宽 NoC | PCIe/网络 | 电源域精细划分 |
-| **电视 SoC** | 多核 A55 + GPU | DDR4 + 大帧缓冲 | AXI + QoS | HDMI/USB/WiFi | 待机功耗优化 |
+| 场景 | 处理器选择 | 存储策略 | 互联方案 | 外设重点 | 功耗策略 | **安全策略** |
+|------|----------|---------|---------|---------|---------|------------|
+| **手机 SoC** | 大小核 + GPU + NPU | LPDDR + 大 Cache | AXI Crossbar | USB/Camera/Display | DVFS + Aggressive 门控 | **TrustZone + Secure Boot** |
+| **车载 SoC** | 多核 A76 + 安全核 | ECC DDR + 双备份 | NoC + 冗余 | CAN/Ethernet/摄像头 | 功能安全优先 | **eFuse 生命周期 + 防篡改** |
+| **IoT MCU** | Cortex-M 单核 | 小 SRAM + Flash | AHB/APB | I2C/SPI/GPIO | 深度睡眠 + 事件唤醒 | **轻量 Secure Boot** |
+| **AI 加速器** | NPU 阵列 + 控制核 | HBM + 本地 SRAM | 高带宽 NoC | PCIe/网络 | 电源域精细划分 | **模型加密 + 访问控制** |
+| **电视 SoC** | 多核 A55 + GPU | DDR4 + 大帧缓冲 | AXI + QoS | HDMI/USB/WiFi | 待机功耗优化 | **DRM + 内容保护** |
 
 ## 协同设计要点
 
@@ -127,7 +178,28 @@ tags: [synthesis, soc, architecture, system-design]
 - 状态保持（Retention）策略跨模块协调
 - 唤醒序列涉及多个子系统时序
 
+### 6. 安全子系统 ↔ 全系统
+- 安全启动验证先于任何子系统初始化
+- TrustZone 隔离处理器/存储/外设的访问权限
+- 生命周期状态影响调试口使能（外设子系统）
+- 安全世界（EL3）控制密钥，非安全世界（EL1）通过 SMC 请求服务
+- eFuse 烧写电压由电源子系统提供，需严格时序控制
+
 ## 典型数据流示例
+
+### 安全启动信任链
+```
+BootROM (ROM, 不可改)
+    ↓ 读取 eFuse 公钥哈希
+验证 SPL 签名
+    ↓ 签名有效
+加载 SPL → 验证 U-Boot → 验证 Kernel → 启动
+    ↓ 签名无效
+静默死锁 / 安全停机
+```
+- **安全子系统**：eFuse 提供信任根，BootROM 执行验证
+- **存储子系统**：SPL/U-Boot/Kernel 存储于 Flash/EMMC
+- **处理器子系统**：CPU 执行 BootROM 代码，异常则停机
 
 ### 摄像头 → AI 推理 → 显示
 ```
@@ -149,6 +221,7 @@ Camera → ISP → DDR(framebuffer) → NPU → DDR(result)
 - [[src-onechan-soc-processor-subsystem]] — 处理器子系统
 - [[src-onechan-soc-low-power-design]] — 低功耗设计
 - [[src-soc-register-default-values]] — 寄存器默认值与硬件契约
+- [[src-soc-efuse-security-bringup]] — eFuse 与安全模块 Bringup 风险
 
 ## 相关概念
 
@@ -158,6 +231,10 @@ Camera → ISP → DDR(framebuffer) → NPU → DDR(result)
 - [[memory-subsystem]] — 存储子系统
 - [[processor-subsystem]] — 处理器子系统
 - [[low-power-design]] — 低功耗设计
+- [[security-subsystem]] — 安全子系统
+- [[efuse]] — 电子熔丝
+- [[secure-boot]] — 安全启动
+- [[trustzone]] — ARM TrustZone
 
 ## 开放问题
 
