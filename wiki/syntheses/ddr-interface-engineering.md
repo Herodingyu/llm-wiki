@@ -1,7 +1,7 @@
 ---
 title: DDR 高速接口工程实践：从系统架构到 SIPI 仿真
 category: dram
-tags: [DDR, SIPI, 内存控制器, PHY, Training, 信号完整性, 电源完整性]
+tags: [DDR, SIPI, 内存控制器, PHY, Training, 信号完整性, 电源完整性, 调度引擎]
 sources:
   - src-ddr-system-roles.md
   - src-ddr-ca-clk-control.md
@@ -9,6 +9,7 @@ sources:
   - src-ddr-training-what-it-trains.md
   - src-ddr-eye-diagram.md
   - src-lpddr5-training.md
+  - src-ddr-controller-deep-dive.md
 ---
 
 # DDR 高速接口工程实践
@@ -265,6 +266,66 @@ LPDDR5 将地址/命令时钟(CK)与高速数据接口解耦，CK 最高 800-120
 
 ---
 
-## 九、一句话总结
+## 九、Controller 调度引擎：从 SIPI 到系统架构的桥梁
+
+前面的章节主要从 SIPI 工程视角（信号完整性、电源完整性、Training）理解 DDR。但回到系统层面，Controller 的调度策略才是决定"理论带宽能兑现多少"的关键。
+
+### 9.1 页缓冲管理策略
+
+| 策略 | 机制 | 适用场景 |
+|------|------|----------|
+| **Open Page** | 读写后不关闭当前行，期待后续命中 | 顺序访问、局部性好，row-hit 率可达 90%+ |
+| **Close Page** | 每次读写后立即 Precharge | 随机访问，延迟确定（tRCD + tCAS） |
+| **Adaptive** | 根据历史 row-hit 率动态切换 | 现代 Controller 主流，>70% Open, <30% Close |
+
+一次 row-miss 的代价：tRP + tRCD + CL ≈ 30~40 周期（DDR4-3200 约 41ns），而 row-hit 只需 tCCD（4~8 周期）。策略选择直接影响带宽利用率：顺序访问 70~80%，随机访问可能只有 15~30%。
+
+### 9.2 两级仲裁架构
+
+**第一级**：读/写命令池内部仲裁——DRAM 页状态 + AXI QoS 优先级（LOW/MED/HIGH/CRITICAL）+ 防饿死机制
+
+**第二级**：读/写/维护命令之间仲裁——维护命令（Refresh）优先级最高；读写之间减少方向切换（tWTR/tRTW 惩罚）
+
+### 9.3 地址映射与交织
+
+- **陷阱**：高位地址映射到 Bank 选择位 → 连续地址打到同一 Bank → 串行化访问
+- **推荐**：Channel 选 Addr[6]，Bank 选 Addr[9:7] → 连续访问跨 Channel 并行 + 跨 Bank 流水线
+- **多通道交织**：Cache-line Interleaving（64B 粒度，负载均衡好）vs Page Interleaving（4KB 粒度，大块传输效率高）
+
+### 9.4 数据冒险处理
+
+写响应提前返回带来一致性挑战：
+
+| 冒险 | 处理 |
+|------|------|
+| **WAW** | 新写合并到旧写命令，保留 byte enable |
+| **RAW** | 读命中 Write Data Buffer → Forward Buffer 旁路返回 |
+| **WAR** | AXI 不保证读写通道顺序，Controller 通常不处理 |
+
+若对写延迟不敏感，可改为 DRAM 真正写完后再返回 AXI 响应，彻底简化冒险逻辑。
+
+### 9.5 DDR4 → DDR5 的架构变化
+
+| 变化 | 影响 |
+|------|------|
+| **子通道** | DIMM 拆成两个 32bit 子通道，各有独立 CA 总线，相当于通道数翻倍 |
+| **On-Die ECC** | 每 128bit 配 8bit ECC，对 Controller 透明，提高 DRAM 良率 |
+| **Bank Group 扩展** | 4 组 → 8 组，共 32 个 Bank，跨组访问无 tCCD_S 限制 |
+| **刷新机制** | tREFI 7.8μs → 3.9μs；新增 REFsb（Same-Bank Refresh） |
+| **PMIC 下移** | 主板输出 5V/12V → DIMM 上 PMIC 降压到 1.1V，上电序列改变 |
+
+### 9.6 未来趋势
+
+- **LPDDR6**：PAM3 信号编码取代 NRZ，PHY 训练流程根本变化
+- **MRDIMM**：单 DIMM 双倍带宽，需支持 MRK 命令和双 Rank 交替调度
+- **DDR6**：PAM4 编码，12800+ MT/s，DFI/命令编码/训练流程重写
+- **PIM（Processing-in-Memory）**：Controller 需管理"远程计算"任务调度
+- **CXL 内存池化**：处理远端内存一致性和延迟，协议栈复杂度上升
+
+---
+
+## 十、一句话总结
 
 > **DDR 真正难的地方不是线多，而是这些线必须在极短时间窗口内互相配合。Controller 决定做什么，PHY 把它变成电信号，DRAM 存储数据，DIMM 组织成模块。而 Training 是 PHY 在正式工作前，对整条物理链路做的一次自我校准和健康检查。**
+
+> **从系统架构视角看，DDR Controller 是 SoC 里最像"操作系统"的硬件——队列管理、优先级仲裁、预测策略、功耗状态机、错误处理一应俱全。它必须在 DRAM 物理约束不断恶化的前提下，尽可能把带宽榨出来、把延迟压下去。只要 DRAM 还是靠电容存数据，这个翻译系统就永远有活干。**
